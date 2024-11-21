@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+   <div>
+    <header class="bg-white">
+        <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+          <div class="flex lg:flex-1">
+            <a href="#" class="-m-1.5 p-1.5">
+              <span class="sr-only">Your Company</span>
+              <img class="h-8 w-auto" src="../images/politicia-logo 1.png"alt="">
+            </a>
+          </div>
+          <div class="flex lg:hidden">
+            <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+              <span class="sr-only">Open main menu</span>
+              <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+            </button>
+          </div>
+          <div class="hidden lg:flex lg:gap-x-12">
+            <div class="relative">
+              <button type="button" class="flex items-center gap-x-1 font-bold text-blue-900 text-lg poppins" aria-expanded="false">
+                Home
+              </button>
+            </div>
+      
+            <a href="#" class="font-normal poppins text-lg text-blue-900">About Us</a>
+            <a href="#" class="font-normal poppins text-lg text-blue-900">Policies</a>
+            <a href="#" class="font-normal poppins text-lg text-blue-900">Blog</a>
+            <a href="#" class="font-normal poppins text-lg text-blue-900">Event</a>
+            <a href="#" class="font-normal poppins text-lg text-blue-900">Media</a>
+            <a href="#" class="font-normal poppins text-lg text-blue-900">Volunteer and Contribution</a>
+          </div>
+          <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+            <!-- <a href="#" class="text-sm/6 font-semibold text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a> -->
+             <button class="bg-red-500 text-lg text-white font-semibold pt-2.5 pb-2.5 px-5	rounded-xl">Contact us</button>
+          </div>
+        </nav>
+        <!-- Mobile menu, show/hide based on menu open state. -->
+        <div class="lg:hidden" role="dialog" aria-modal="true">
+          <!-- Background backdrop, show/hide based on slide-over state. -->
+          <div class="fixed inset-0 z-10"></div>
+          <div class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+            <div class="flex items-center justify-between">
+              <a href="#" class="-m-1.5 p-1.5">
+                <span class="sr-only">Your Company</span>
+                <img class="h-8 w-auto" src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600" alt="">
+              </a>
+              <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+                <span class="sr-only">Close menu</span>
+                <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <div class="mt-6 flow-root">
+              <div class="-my-6 divide-y divide-gray-500/10">
+                <div class="space-y-2 py-6">
+                  <div class="-mx-3">
+                    <button type="button" class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50" aria-controls="disclosure-1" aria-expanded="false">
+                      Product
+                    </button>
+                   
+                  </div>
+                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">About Us</a>
+                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Policies</a>
+                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Blog</a>
+                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Event</a>
+                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Media</a>
+                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Volunteer and Contribution</a>
+                </div>
+                <div class="py-6">
+                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Log in</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+   </div>
+
+      <div class="bg-[url(../images/bg-img.jpg)] bg-cover bg-no-repeat ">
+        <div class="bg-blue-900 text-white font-sans bg-opacity-70">
+            <div class="relative">
+                <!-- Background Image Overlay -->
+                <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+                
+                <div class="container mx-auto px-6 py-16 relative z-10">
+                  <div class="grid lg:grid-cols-2 gap-8 items-center">
+                    <!-- Text Content -->
+                    <div>
+                      <h3 class="text-red-500 font-semibold uppercase mb-2">The Political Party</h3>
+                      <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4">
+                        Creating A <span class="text-red-500">Country For</span> Every Citizen
+                      </h1>
+                      <p class="text-gray-300 mb-6">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras at velit risus. Nulla eleifend libero ac massa sollicitudin.
+                      </p>
+                      <div class="flex items-center space-x-4">
+                        <a href="#" class="px-6 py-3 bg-red-500 hover:bg-red-600 text-white font-medium rounded-md">Get A Consult</a>
+                        <a href="#" class="flex items-center text-gray-200 hover:text-white">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A2 2 0 009 10.868v2.264a2 2 0 002.555 1.832l3.197-1.916a2 2 0 000-3.464z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                          See Our Video
+                        </a>
+                      </div>
+                    </div>
+                    <!-- Image Section -->
+                    <div>
+                      <img src="../images/banner-photo.png" alt="Speaker Image" class="rounded-lg shadow-lg">
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </div>
+</body>
+
+</html>

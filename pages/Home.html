@@ -51,8 +51,19 @@
             </div>
             <div class="hidden lg:flex lg:flex-1 lg:justify-end">
 
-                <button class="bg-[#E3042E] text-lg text-white font-semibold pt-2.5 pb-2.5 px-5 rounded-xl">Contact
-                    us</button>
+                <div class="relative">
+                    <button
+                        class="bg-[#E3042E] md:ml-[6px] ml-[6px] md:mt-[3px] text-white font-semibold md:px-5 px-3 py-3 rounded-md poppins text-[14px] md:text-[16px]">
+                        Contact us
+                    </button>
+                    <a href="" class="relative block">
+                        <!-- Add the pseudo-element using Tailwind -->
+                        <div
+                            class="absolute before:content-[''] before:absolute before:-bottom-[6px] before:left-[0px] before:border-b-2 before:border-l-2 before:border-[#E3042E] before:rounded-bl-lg md:before:rounded-bl-xl md:before:px-[58px] before:px-[53px] before:py-[19px] md:before:py-[19px] before:py-[15px]">
+                        </div>
+                    </a>
+                </div>
+
             </div>
         </nav>
         </div>
@@ -129,7 +140,8 @@
                 <h2 class="poppins text-[45px] font-semibold text-[#052B5A] hidden md:block">About <span
                         class="text-[#E3042E]">Us</span> </h2>
                 <div class="jost text-xl text-[#7F7F7F] leading-7">
-                    <p class="pb-4 md:mt-3 pl-6 md:pl-0 px-5">provide visitors with a comprehensive understanding of who the
+                    <p class="pb-4 md:mt-3 pl-6 md:pl-0 px-5">provide visitors with a comprehensive understanding of who
+                        the
                         politician is, what they stand for, and how they plan to make a positive impact on the community
                         or society as a whole.</p>
                     <p class="pl-6 md:pl-0 px-5">Emphasize the politician's commitment to transparency, integrity, and
@@ -154,9 +166,9 @@
 
     <!-- Building A Brighter Future Together  -->
 
-    <section class="bg-[#F9F9FF]">
+    <section class="bg-[#F9F9FF] px-4">
         <div class="container mx-auto">
-            <div class="px-4 py-10">
+            <div class=" py-10">
                 <h1 class="text-center text-[28px] md:text-[45px] poppins font-bold text-[#052B5A] md:pt-7">
                     Building A Brighter Future <span class="text-[#E3042E] ">Together</span>
                 </h1>
@@ -291,7 +303,7 @@
                         <img src="../images/gallery-2.jpg" alt="Gallery Image 3"
                             class="rounded-lg shadow-md md:h-[640px] w-full md:w-[468px] h-full object-cover">
                         <div
-                            class="md:h-[640px] md:w-[417px] absolute inset-0 bg-gradient-to-b from-[rgba(204,13,49,0.9)] to-[rgba(2,20,96,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex items-center justify-center border-2 border-white">
+                            class="md:h-[640px] md:w-[417px] w-[385px] ml-3 absolute inset-0 bg-gradient-to-b from-[rgba(204,13,49,0.9)] to-[rgba(2,20,96,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex items-center justify-center border-2 border-white">
                             <div class="border-white border-3"></div>
                             <!-- Text on Hover -->
                             <h3 class="text-white text-xl md:text-[40px] font-bold">Election meeting</h3>
@@ -330,10 +342,10 @@
 
     <section class="mb-36">
         <div class="relative bg-cover bg-center"
-            style="background-image: url('../images/sec-5.1.jpg'); background-position: 30% 39%;">
+            style="background-image: url('../images/sec-5.1.jpg'); background-position: 20% 43%;">
             <div class="container mx-auto">
                 <!-- Overlay with color -->
-                <div class="absolute inset-0 bg-[#052B5A] bg-opacity-85 rounded-lg"></div>
+                <div class="absolute inset-0 bg-[#001631] bg-opacity-90 rounded-lg"></div>
 
                 <!-- Content Section -->
                 <div class="relative z-10 text-white p-7 ">
@@ -344,13 +356,13 @@
                                 Biography Of Political <span class="text-[#E3042E]">Party</span></h2>
                             <div class="relative hidden md:block">
                                 <button
-                                    class="bg-[#E3042E] md:ml-[661px] text-white font-semibold md:px-5 px-3 py-2 rounded-md poppins text-[14px] md:text-[16px]">
+                                    class="bg-[#E3042E] md:ml-[770px]  text-white font-semibold md:px-5 px-3 py-2 rounded-md poppins text-[14px] md:text-[16px]">
                                     View More
                                 </button>
                                 <a href="" class="relative block">
                                     <!-- Add the pseudo-element using Tailwind -->
                                     <div
-                                        class="absolute before:content-[''] before:absolute before:-bottom-[5px] before:left-[655px] before:border-b-2 before:border-l-2 before:border-[#E3042E] before:rounded-bl-lg md:before:rounded-bl-xl md:before:px-[55px] md:before:py-[17px] before:px-[43px] before:py-[15px]">
+                                        class="absolute before:content-[''] before:absolute before:-bottom-[5px] before:left-[765px] before:border-b-2 before:border-l-2 before:border-[#E3042E] before:rounded-bl-lg md:before:rounded-bl-xl md:before:px-[55px] md:before:py-[17px] before:px-[43px] before:py-[15px]">
                                     </div>
                                 </a>
                             </div>
@@ -372,11 +384,15 @@
                             <div class="h-[0.1px] bg-white opacity-30 "></div>
 
                             <div class="flex justify-between items-center flex-col sm:flex-row md:mt-8 md:mb-7">
-                                <p class="text-white md:font-semibold font-bold md:text-[22px] text-[20px] md:hidden">Leading The
+                                <p class="text-white md:font-semibold font-bold md:text-[22px] text-[20px] md:hidden">
+                                    Leading The
                                     Party</p>
-                                <p class="text-lg sm:text-xl md:mt-2 md:mb-2 text-gray-300 mt-2 font-semibold">18 April 2015
+                                <p class="text-lg sm:text-xl md:mt-2 md:mb-2 text-gray-300 mt-2 font-semibold">18 April
+                                    2015
                                 </p>
-                                <p class="text-white md:font-semibold font-bold md:text-[22px] text-[20px] hidden md:block">Leading The
+                                <p
+                                    class="text-white md:font-semibold font-bold md:text-[22px] text-[20px] hidden md:block">
+                                    Leading The
                                     Party</p>
                             </div>
 
@@ -404,7 +420,9 @@
 
                             <!-- Timeline Item 3 -->
                             <div class="flex justify-between items-center flex-col sm:flex-row">
-                                <p class="text-lg sm:text-[17px] font-normal text-[#AFADAD] text-[14px] text-center md:text-start">Lorem ipsum
+                                <p
+                                    class="text-lg sm:text-[17px] font-normal text-[#AFADAD] text-[14px] text-center md:text-start">
+                                    Lorem ipsum
                                     dolor sit amet,
                                     consectetur adipiscing elit. Quisque aliquet vitae augue id laoreet. Ut finibus,
                                     enim efficitur pretium vestibulum, eros massa egestas mauris, nec fringilla sem nibh
@@ -419,8 +437,8 @@
                             <!-- Timeline Item 4 -->
                             <div class="flex justify-between items-center flex-col sm:flex-row">
                                 <p
-                                class="text-gray-300 font-bold md:font-semibold text-white md:text-[23px] text-[25px] mt-2 md:hidden">
-                                Public Affairs</p>
+                                    class="text-gray-300 font-bold md:font-semibold text-white md:text-[23px] text-[25px] mt-2 md:hidden">
+                                    Public Affairs</p>
                                 <p class="text-[18px] sm:text-xl font-medium md:mt-2 md:mb-2 mt-2">21 June 2015</p>
                                 <p
                                     class="text-gray-300 font-bold md:font-semibold text-white md:text-[23px] text-[22px] mt-2 hidden md:block">
@@ -447,61 +465,69 @@
                         </div>
                     </div>
 
-                  
+
                 </div>
 
-                <div class="relative z-10 md:top-20 container mx-auto bg-white rounded-xl p-5 md:w-[1400px] w-[370px] top-20"
+                <div class="relative z-10 md:top-20 container mx-auto bg-white rounded-xl md:p-8 p-5 md:w-[1500px] w-[370px]  top-20"
                     style="box-shadow: 0px 4px 21px 1px #052B5A0D;">
                     <div class="flex flex-wrap md:pl-24">
                         <div class="md:w-1/4 w-2/4">
                             <div class="flex flex-wrap">
-                                <div class="logo md:w-[70px] md:h-[70px]  w-[58px] h-[58px] rounded-full flex justify-center items-center"
+                                <div class="logo md:w-[75px] md:h-[75px]  w-[58px] h-[58px] rounded-full flex justify-center items-center"
                                     style="background: url('../images/Ellipse\ 18.png') no-repeat center center; background-size: cover;">
-                                    <img src="../images/icon-1.png" alt="" class="md:w-[38px] md:h-[38px] w-[28px] h-[28px]">
+                                    <img src="../images/icon-1.png" alt=""
+                                        class="md:w-[38px] md:h-[38px] w-[28px] h-[28px]">
                                 </div>
 
                                 <div class="content">
-                                    <p class="text-2xl ml-2 font-bold text-[#052B5A] poppins md:ml-3">9232+</p>
-                                    <p class="text-[15px] ml-2 text-[#7F7F7F] jost font-medium md:ml-3">Total volunteer</p>
+                                    <p class="text-[21px] md:text-[26px] md:mt-1 ml-2 font-bold text-[#052B5A] poppins md:ml-4">9232+</p>
+                                    <p class="text-[14px] md:text-[17px] ml-2 text-[#7F7F7F] jost font-medium md:ml-4">Total volunteer
+                                    </p>
                                 </div>
                             </div>
                         </div>
                         <div class="md:w-1/4 w-2/4">
                             <div class="flex flex-wrap  ml-2 md:ml-0">
-                                <div class="logo md:w-[70px] md:h-[70px] w-[58px] h-[58px] rounded-full flex justify-center items-center"
+                                <div class="logo md:w-[75px] md:h-[75px] w-[58px] h-[58px] rounded-full flex justify-center items-center"
                                     style="background: url('../images/Ellipse\ 18.png') no-repeat center center; background-size: cover;">
-                                    <img src="../images/icon-2.png" alt="" class="md:w-[38px] md:h-[38px] w-[28px] h-[28px]">
+                                    <img src="../images/icon-2.png" alt=""
+                                        class="md:w-[38px] md:h-[38px] w-[28px] h-[28px]">
                                 </div>
 
                                 <div class="content">
-                                    <p class="text-2xl ml-2 font-bold text-[#052B5A] poppins md:ml-3">9232+</p>
-                                    <p class="text-[15px] ml-2 text-[#7F7F7F] jost font-medium md:ml-3">Total volunteer</p>
+                                    <p class="text-[21px] md:text-[26px] md:mt-1 ml-2 font-bold text-[#052B5A] poppins md:ml-4">9232+</p>
+                                    <p class="text-[14px] md:text-[17px] ml-2 text-[#7F7F7F] jost font-medium md:ml-4">Total volunteer
+                                    </p>
                                 </div>
                             </div>
                         </div>
                         <div class="md:w-1/4 w-2/4">
                             <div class="flex flex-wrap mt-6  md:mt-0">
-                                <div class="logo md:w-[70px] md:h-[70px] w-[58px] h-[58px] rounded-full flex justify-center items-center"
+                                <div class="logo md:w-[75px] md:h-[75px] w-[58px] h-[58px] rounded-full flex justify-center items-center"
                                     style="background: url('../images/Ellipse\ 18.png') no-repeat center center; background-size: cover;">
-                                    <img src="../images/icon-3.png" alt="" class="md:w-[38px] md:h-[38px] w-[28px] h-[28px]">
+                                    <img src="../images/icon-3.png" alt=""
+                                        class="md:w-[38px] md:h-[38px] w-[28px] h-[28px]">
                                 </div>
 
                                 <div class="content">
-                                    <p class="text-2xl ml-2 font-bold text-[#052B5A] poppins md:ml-3">9232+</p>
-                                    <p class="text-[15px] ml-2 text-[#7F7F7F] jost font-medium md:ml-3">Total volunteer</p>
+                                    <p class="text-[21px] ml-2 md:mt-1 md:text-[26px] font-bold text-[#052B5A] poppins md:ml-3">9232+</p>
+                                    <p class="text-[14px]  md:text-[17px] ml-2 text-[#7F7F7F] jost font-medium md:ml-3">Total volunteer
+                                    </p>
                                 </div>
                             </div>
                         </div>
                         <div class="md:w-1/4 w-2/4">
                             <div class="flex flex-wrap mt-6 ml-2 md:ml-0 md:mt-0">
-                                <div class="logo md:w-[70px] md:h-[70px] w-[58px] h-[58px] rounded-full flex justify-center items-center"
+                                <div class="logo md:w-[75px] md:h-[75px] w-[58px] h-[58px] rounded-full flex justify-center items-center"
                                     style="background: url('../images/Ellipse\ 18.png') no-repeat center center; background-size: cover;">
-                                    <img src="../images/icon-4.png" alt="" class="md:w-[38px] md:h-[38px] w-[28px] h-[28px]">
+                                    <img src="../images/icon-4.png" alt=""
+                                        class="md:w-[38px] md:h-[38px] w-[28px] h-[28px]">
                                 </div>
 
                                 <div class="content">
-                                    <p class="text-2xl ml-2 font-bold text-[#052B5A] poppins md:ml-3">9232+</p>
-                                    <p class="text-[15px] ml-2 text-[#7F7F7F] jost font-medium md:ml-3">Total volunteer</p>
+                                    <p class="text-[21px] ml-2  md:mt-1 md:text-[26px] font-bold text-[#052B5A] poppins md:ml-3">9232+</p>
+                                    <p class="text-[14px] md:text-[17px]  ml-2 text-[#7F7F7F] jost font-medium md:ml-3">Total volunteer
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -515,8 +541,8 @@
     </section>
 
     <!-- What Our Priorities  -->
-    <section>
-        <div class="container mx-auto md:mb-8 px-4">
+    <section class="px-4">
+        <div class="container mx-auto md:mb-8">
             <!-- Title -->
             <h2 class="text-[33px] sm:text-4xl font-semibold text-center text-[#052B5A] md:pt-10">
                 What Our <span class="text-[#E3042E]">Priorities</span>
@@ -609,7 +635,7 @@
                 <div class="relative rounded-lg p-7 md:p-10 bg-cover bg-center md:h-[400px] md:w-[615px] h-[300px] px-4 object-cover mt-7 md:mt-0"
                     style="background-image: url('../images/sec-4.3.png'); background-position: 50% 200%;">
                     <!-- Background Overlay -->
-                    <div class="absolute inset-0 bg-[#052B5A] bg-opacity-85">
+                    <div class="absolute inset-0 bg-[#052B5A] bg-opacity-90">
 
                         <div class="md:p-16 md:mt-20 p-14 mt-10">
                             <h2 class="text-xl font-semibold  mb-4 poppins">
@@ -687,7 +713,7 @@
                 <!-- Play Button -->
                 <div class="absolute inset-0 flex items-center justify-center">
                     <div class="md:w-[110px] md:h-[110px] rounded-full bg-[#ffffff] flex items-center justify-center">
-                       
+
                         <div
                             class=" md:w-[80px] md:h-[80px] rounded-full bg-[#052B5A] flex items-center justify-center z-10">
                             <div>
@@ -739,7 +765,8 @@
             <div class="flex flex-warp">
                 <div class="md:w-4/12 md:mr-7 ">
                     <div class="bg-white rounded-lg shadow-lg">
-                        <img src="../images/sec-9.1.jpg" alt="Family Protection" class="md:rounded-t-2xl rounded-t-xl object-cover">
+                        <img src="../images/sec-9.1.jpg" alt="Family Protection"
+                            class="md:rounded-t-2xl rounded-t-xl object-cover">
 
                         <div class="px-6">
                             <h3 class="text-xl font-semibold mt-4 text-[#052B5A] poppins md:text-2xl">The Importance of
@@ -750,7 +777,9 @@
                                 healthcare, education
                             </p>
                             <div class="h-[0.1px] bg-[#052B5A] opacity-30 "></div>
-                            <h3 class="poppins text-[#052B5A] md:text-[21px] font-semibold md:py-5 pb-3 md:pb-0 pt-4 md:pt-0">Read More</h3>
+                            <h3
+                                class="poppins text-[#052B5A] md:text-[21px] font-semibold md:py-5 pb-3 md:pb-0 pt-4 md:pt-0">
+                                Read More</h3>
                         </div>
                     </div>
                 </div>
@@ -758,7 +787,7 @@
                     <div class="bg-white md:flex flex-warp py-5 px-5 rounded-md">
                         <div>
                             <img src="../images/sec-9.2.jpg"
-                                class="md:h-[200px] md:w-[470px] h-[200px] w-[490px] rounded-md" alt="">
+                                class="md:h-[200px] md:w-[470px] h-[200px] w-[490px] rounded-md object-cover" alt="">
                         </div>
                         <div class="md:px-8 pl-1">
                             <h3 class="text-xl font-semibold text-[#052B5A] poppins md:text-2xl">The Importance of
@@ -775,7 +804,7 @@
                     <div class="bg-white md:flex flex-warp py-5 px-5 rounded-md md:mt-6">
                         <div>
                             <img src="../images/sec-9.3.jpg"
-                                class="md:h-[200px] md:w-[470px] h-[200px] w-[490px] rounded-md" alt="">
+                                class="md:h-[200px] md:w-[470px] h-[200px] w-[490px] rounded-md object-cover" alt="">
                         </div>
                         <div class="md:px-8 pl-1">
                             <h3 class="text-xl font-semibold text-[#052B5A] poppins md:text-2xl">The Importance of
@@ -796,31 +825,36 @@
     </section>
 
     <!-- Testimonial  -->
-    <section>
-        <div class="container mx-auto md:mb-28">
+    <section class="px-4">
+        <div class="container mx-auto md:mb-28 mb-16">
             <div class="title">
-                <h2 class="poppins text-[#052B5A] md:text-5xl font-semibold	text-center md:py-24 md:mb-10">Testimonial
+                <h2
+                    class="poppins text-[#052B5A] md:text-5xl text-[27px] font-semibold	text-center md:py-24 md:mb-10 py-12 mb-10">
+                    Testimonial
                 </h2>
             </div>
             <div class="flex">
-                <div class="md:w-4/12 px-3">
+                <div class="md:w-4/12">
                     <div class="bg-white shadow-lg rounded-lg p-6 relative">
-                        <div class="absolute -top-14 ">
-                            <img src="../images/testimonial-1.png" alt="" class="md:w-[120px] md:h-[120px] border-4 rounded-lg
-                            border-white shadow-lg
+                        <div class="absolute md:-top-14 -top-9 ">
+                            <img src="../images/testimonial-1.png" alt="" class="md:w-[120px] md:h-[120px] w-[80px] h-[80px] border-4 rounded-lg
+                            border-white shadow-lg object-cover
                             ">
                         </div>
-                        <div class="md:ml-[350px] md:mt-3">
+                        <div class="md:ml-[350px] md:mt-3 ml-[220px]">
                             <img src="../images/testimonial-icon.png" alt="">
                         </div>
                         <br>
-                        <div class="md:mt-[-25px]">
-                            <h3 class="poppins font-semibold md:text-2xl text-[#052B5A]">George Johnston</h3>
-                            <p class="text-sm jost md:text-[21px] text-[#7F7F7F] font-normal md:pt-2 md:pb-5">Candidate
+                        <div class="md:mt-[-25px] mt-[-30px]">
+                            <h3 class="poppins text-[20px] font-semibold md:text-2xl text-[#052B5A]">George Johnston
+                            </h3>
+                            <p
+                                class="text-[18px] jost md:text-[21px] text-[#7F7F7F] font-normal md:pt-2 md:pb-2 pb-5 pt-1">
+                                Candidate
                             </p>
                         </div>
                         <div class="h-[0.1px] bg-[#2f2f2f] opacity-10 "></div>
-                        <p class="mt-4 md:text-[20px] text-[#7F7F7F] font-normal	">
+                        <p class="mt-4 md:text-[20px] text-[#7F7F7F] font-normal">
                             Lorem ipsum dolor sit amet, consectetur elit. Ad assumenda fuga illo
                             laudantium magni sed temporibus. Amet atque aut autem consectetur
                             consequuntur dolorem enim.
@@ -836,7 +870,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="md:w-4/12 px-3">
+                <div class="md:w-4/12 px-3 hidden md:block">
                     <div class="bg-white shadow-lg rounded-lg p-6 relative">
                         <div class="absolute -top-14 ">
                             <img src="../images/testimonial-2.png" alt="" class="md:w-[120px] md:h-[120px] border-4 rounded-lg
@@ -869,7 +903,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="md:w-4/12 px-3">
+                <div class="md:w-4/12 px-3 hidden md:block">
                     <div class="bg-white shadow-lg rounded-lg p-6 relative">
                         <div class="absolute -top-14 ">
                             <img src="../images/testimonial-3.png" alt="" class="md:w-[120px] md:h-[120px] border-4 rounded-lg
@@ -908,98 +942,144 @@
     </section>
 
     <!-- footer  -->
-    <footer>
-        <div class="relative bg-cover bg-center"
+    <footer class="">
+        <div class="relative bg-cover bg-center md:h-[425px] h-[700px]"
             style="background-image: url('../images/footer-bg.jpg'); background-position: 31% 34%;">
-            <div class="container mx-auto">
-                <!-- Overlay with color -->
-                <div class="absolute inset-0 bg-[#001631] bg-opacity-90 rounded-lg"></div>
-                <div class="flex p-10">
-                    <div class="w-4/12 z-10">
-                        <div class="md:mt-5">
-                            <h3 class="text-xl md:text-[22px] font-semibold mb-4 text-white">Contact</h3>
-                            <ul>
-                                <li class="flex items-center mb-2 text-[#AFADAD] font-medium">
+            <!-- Overlay with color -->
+            <div class="absolute inset-0 bg-[#001631] bg-opacity-90">
+                <div class="container mx-auto">
+                    <div class="md:flex px-4 md:px-0">
+                        <div class="md:w-4/12 w-full z-10 md:hidden">
+                            <div class="md:mt-5 md:pt-9 mt-7">
+                                <div class="md:flex md:justify-center md:items-center">
+                                    <img src="../images/footer-logo.png" alt="" class="h-[45px]">
+                                    <div class="h-[0.1px] bg-white opacity-30 mt-5"></div>
+                                </div>
+                                <div class="md:mt-5 mt-4 ml-3">
+                                    <p class="text-gray-300 md:text-center jost font-medium text-[17px]">
+                                        Lorem ipsum dolor sit amet, consectetur elit. Ad assumenda fuga illo
+                                        laudantium magni sed temporibus. Amet atque.
+                                    </p>
+                                </div>
+                                <div class="flex md:justify-center md:mt-4 relative">
+                                    <div class="absolute flex bottom-[115px] left-[247px]">
+                                        <div
+                                            class=" md:w-[35px]  w-[33px] h-[33px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                            <span class=""><i class="fa-brands fa-facebook-f"
+                                                    style="color: #052B5A;"></i></span>
+                                        </div>
+                                        <div
+                                            class=" md:w-[35px]  w-[33px] h-[33px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                            <span class=""><i class="fa-brands fa-twitter"
+                                                    style="color: #052B5A;"></i></span>
+                                        </div>
+                                        <div
+                                            class=" md:w-[35px] w-[33px] h-[33px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                            <span class=""><i class="fa-brands fa-instagram"
+                                                    style="color: #052B5A;"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:w-4/12 z-10">
+                            <div class="md:mt-5 z-10 md:pt-14 pt-10">
+                                <h3 class="text-xl md:text-[22px] font-semibold mb-4 text-white hidden md:block">Contact
+                                </h3>
+                                <ul>
+                                    <li
+                                        class="flex items-center text-[#AFADAD] font-medium z-10 ml-2 md:ml-0 mb-5 md:mb-3">
+                                        <div
+                                            class=" md:w-[35px] w-[30px] h-[30px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                            <span class=""><i class="fa-solid fa-phone-volume"
+                                                    style="color: #052B5A;"></i></span>
+                                        </div>
+
+                                        (+91) 9106701061
+                                    </li>
+                                    <li
+                                        class="flex items-center text-[#AFADAD] font-medium ml-2 md:ml-0  mb-5 md:mb-3">
+                                        <div
+                                            class=" md:w-[35px]  w-[30px] h-[30px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                            <span class="material-icons text-blue-300"><i class="fa-solid fa-envelope"
+                                                    style="color: #052B5A;"></i></span>
+                                        </div>
+
+                                        Politician@gmail.com
+                                    </li>
+                                    <li class="flex items-center mb-2 text-[#AFADAD] font-medium ml-2 md:ml-0">
+                                        <div
+                                            class=" md:w-[35px]  w-[30px] h-[30px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                            <span class="material-icons text-blue-300"><i
+                                                    class="fa-solid fa-location-dot" style="color: #052B5A;"></i></span>
+                                        </div>
+
+                                        22 Brooklyn Street, 30 Road, New York, <br> United States
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="md:w-4/12 w-full z-10 hidden md:block">
+                            <div class="md:mt-5 md:pt-9">
+                                <div class="flex justify-center items-center">
+                                    <img src="../images/footer-logo.png" alt="">
+                                </div>
+                                <div class="md:mt-5">
+                                    <p class="text-gray-300 text-center jost font-medium text-lg">
+                                        Lorem ipsum dolor sit amet, consectetur elit. Ad <br> assumenda fuga illo
+                                        laudantium magni sed temporibus. <br> Amet atque.
+                                    </p>
+                                </div>
+                                <div class="flex justify-center md:mt-4">
                                     <div
                                         class=" md:w-[35px] md:h-[35px] md:mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
-                                        <span class=""><i class="fa-solid fa-phone-volume"
+                                        <span class=""><i class="fa-brands fa-facebook-f"
                                                 style="color: #052B5A;"></i></span>
                                     </div>
-
-                                    (+91) 9106701061
-                                </li>
-                                <li class="flex items-center mb-2 text-[#AFADAD] font-medium">
                                     <div
                                         class=" md:w-[35px] md:h-[35px] md:mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
-                                        <span class="material-icons text-blue-300"><i class="fa-solid fa-envelope"
+                                        <span class=""><i class="fa-brands fa-twitter"
                                                 style="color: #052B5A;"></i></span>
                                     </div>
-
-                                    Politician@gmail.com
-                                </li>
-                                <li class="flex items-center mb-2 text-[#AFADAD] font-medium">
                                     <div
                                         class=" md:w-[35px] md:h-[35px] md:mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
-                                        <span class="material-icons text-blue-300"><i class="fa-solid fa-location-dot"
+                                        <span class=""><i class="fa-brands fa-instagram"
                                                 style="color: #052B5A;"></i></span>
                                     </div>
-
-                                    22 Brooklyn Street, 30 Road, New York, <br> United States
-                                </li>
-                            </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:w-4/12 w-full z-10">
+                            <div class="md:mt-5 md:pt-5">
+                                <div class="md:text-center md:ml-56 mt-8 md:mt-0 ml-3 md:ml-0">
+                                    <h3
+                                        class="text-xl font-semibold mb-4 poppins font-semibold	text-white md:mt-10 md:mr-[130px]">
+                                        Open Hours</h3>
+                                    <ul class="jost font-medium	text-[#AFADAD] text-xl md:text-[22px]">
+                                        <li class="mb-3 ">Mon-Sat: 8:00am - 5:00pm</li>
+                                        <li class="md:mt-3">Sunday: 10:00am - 4:00am</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="w-4/12 z-10">
-                        <div class="md:mt-5">
-                            <div class="flex justify-center items-center">
-                                <img src="../images/footer-logo.png" alt="">
-                            </div>
-                            <div class="md:mt-5">
-                                <p class="text-gray-300 text-center jost font-medium text-lg">
-                                    Lorem ipsum dolor sit amet, consectetur elit. Ad <br> assumenda fuga illo
-                                    laudantium magni sed temporibus. <br> Amet atque.
-                                </p>
-                            </div>
-                            <div class="flex justify-center md:mt-4">
-                                <div
-                                    class=" md:w-[35px] md:h-[35px] md:mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
-                                    <span class=""><i class="fa-brands fa-facebook-f"
-                                            style="color: #052B5A;"></i></span>
-                                </div>
-                                <div
-                                    class=" md:w-[35px] md:h-[35px] md:mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
-                                    <span class=""><i class="fa-brands fa-twitter" style="color: #052B5A;"></i></span>
-                                </div>
-                                <div
-                                    class=" md:w-[35px] md:h-[35px] md:mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
-                                    <span class=""><i class="fa-brands fa-instagram" style="color: #052B5A;"></i></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="w-4/12 z-10">
-                        <div class="md:mt-5">
-                            <div class="text-center md:ml-56">
-                                <h3 class="text-xl font-semibold mb-4 poppins font-semibold	text-white md:mt-10 md:mr-[130px]">Open Hours</h3>
-                                <ul class="jost font-medium	text-[#AFADAD] text-xl	md:text-[22px]">
-                                    <li class="mb-3 ">Mon-Sat: 8:00am - 5:00pm</li>
-                                    <li class="md:mt-3">Sunday: 10:00am - 4:00am</li>
-                                  </ul>
-                            </div>
-                        </div>
+
+
+
+                </div>
+                <div class="h-[0.1px] bg-white opacity-30 mt-16"></div>
+                <div class="md:w-10/12 mx-auto flex flex-col md:flex-row justify-between text-sm text-gray-400 z-10">
+                    <p class="text-white mt-8 text-center">Copyright © 2023 Politician, All Rights Reserved</p>
+                    <div class="flex space-x-4 mt-2 md:mt-0 text-white z-10">
+                        <a href="#" class="hover:underline mt-3 md:mt-8 ml-24">Privacy Policy</a>
+                        <div class="w-[1.1px] h-[21px] bg-white opacity-30 mt-3"></div>
+                        <a href="#" class="hover:underline mt-3 md:mt-8 ">Terms & Conditions</a>
                     </div>
                 </div>
             </div>
 
-            <div class="border-t-2 border-[#FFF4FA] py-6 z-10">
-                <div class="md:w-9/12 mx-auto flex flex-col md:flex-row justify-between text-sm text-gray-400 z-10">
-                  <p class="text-white z-10">Copyright © 2023 Politician, All Rights Reserved</p>
-                  <div class="flex space-x-4 mt-2 md:mt-0 text-white z-10">
-                    <a href="#" class="hover:underline">Privacy Policy</a>
-                    <a href="#" class="hover:underline">Terms & Conditions</a>
-                  </div>
-                </div>
-              </div>
+
+        </div>
     </footer>
 
 </body>

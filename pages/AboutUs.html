@@ -68,7 +68,8 @@
     </header>
 
     <!-- banner section  -->
-    <div class="bg-[url(../images/bg-img.jpg)] bg-cover bg-no-repeat md:h-[650px]">
+    <div class="bg-[url(../images/bg-img.jpg)] bg-cover bg-no-repeat md:h-[650px] overflow-hidden">
+        <img src="../images/about-sec-banner-img-2.png" alt="" class="absolute w-[600px] z-10 top-[500px] opacity-20 hidden md:block">
         <div class="text-white font-sans bg-opacity-70">
             <div class="relative">
 
@@ -77,7 +78,7 @@
                 <div class="container mx-auto px-6  relative z-10">
                     <div class="flex flex-wrap lg:flex-nowrap pt-14">
 
-                        <div class="w-full lg:w-1/2 lg:mb-0 md:mt-[190px] mt-[-20px]">
+                        <div class="w-full lg:w-1/2 lg:mb-0 md:mt-[260px] mt-[-20px]">
                             <h1 class="font-semibold md:text-6xl poppins text-[24px]">About us</h1>
                             <div class="flex poppins md:mt-6 mt-2">
                                 <a href="../pages/Home.html" class="text-[#E3042E] md:text-[21px] text-[16px]">Home</a>
@@ -101,29 +102,46 @@
     </div>
 
     <!-- Serving With Purpose And Integrity  -->
-    <section class="px-4 py-20">
+    <section class="px-4 md:py-20 py-8">
         <div class="container mx-auto">
-            <div class="flex flex-col md:flex-row">
+            <div class="flex flex-col md:flex-row ">
+                <h2 class="text-2xl md:text-[42px] font-semibold text-[#052B5A] poppins mb-7 md:hidden">
+                    Serving With Purpose <span class="text-[#E3042E] ">And <br>
+                        <div class="mt-1"> Integrity</div>
+                    </span>
+                </h2>
                 <!-- Image Section -->
-                <div class="md:w-2/5">
-                    <img src="../images/about-sec-2.png" alt="David M. Smith" class="shadow-lg md:w-[560px] md:h-[380px] object-cover" />
+                <div class="md:w-2/5 relative">
+                    <img src="../images/about-sec-2.png" alt="David M. Smith"
+                        class="shadow-lg md:w-[560px] md:h-[380px] object-cover" />
+                        <div class="md:w-[560px] md:h-[90px] h-[70px] bg-[#001631] absolute inset-0 bg-opacity-50 backdrop-blur-[4px] md:top-[290px] top-[253px] md:pt-4 pt-2">
+                            <p class="poppins font-medium md:text-[19px] text-white z-10 text-center">David M.Smith</p>
+                            <p class="poppins font-normal md:text-[17px] text-[#AFADAD] z-10 text-center">CEO & Founder Of Manit</p>
+                        </div>
                 </div>
                 <!-- Content Section -->
-                <div class=" md:w-3/5 md:ml-11 mt-6 md:mt-12">
-                    <h2 class="text-2xl md:text-[42px] font-semibold text-[#052B5A] poppins ">
-                        Serving With Purpose <span class="text-[#E3042E] ">And <br><div class="mt-5"> Integrity</div></span>
+                <div class=" md:w-3/5 md:ml-11 mt-6 md:mt-12 relative">
+                    <h2 class="text-2xl md:text-[42px] font-semibold text-[#052B5A] poppins hidden md:block">
+                        Serving With Purpose <span class="text-[#E3042E] ">And <br>
+                            <div class="md:mt-5"> Integrity</div>
+                        </span>
                     </h2>
-                    <p class="md:mt-7 text-[#7F7F7F] jost font-normal	md:text-[20px]">
-                        We envision a future where [insert key elements of the politician's vision, e.g., "every individual has the opportunity  to thrive,"our communities are characterized by prosperity and equity,"unity and collaboration are celebrated the politician's vision, e.g., "every individual has the opportunity.
+                    <div class="md:w-[3px] w-[3px] md:h-[80px] h-[150px] bg-[#B90500] absolute md:top-[120px]"></div>
+                    <p class="md:mt-7 text-[#7F7F7F] jost font-normal md:text-[20px] px-2 md:px-0 md:ml-3 ml-2">
+                        We envision a future where [insert key elements of the politician's vision, e.g., "every
+                        individual has the opportunity to thrive,"our communities are characterized by prosperity and
+                        equity,"unity and collaboration are celebrated the politician's vision, e.g., "every individual
+                        has the opportunity.
                     </p>
-                    <p class="md:mt-5 text-[#7F7F7F] jost font-normal md:text-[20px]">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras at velit risus. Nulla eleifend libero ac massa sollicitudin, ut pharetra tortor pulvinar every individual has the opportunity.
+                    <p class="md:mt-5 text-[#7F7F7F] jost font-normal md:text-[20px] mt-3 px-2 md:px-0">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras at velit risus. Nulla eleifend
+                        libero ac massa sollicitudin, ut pharetra tortor pulvinar every individual has the opportunity.
                     </p>
                 </div>
             </div>
 
             <!-- Footer Section -->
-            <div class="mt-8">
+            <div class="mt-8 md:px-0 px-2">
                 <p class="text-[#7F7F7F] jost font-normal md:text-[20px]">
                     <i class="fa-solid fa-share md:mr-1" style="color: #052b5a;"></i>
                     This structured approach allows visitors to the website to quickly grasp key aspects of the
@@ -142,13 +160,521 @@
     </section>
 
     <!-- Journey Of Service And Leadership  -->
-     <section class="px-4 py-20">
-        <div class="container mx-auto">
-            <div>
-               
+    <section class="">
+        <div class="relative bg-cover bg-center"
+            style="background-image: url('../images/about-sec-3.jpg'); background-position: 20% 46%;">
+            <div class="container mx-auto md:pb-20">
+                <!-- Overlay with color -->
+                <div class="absolute inset-0 bg-[#001631] bg-opacity-90 backdrop-blur-[4px]"></div>
+
+                <div class="px-4">
+                    <div class="z-10 relative md:pt-20 pt-6 pb-5 md:pb-0">
+                        <h1 class="text-center text-[25px] md:text-[44px] font-semibold text-white z-10">
+                            Journey Of Service <span class="text-red-500">And Leadership</span>
+                        </h1>
+                    </div>
+
+                    <!-- Timeline -->
+                    <div class="relative md:mt-10 ">
+                        <!-- Horizontal Line -->
+                        <div class="absolute md:top-[93px] top-[71px] left-0 w-full h-[0.1px] bg-[#394556]"></div>
+
+                        <!-- Timeline Content -->
+                        <div class="flex flex-col md:flex-row items-center justify-between space-y-10 md:space-y-0">
+                            <!-- First Milestone -->
+                            <div class="text-center relative md:w-1/3">
+                                <div
+                                    class="absolute md:top-[96px] top-[75px] left-1/2 transform -translate-x-1/2 -translate-y-3 w-4 h-4 bg-red-500 rounded-full">
+                                </div>
+                                <p class="poppins font-normal text-[20px] text-white md:mt-4">5 March 2014</p>
+                                <p class="md:mt-16 mt-16 md:pt-5 md:text-[22px] text-[20px] text-white font-semibold poppins">knowledge is
+                                    power</p>
+                                <p class="md:mt-4 mt-4 mb-6 md:mb-0 jost text-[#AFADAD] md:text-center md:text-[18px] font-normal	">
+                                    Provide visitors with a comprehensive <br> understanding of who the politician is,
+                                    <br> what they stand for.
+                                </p>
+                            </div>
+
+                            <!-- Second Milestone -->
+                            <div class="text-center relative md:w-1/3 hidden md:block">
+                                <div
+                                    class="absolute top-[96px] left-1/2 transform -translate-x-1/2 -translate-y-3 w-4 h-4 bg-red-500 rounded-full">
+                                </div>
+                                <p class="poppins font-normal text-[20px] text-white md:mt-4">10 April 2015</p>
+                                <p class="md:mt-16 md:pt-5 md:text-[22px] text-white font-semibold poppins">Started
+                                    advocacy</p>
+                                <p class="md:mt-4 jost text-[#AFADAD] md:text-center md:text-[18px] font-normal	">
+                                    Provide visitors with a comprehensive <br> understanding of who the politician is,
+                                    <br> what they stand for.
+                                </p>
+                            </div>
+
+                            <!-- Third Milestone -->
+                            <div class="text-center relative md:w-1/3 hidden md:block">
+                                <div
+                                    class="absolute top-[96px] left-1/2 transform -translate-x-1/2 -translate-y-3 w-4 h-4 bg-red-500 rounded-full">
+                                </div>
+                                <p class="poppins font-normal text-[20px] text-white md:mt-4">16 May 2016</p>
+                                <p class="md:mt-16 md:pt-5 md:text-[22px] text-white font-semibold poppins">Elected
+                                    Council</p>
+                                <p class="md:mt-4 jost text-[#AFADAD] md:text-center md:text-[18px] font-normal	">
+                                    Provide visitors with a comprehensive <br> understanding of who the politician is,
+                                    <br> what they stand for.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Arrows -->
+                        <div
+                            class="absolute md:top-[93px] top-[71px] md:left-0 left-[10px] transform -translate-y-1/2 w-4 h-4 bg-red-500 -translate-x-1/2 rotate-45">
+                        </div>
+                        <div
+                            class="absolute md:top-[93px] top-[71px] right-0 left-[355px] md:left-[1500px] transform -translate-y-1/2 w-4 h-4 bg-red-500 translate-x-1/2 rotate-45">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-     </section>
+    </section>
+
+    <!-- What Our Priorities  -->
+    <section class="px-4 py-10">
+        <div class="container mx-auto md:mb-8">
+            <!-- Title -->
+            <h2 class="text-[33px] sm:text-4xl font-semibold text-center text-[#052B5A] md:pt-10">
+                What Our <span class="text-[#E3042E]">Priorities</span>
+            </h2>
+
+
+            <!-- Card Grid -->
+            <div class="grid gap-8 mt-10 sm:grid-cols-2 lg:grid-cols-3">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-lg shadow-lg">
+                    <img src="../images/sec-6.1.jpg" alt="Family Protection"
+                        class="rounded-t-lg  object-cover scale-x-[-1]">
+                    <div class="mt-4 flex justify-center md:mt-[-35px] mt-[-35px]">
+                        <div
+                            class="md:w-[70px] md:h-[70px] w-[70px] h-[70px] rounded-full bg-white flex items-center justify-center z-10">
+                            <div
+                                class="md:w-16 md:h-16 w-16 h-16 rounded-full bg-[#052B5A] flex items-center justify-center">
+                                <img src="../images/icon-5.png" alt="Icon" class="md:w-10 md:h-10 ">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="px-6">
+                        <h3 class="text-xl font-semibold text-center mt-4 text-[#052B5A] poppins md:text-3xl">Family
+                            Protection</h3>
+                        <p
+                            class="text-[#7F7F7F] text-center mt-2 jost font-normal md:leading-[29px] md:text-xl md:pt-2 md:pb-8 pb-8">
+                            Lorem ipsum dolor sit amet, consectetur elit. <br> Ad assumenda fuga illo laudantium magni
+                            sed <br> temporibus. Amet atque aut autem.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white rounded-lg shadow-lg hidden md:block">
+                    <img src="../images/sec-6.2.jpg" alt="Family Protection"
+                        class="rounded-t-lg  object-cover scale-x-[-1]">
+                    <div class="mt-4 flex justify-center md:mt-[-35px]">
+                        <div class="w-[70px] h-[70px] rounded-full bg-white flex items-center justify-center z-10">
+                            <div class="w-16 h-16 rounded-full bg-[#052B5A] flex items-center justify-center">
+                                <img src="../images/icon-6.png" alt="Icon" class="w-8 h-9 ">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="px-6">
+                        <h3 class="text-xl font-semibold text-center mt-4 text-[#052B5A] poppins md:text-3xl">Political
+                            Speech</h3>
+                        <p
+                            class="text-[#7F7F7F] text-center mt-2 jost font-normal md:leading-[29px] md:text-xl md:pt-2 md:pb-8 pb-8">
+                            Lorem ipsum dolor sit amet, consectetur elit. <br> Ad assumenda fuga illo laudantium magni
+                            sed <br> temporibus. Amet atque aut autem.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white rounded-lg shadow-lg hidden md:block">
+                    <img src="../images/sec-6.3.jpg" alt="Family Protection"
+                        class="rounded-t-lg  object-cover scale-x-[-1] md:w-[479px] md:h-[275px] w-[460px] h-[275px]">
+                    <div class="mt-4 flex justify-center md:mt-[-35px]">
+                        <div class="w-[70px] h-[70px] rounded-full bg-white flex items-center justify-center z-10">
+                            <div class="w-16 h-16 rounded-full bg-[#052B5A] flex items-center justify-center">
+                                <img src="../images/icon-7.png" alt="Icon" class="w-10 h-9 ">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="">
+                        <h3 class="text-xl font-semibold text-center mt-4 text-[#052B5A] poppins md:text-3xl">Veterans
+                            Benefits</h3>
+                        <p
+                            class="text-[#7F7F7F] text-center mt-2 jost font-normal md:leading-[29px] md:text-xl md:pt-2 md:pb-8 pb-8">
+                            Lorem ipsum dolor sit amet, consectetur elit. <br> Ad assumenda fuga illo laudantium magni
+                            sed <br> temporibus. Amet atque aut autem.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet The Dedicated Team  -->
+
+    <section class="bg-[#F9F9FF] relative md:pb-20">
+        <div>
+            <img src="../images/about-sec-4.5.png" alt="" class="scale-x-[-1] absolute top-[364px] left-[-145px] md:w-[300px] hidden md:block">
+            <div class="container mx-auto">
+                <div class="poppins">
+                    <h2 class="text-[25px] sm:text-[40px] font-semibold text-center text-[#052B5A] md:pt-10 pt-6 pb-5 md:pb-0">
+                        Meet The Dedicated <span class="text-[#E3042E]">Team</span>
+                    </h2>
+                </div>
+                <div class="md:flex px-4 md:px-0">
+                    <div class="md:w-4/12 w-full md:pt-16 hidden md:block">
+                        <div>
+                            <div class="relative md:h-[374px] md:w-[347px] group">
+                                <img src="../images/about-sec-4.1.png" alt=""
+                                    class="md:h-[374px] md:w-[347px] object-cover rounded-[10px]">
+                                <div
+                                    class="absolute inset-0 group-hover:border-2 border-white m-2 opacity-20 transition-opacity duration-300 z-10">
+                                </div>
+                                <div
+                                    class="md:h-[374px] md:w-[347px] absolute inset-0 bg-gradient-to-b from-[rgba(204,13,49,0.9)] to-[rgba(2,20,96,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex justify-center border-2 border-white">
+                                    <h5 class="text-white text-lg font-semibold md:text-[26px] md:pt-[130px] pt-[130px]">Elaine Chao</h5> 
+                                    <p class="absolute text-white md:text-[20px] font-medium md:pt-[166px]	pt-[166px]">Founder</p>
+                                    <div class="absolute flex md:bottom-[126px] bottom-[140px]">
+                                        <div
+                                            class=" md:w-[35px]  w-[33px] h-[33px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                            <span class=""><i class="fa-brands fa-facebook-f"
+                                                    style="color: #052B5A;"></i></span>
+                                        </div>
+                                        <div
+                                            class=" md:w-[35px]  w-[33px] h-[33px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                            <span class=""><i class="fa-brands fa-twitter"
+                                                    style="color: #052B5A;"></i></span>
+                                        </div>
+                                        <div
+                                            class=" md:w-[35px] w-[33px] h-[33px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                            <span class=""><i class="fa-brands fa-instagram"
+                                                    style="color: #052B5A;"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-4/12 w-full md:pt-16 md:mt-[50px]">
+                        <div>
+                            <div class="relative md:h-[374px] md:w-[347px] group">
+                                <img src="../images/about-sec-4.2.jpg" alt=""
+                                    class="md:h-[374px] md:w-[347px] h-[374px] w-full object-cover rounded-[10px]">
+                                <div
+                                    class="absolute inset-0 group-hover:border-2 border-white m-2 opacity-20 transition-opacity duration-300 z-10">
+                                </div>
+                                <div
+                                    class="md:h-[374px] md:w-[347px] absolute inset-0 bg-gradient-to-b from-[rgba(204,13,49,0.9)] to-[rgba(2,20,96,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex justify-center border-2 border-white">
+                                    <h5 class="text-white text-[26px] font-semibold md:text-[26px] md:pt-[130px] pt-[130px]">Elaine Chao</h5> 
+                                    <p class="absolute text-white md:text-[20px] font-medium md:pt-[166px]	pt-[166px]">Founder</p>
+                                    <div class="absolute flex md:bottom-[126px] bottom-[140px]">
+                                        <div
+                                            class=" md:w-[35px]  w-[33px] h-[33px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                            <span class=""><i class="fa-brands fa-facebook-f"
+                                                    style="color: #052B5A;"></i></span>
+                                        </div>
+                                        <div
+                                            class=" md:w-[35px]  w-[33px] h-[33px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                            <span class=""><i class="fa-brands fa-twitter"
+                                                    style="color: #052B5A;"></i></span>
+                                        </div>
+                                        <div
+                                            class=" md:w-[35px] w-[33px] h-[33px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                            <span class=""><i class="fa-brands fa-instagram"
+                                                    style="color: #052B5A;"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-4/12 w-full md:pt-16 hidden md:block">
+                        <div>
+                            <div class="relative md:h-[374px] md:w-[347px] group">
+                                <img src="../images/about-sec-4.3.jpg" alt=""
+                                    class="md:h-[374px] md:w-[347px] object-cover rounded-[10px]">
+                                <div
+                                    class="absolute inset-0 group-hover:border-2 border-white m-2 opacity-20 transition-opacity duration-300 z-10">
+                                </div>
+                                <div
+                                    class="md:h-[374px] md:w-[347px] absolute inset-0 bg-gradient-to-b from-[rgba(204,13,49,0.9)] to-[rgba(2,20,96,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex justify-center border-2 border-white">
+                                    <h5 class="text-white text-lg font-semibold md:text-[26px] md:pt-[130px] pt-[130px]">Elaine Chao</h5> 
+                                    <p class="absolute text-white md:text-[20px] font-medium md:pt-[166px]	pt-[166px]">Founder</p>
+                                    <div class="absolute flex md:bottom-[126px] bottom-[140px] ">
+                                        <div
+                                            class=" md:w-[35px]  w-[33px] h-[33px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                            <span class=""><i class="fa-brands fa-facebook-f"
+                                                    style="color: #052B5A;"></i></span>
+                                        </div>
+                                        <div
+                                            class=" md:w-[35px]  w-[33px] h-[33px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                            <span class=""><i class="fa-brands fa-twitter"
+                                                    style="color: #052B5A;"></i></span>
+                                        </div>
+                                        <div
+                                            class=" md:w-[35px] w-[33px] h-[33px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                            <span class=""><i class="fa-brands fa-instagram"
+                                                    style="color: #052B5A;"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-4/12 w-full md:pt-16 md:mt-[50px] hidden md:block">
+                        <div>
+                            <div class="relative md:h-[374px] md:w-[347px] group">
+                                <img src="../images/about-sec-4.4.jpg" alt=""
+                                    class="md:h-[374px] md:w-[347px] object-cover rounded-[10px]">
+                                <div
+                                    class="absolute inset-0 group-hover:border-2 border-white m-2 opacity-20 transition-opacity duration-300 z-10">
+                                </div>
+                                <div
+                                    class="md:h-[374px] md:w-[347px] absolute inset-0 bg-gradient-to-b from-[rgba(204,13,49,0.9)] to-[rgba(2,20,96,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex justify-center border-2 border-white">
+                                    <h5 class="text-white text-lg font-semibold md:text-[26px] md:pt-[130px] pt-[130px]">Elaine Chao</h5> 
+                                    <p class="absolute text-white md:text-[20px] font-medium md:pt-[166px]	pt-[166px]">Founder</p>
+                                    <div class="absolute flex md:bottom-[126px] bottom-[140px]">
+                                        <div
+                                            class=" md:w-[35px]  w-[33px] h-[33px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                            <span class=""><i class="fa-brands fa-facebook-f"
+                                                    style="color: #052B5A;"></i></span>
+                                        </div>
+                                        <div
+                                            class=" md:w-[35px]  w-[33px] h-[33px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                            <span class=""><i class="fa-brands fa-twitter"
+                                                    style="color: #052B5A;"></i></span>
+                                        </div>
+                                        <div
+                                            class=" md:w-[35px] w-[33px] h-[33px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                            <span class=""><i class="fa-brands fa-instagram"
+                                                    style="color: #052B5A;"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+     <!-- Our Highlights  -->
+     <section class="px-4 md:py-20">
+        <div class="container mx-auto md:mb-10">
+            <div class="md:flex md:justify-between md:items-center md:mb-14">
+                <h2 class="text-[28px] md:text-[45px] font-semibold poppins my-8 md:my-0 text-center">
+                    <span class="text-[#052B5A] ">Our</span> <span class="text-red-600">Highlights</span>
+                </h2>
+                <div class="relative hidden md:block">
+                    <button
+                        class="bg-[#E3042E] md:ml-[661px] text-white font-semibold md:px-5 px-3 py-2 rounded-md poppins text-[14px] md:text-[16px]">
+                        Discover More
+                    </button>
+                    <a href="" class="relative block">
+                        <!-- Add the pseudo-element using Tailwind -->
+                        <div
+                            class="absolute before:content-[''] before:absolute before:-bottom-[5px] before:left-[655px] before:border-b-2 before:border-l-2 before:border-[#E3042E] before:rounded-bl-lg md:before:rounded-bl-xl md:before:px-[68px] md:before:py-[17px] before:px-[43px] before:py-[15px]">
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Video Section -->
+            <div class="relative bg-white rounded-lg overflow-hidden h-full">
+                <div class="relative rounded-lg p-7 md:p-10 bg-cover bg-center md:h-[550px] h-[200px] md:w-full "
+                    style="background-image: url('../images/sec-8.1.jpg'); background-position: 50% 49%;">
+                </div>
+                <div class="absolute inset-0 bg-[#052B5A] bg-opacity-45 rounded-lg"></div>
+                <!-- Play Button -->
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <div class="md:w-[110px] md:h-[110px] rounded-full bg-[#ffffff] flex items-center justify-center">
+
+                        <div
+                            class=" md:w-[80px] md:h-[80px] rounded-full bg-[#052B5A] flex items-center justify-center z-10">
+                            <div>
+                                <i class="fa-solid fa-play text-[30px] md:ml-2" style="color: #ffffff;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative md:hidden text-center mt-6 mb-12">
+                <button
+                    class="bg-[#E3042E] md:ml-[661px] text-white font-semibold md:px-5 px-3 py-3 rounded-md poppins text-[14px] md:text-[16px]">
+                    Discover More
+                </button>
+                <a href="" class="relative block">
+                    <!-- Add the pseudo-element using Tailwind -->
+                    <div
+                        class="absolute before:content-[''] before:absolute before:-bottom-[5px] before:left-[122px] before:border-b-2 before:border-l-2 before:border-[#E3042E] before:rounded-bl-lg md:before:rounded-bl-xl md:before:px-[68px] md:before:py-[17px] before:px-[55px] before:py-[15px]">
+                    </div>
+                </a>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- footer  -->
+    <footer class="">
+        <div class="relative bg-cover bg-center md:h-[425px] h-[700px]"
+            style="background-image: url('../images/footer-bg.jpg'); background-position: 31% 34%;">
+            <!-- Overlay with color -->
+            <div class="absolute inset-0 bg-[#001631] bg-opacity-90 backdrop-blur-[6px]">
+                <div class="container mx-auto">
+                    <div class="md:flex px-4 md:px-0">
+                        <div class="md:w-4/12 w-full z-10 md:hidden">
+                            <div class="md:mt-5 md:pt-9 mt-7">
+                                <div class="md:flex md:justify-center md:items-center">
+                                    <img src="../images/footer-logo.png" alt="" class="h-[45px]">
+                                    <div class="h-[0.1px] bg-white opacity-30 mt-5"></div>
+                                </div>
+                                <div class="md:mt-5 mt-4 ml-3">
+                                    <p class="text-gray-300 md:text-center jost font-medium text-[17px]">
+                                        Lorem ipsum dolor sit amet, consectetur elit. Ad assumenda fuga illo
+                                        laudantium magni sed temporibus. Amet atque.
+                                    </p>
+                                </div>
+                                <div class="flex md:justify-center md:mt-4 relative">
+                                    <div class="absolute flex bottom-[115px] left-[247px]">
+                                        <div
+                                            class=" md:w-[35px]  w-[33px] h-[33px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                            <span class=""><i class="fa-brands fa-facebook-f"
+                                                    style="color: #052B5A;"></i></span>
+                                        </div>
+                                        <div
+                                            class=" md:w-[35px]  w-[33px] h-[33px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                            <span class=""><i class="fa-brands fa-twitter"
+                                                    style="color: #052B5A;"></i></span>
+                                        </div>
+                                        <div
+                                            class=" md:w-[35px] w-[33px] h-[33px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                            <span class=""><i class="fa-brands fa-instagram"
+                                                    style="color: #052B5A;"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:w-4/12 z-10">
+                            <div class="md:mt-5 z-10 md:pt-14 pt-10">
+                                <h3 class="text-xl md:text-[22px] font-semibold mb-4 text-white hidden md:block">Contact
+                                </h3>
+                                <ul>
+                                    <li
+                                        class="flex items-center text-[#AFADAD] font-medium z-10 ml-2 md:ml-0 mb-5 md:mb-3">
+                                        <div
+                                            class=" md:w-[35px] w-[30px] h-[30px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                            <span class=""><i class="fa-solid fa-phone-volume"
+                                                    style="color: #052B5A;"></i></span>
+                                        </div>
+
+                                        (+91) 9106701061
+                                    </li>
+                                    <li
+                                        class="flex items-center text-[#AFADAD] font-medium ml-2 md:ml-0  mb-5 md:mb-3">
+                                        <div
+                                            class=" md:w-[35px]  w-[30px] h-[30px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                            <span class="material-icons text-blue-300"><i class="fa-solid fa-envelope"
+                                                    style="color: #052B5A;"></i></span>
+                                        </div>
+
+                                        Politician@gmail.com
+                                    </li>
+                                    <li class="flex items-center mb-2 text-[#AFADAD] font-medium ml-2 md:ml-0">
+                                        <div
+                                            class=" md:w-[35px]  w-[30px] h-[30px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                            <span class="material-icons text-blue-300"><i
+                                                    class="fa-solid fa-location-dot" style="color: #052B5A;"></i></span>
+                                        </div>
+
+                                        22 Brooklyn Street, 30 Road, New York, <br> United States
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="md:w-4/12 w-full z-10 hidden md:block">
+                            <div class="md:mt-5 md:pt-9">
+                                <div class="flex justify-center items-center">
+                                    <img src="../images/footer-logo.png" alt="">
+                                </div>
+                                <div class="md:mt-5">
+                                    <p class="text-gray-300 text-center jost font-medium text-lg">
+                                        Lorem ipsum dolor sit amet, consectetur elit. Ad <br> assumenda fuga illo
+                                        laudantium magni sed temporibus. <br> Amet atque.
+                                    </p>
+                                </div>
+                                <div class="flex justify-center md:mt-4 md:ml-14">
+                                    <div
+                                        class=" md:w-[35px] md:h-[35px] md:mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                        <span class=""><i class="fa-brands fa-facebook-f"
+                                                style="color: #052B5A;"></i></span>
+                                    </div>
+                                    <div
+                                        class=" md:w-[35px] md:h-[35px] md:mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                        <span class=""><i class="fa-brands fa-twitter"
+                                                style="color: #052B5A;"></i></span>
+                                    </div>
+                                    <div
+                                        class=" md:w-[35px] md:h-[35px] md:mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                        <span class=""><i class="fa-brands fa-instagram"
+                                                style="color: #052B5A;"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:w-4/12 w-full z-10">
+                            <div class="md:mt-5 md:pt-5">
+                                <div class="md:text-center md:ml-56 mt-8 md:mt-0 ml-3 md:ml-0">
+                                    <h3
+                                        class="text-xl font-semibold mb-4 poppins font-semibold	text-white md:mt-10 md:mr-[130px]">
+                                        Open Hours</h3>
+                                    <ul class="jost font-medium	text-[#AFADAD] text-xl md:text-[22px]">
+                                        <li class="mb-3 ">Mon-Sat: 8:00am - 5:00pm</li>
+                                        <li class="md:mt-3">Sunday: 10:00am - 4:00am</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class="h-[0.1px] bg-white opacity-30 mt-16"></div>
+                <div class="md:w-10/12 mx-auto flex flex-col md:flex-row justify-between text-sm text-gray-400 z-10">
+                    <p class="text-white mt-8 text-center">Copyright © 2023 Politician, All Rights Reserved</p>
+                    <div class="flex space-x-4 mt-2 md:mt-0 text-white z-10">
+                        <a href="#" class="hover:underline mt-3 md:mt-8 ml-24">Privacy Policy</a>
+                        <div class="w-[1.1px] h-[21px] bg-white opacity-30 md:mt-[30px]"></div>
+                        <a href="#" class="hover:underline mt-3 md:mt-8 ">Terms & Conditions</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </footer>
+
+  
 
 </body>
 

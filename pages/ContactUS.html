@@ -9,12 +9,30 @@
     <link rel="stylesheet" href="../css/fonts.css">
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const toggleIconOpen = document.getElementById('menu-icon-open');
+            const toggleIconClose = document.getElementById('menu-icon-close');
+
+            menu.classList.toggle('hidden'); // Toggle visibility
+            menu.classList.toggle('max-h-0'); // For smooth opening/closing
+            menu.classList.toggle('max-h-screen'); // For smooth opening/closing
+            menu.classList.toggle('transition-transform');
+            menu.classList.toggle('duration-1000');
+            // Toggle icons
+            toggleIconOpen.classList.toggle('hidden');
+            toggleIconClose.classList.toggle('hidden');
+        }
+    </script>
 </head>
+
 
 <body>
 
     <!-- header  -->
-    <header class="bg-white container mx-auto">
+    <!-- <header class="bg-white container mx-auto">
         <nav class="mx-auto flex container items-center justify-between p-6 lg:px-8" aria-label="Global">
             <div class="flex lg:flex-1">
                 <a href="#" class="-m-1.5 p-1.5">
@@ -57,7 +75,7 @@
                         Contact us
                     </a>
                     <a href="" class="relative block">
-                        <!-- Add the pseudo-element using Tailwind -->
+                       
                         <div
                             class="absolute before:content-[''] before:absolute before:-bottom-[17px] before:left-[0px] before:border-b-2 before:border-l-2 before:border-[#E3042E] before:rounded-bl-lg md:before:rounded-bl-xl md:before:px-[58px] before:px-[53px] before:py-[19px] md:before:py-[19px] before:py-[15px]">
                         </div>
@@ -66,6 +84,82 @@
 
             </div>
         </nav>
+        </div>
+    </header> -->
+
+
+    <header class="bg-white px-4">
+        <div class="container mx-auto">
+            <div class=" px-4 py-6 flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex lg:flex-1 ">
+                    <a href="#" class="-m-1 p-1">
+                        <img class="h-8 w-auto" src="../images/politicia-logo 1.png" alt="">
+                    </a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex space-x-9 ">
+                    <a href="../pages/AboutUs.html" class="font-bold poppins text-lg text-[#052B5A]">Home</a>
+                    <a href="../pages/AboutUs.html" class="font-normal poppins text-lg text-[#052B5A]">About Us</a>
+                    <a href="../pages/Policies.html" class="font-normal poppins text-lg text-[#052B5A]">Policies</a>
+                    <a href="../pages/Blog.html" class="font-normal poppins text-lg text-[#052B5A]">Blog</a>
+                    <a href="../pages/Event.html" class="font-normal poppins text-lg text-[#052B5A]">Event</a>
+                    <a href="../pages/Media.html" class="font-normal poppins text-lg text-[#052B5A]">Media</a>
+                    <a href="../pages/VolunteerAndContribution.html"
+                        class="font-normal poppins text-lg text-[#052B5A]">Volunteer and Contribution</a>
+                </nav>
+
+                <!-- Call to Action Button -->
+                <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+
+                    <div class="relative">
+                        <a href="../pages/Blog.html"
+                            class="bg-[#E3042E] md:ml-[6px] ml-[6px] md:mt-[3px] text-white font-semibold md:px-5 px-3 py-3 rounded-md poppins text-[14px] md:text-[16px]">
+                            Contact us
+                        </a>
+                        <a href="" class="relative block">
+
+                            <div
+                                class="absolute before:content-[''] before:absolute before:-bottom-[17px] before:left-[0px] before:border-b-2 before:border-l-2 before:border-[#E3042E] before:rounded-bl-lg md:before:rounded-bl-xl md:before:px-[58px] before:px-[53px] before:py-[19px] md:before:py-[19px] before:py-[15px]">
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- Mobile Menu Toggle Button -->
+                <button class="md:hidden text-gray-700 focus:outline-none" onclick="toggleMenu()">
+                    <!-- Hamburger Icon -->
+                    <svg id="menu-icon-open" xmlns="http://www.w3.org/2000/svg"
+                        class="h-6 w-6 transition-transform duration-1000" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                    <!-- Close Icon -->
+                    <svg id="menu-icon-close" xmlns="http://www.w3.org/2000/svg"
+                        class="h-6 w-6 hidden transition-transform duration-1000" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu"
+                class="hidden max-h-0 overflow-hidden transition-all duration-3000  md:hidden  border-t border-gray-200">
+                <nav class="space-y-2 py-4 px-4">
+                    <a href="#" class="block poppins font-bold text-[20px] ">Home</a>
+                    <a href="#" class="block text-gray-700 hover:text-blue-500">About Us</a>
+                    <a href="#" class="block text-gray-700 hover:text-blue-500">Services</a>
+                    <a href="#" class="block text-gray-700 hover:text-blue-500">Blog</a>
+                    <a href="#" class="block text-gray-700 hover:text-blue-500">Gallery</a>
+                    <a href="#" class="block text-gray-700 hover:text-blue-500">Contact Us</a>
+                   
+                </nav>
+            </div>
         </div>
     </header>
 
@@ -161,8 +255,10 @@
                     </div>
                     <div class="shadow-lg bg-white md:p-6 p-4 rounded-lg md:mt-6 relative md:mt-0 mt-3">
                         <div class="flex">
-                            <p class="poppins md:text-[25px] text-[16px] text-[#052B5A] font-semibold ">Monday To Saturday</p>
-                            <p class="poppins md:text-[25px] text-[16px] text-[#7F7F7F] font-medium md:ml-16 ml-6">8:00am To 5:00am</p>
+                            <p class="poppins md:text-[25px] text-[16px] text-[#052B5A] font-semibold ">Monday To
+                                Saturday</p>
+                            <p class="poppins md:text-[25px] text-[16px] text-[#7F7F7F] font-medium md:ml-16 ml-6">
+                                8:00am To 5:00am</p>
                         </div>
                         <div
                             class="md:w-[575px] w-[350px] md:h-[1.5px] h-[2px] bg-[#9c9c9c] bg-opacity-40 absolute md:top-[75px] mt-2 md:mt-0">
@@ -172,7 +268,9 @@
                         </div>
                         <div class="flex md:mt-7 mt-4">
                             <p class="poppins md:text-[25px] text-[16px] text-[#052B5A] font-semibold ">Sunday</p>
-                            <p class="poppins md:text-[25px] text-[16px] text-[#7F7F7F] font-medium md:ml-[223px] ml-[125px]">10:00am To 4:00am
+                            <p
+                                class="poppins md:text-[25px] text-[16px] text-[#7F7F7F] font-medium md:ml-[223px] ml-[125px]">
+                                10:00am To 4:00am
                             </p>
                         </div>
                     </div>
@@ -217,7 +315,8 @@
                         <div class="md:h-[40px] md:w-[40px] h-[30px] w-[45px] bg-white rounded-full">
                             <i class="fas fa-map-marker-alt md:pt-[10px]" style="color: #052B5A;"></i>
                         </div>
-                        <span class="jost md:text-[20px] font-medium md:pl-2 pl-1 md:pt-0 pt-1">22 Brooklyn Street 30 Road, New York, United
+                        <span class="jost md:text-[20px] font-medium md:pl-2 pl-1 md:pt-0 pt-1">22 Brooklyn Street 30
+                            Road, New York, United
                             States</span>
                     </div>
                 </div>

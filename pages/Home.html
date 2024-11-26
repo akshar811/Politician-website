@@ -47,7 +47,8 @@
                 <a href="../pages/Blog.html" class="font-normal poppins text-lg text-[#052B5A]">Blog</a>
                 <a href="../pages/Event.html" class="font-normal poppins text-lg text-[#052B5A]">Event</a>
                 <a href="../pages/Media.html" class="font-normal poppins text-lg text-[#052B5A]">Media</a>
-                <a href="../pages/VolunteerAndContribution.html" class="font-normal poppins text-lg text-[#052B5A]">Volunteer and Contribution</a>
+                <a href="../pages/VolunteerAndContribution.html"
+                    class="font-normal poppins text-lg text-[#052B5A]">Volunteer and Contribution</a>
             </div>
             <div class="hidden lg:flex lg:flex-1 lg:justify-end">
 
@@ -55,7 +56,7 @@
                     <a href="../pages/ContactUS.html"
                         class="bg-[#E3042E] md:ml-[6px] ml-[6px] md:mt-[3px] text-white font-semibold md:px-5 px-3 py-3 rounded-md poppins text-[14px] md:text-[16px]">
                         Contact us
-                </a>
+                    </a>
                     <a href="" class="relative block">
                         <!-- Add the pseudo-element using Tailwind -->
                         <div
@@ -72,7 +73,8 @@
 
     <!-- banner section  -->
     <div class="bg-[url(../images/bg-img.jpg)] bg-cover bg-no-repeat">
-        <img src="../images/about-sec-banner-img-2.png" alt="" class="absolute w-[600px] z-10 top-[551px] opacity-15 hidden md:block left-[-34px]">
+        <img src="../images/about-sec-banner-img-2.png" alt=""
+            class="absolute w-[600px] z-10 top-[551px] opacity-15 hidden md:block left-[-34px]">
         <div class="text-white font-sans bg-opacity-70">
             <div class="relative">
 
@@ -214,10 +216,14 @@
 
 
                     <!-- Statistics Section -->
-                    <div class="relative rounded-lg shadow-md p-7 md:p-10 md:w-4/12 md:mt-16 md:mb-8 mt-6 bg-cover bg-center"
-                        style="background-image: url('../images/sec-4.3.png');">
+                    <div
+                        class="relative rounded-lg shadow-md p-7 md:p-10 md:w-4/12 md:mt-16 md:mb-8 mt-6 bg-cover bg-center ">
+
+                        <img src="../images/sec-4.3.png" alt=""
+                            class="absolute md:w-[900px] md:h-[370px] h-[300px] z-10  opacity-15  right-[10px] md:top-[117px] top-[80px]">
+
                         <!-- Background Overlay -->
-                        <div class="absolute inset-0 bg-[#052B5A] bg-opacity-85 rounded-lg"></div>
+                        <div class="absolute inset-0 bg-[#052B5A] rounded-lg"></div>
 
                         <!-- Content -->
                         <div class="relative text-white">
@@ -292,33 +298,105 @@
                     <!-- Left Column -->
                     <div class="flex flex-warp md:flex-col gap-3 px-4 md:px-0">
                         <div class="flex gap-4 flex-wrap">
-                            <img src="../images/galley-1.jpg" alt="Gallery Image 1"
-                                class="rounded-lg shadow-md md:h-[377px] md:w-[488px] w-2/4 w-[180px] h-[159px]  object-cover">
-                            <img src="../images/gallery-4.jpg" alt="Gallery Image 2"
-                                class=" w-2/4 rounded-lg shadow-md md:h-[243px] md:w-[468px] w-[180px] h-[154px]  object-cover">
+                            <div class="relative group order-1 md:order-1 ">
+                                <img src="../images/galley-1.jpg" alt="Gallery Image 1"
+                                    class="rounded-lg shadow-md md:h-[377px] md:w-[488px] w-2/4 w-[180px] h-[159px]  object-cover">
+                                <div class=" absolute inset-0 group-hover:border-2 border-white md:m-10 m-5 transition-opacity
+                                                  duration-300">
+                                </div>
+
+                                <div
+                                    class=" absolute inset-0 bg-gradient-to-b from-[rgba(204,13,49,0.9)] to-[rgba(2,20,96,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex justify-center top-0">
+
+                                    <h5
+                                        class="text-white text-lg font-semibold md:text-[45px] md:pt-[180px] pt-[80px] poppins">
+                                        Election
+                                    </h5>
+
+
+                                </div>
+                            </div>
+                            <div class="relative group order-1 md:order-1 ">
+                                <img src="../images/gallery-4.jpg" alt="Gallery Image 2"
+                                    class=" w-2/4 rounded-lg shadow-md md:h-[243px] md:w-[468px] w-[180px] h-[154px]  object-cover">
+                                <div class=" absolute inset-0 group-hover:border-2 border-white md:m-10 m-5 transition-opacity
+                                    duration-300">
+                                </div>
+
+                                <div
+                                    class=" absolute inset-0 bg-gradient-to-b from-[rgba(204,13,49,0.9)] to-[rgba(2,20,96,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex justify-center top-0">
+
+                                    <h5
+                                        class="text-white text-lg font-semibold md:text-[35px] md:pt-[100px] pt-[80px] poppins">
+                                        Election
+                                    </h5>
+
+
+                                </div>
+                            </div>
                         </div>
                     </div>
 
                     <!-- Center Column -->
-                    <div class="relative flex group h-[145px] w-full px-4 md:px-0">
+                    <div class="relative flex group w-full px-4 md:px-0">
                         <img src="../images/gallery-2.jpg" alt="Gallery Image 3"
                             class="rounded-lg shadow-md md:h-[640px] w-full md:w-[468px] h-full object-cover">
+                            <div class=" absolute inset-0 group-hover:border-2 border-white md:m-10 m-5 transition-opacity
+                            duration-300">
+                        </div>
+
                         <div
-                            class="md:h-[640px] md:w-[417px] w-[385px] ml-3 absolute inset-0 bg-gradient-to-b from-[rgba(204,13,49,0.9)] to-[rgba(2,20,96,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex items-center justify-center border-2 border-white">
-                            <div class="border-white border-3"></div>
-                            <!-- Text on Hover -->
-                            <h3 class="text-white text-xl md:text-[40px] font-bold">Election meeting</h3>
+                            class=" absolute inset-0 bg-gradient-to-b from-[rgba(204,13,49,0.9)] to-[rgba(2,20,96,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex justify-center top-0">
+
+                            <h5
+                                class="text-white text-lg font-semibold md:text-[33px] md:pt-[300px] pt-[80px] poppins">
+                                Election meeting
+                            </h5>
+
+
                         </div>
                     </div>
 
                     <!-- Right Column -->
                     <div class="flex flex-wrap flex-col gap-2 px-4 md:px-0">
                         <div class="flex gap-4 flex-wrap">
-                            <img src="../images/gallery-3.jpg" alt="Gallery Image 1"
-                                class="rounded-lg shadow-md md:h-[243px]  md:w-[464px] w-2/4 w-[180px] h-[154px]  object-cover">
+                            <div class="relative group order-1 md:order-1 ">
+                                <img src="../images/gallery-3.jpg" alt="Gallery Image 1"
+                                    class="rounded-lg shadow-md md:h-[243px]  md:w-[464px] w-2/4 w-[180px] h-[154px]  object-cover">
+                                <div class=" absolute inset-0 group-hover:border-2 border-white md:m-10 m-5 transition-opacity
+                                    duration-300">
+                                </div>
 
-                            <img src="../images/gallery-5.jpg" alt="Gallery Image 2"
-                                class=" w-2/4 rounded-lg shadow-md md:h-[377px] md:w-[464px] w-[180px] h-[154px]  object-cover">
+                                <div
+                                    class=" absolute inset-0 bg-gradient-to-b from-[rgba(204,13,49,0.9)] to-[rgba(2,20,96,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex justify-center top-0">
+
+                                    <h5
+                                        class="text-white text-lg font-semibold md:text-[35px] md:pt-[100px] pt-[80px] poppins">
+                                        Election
+                                    </h5>
+
+
+                                </div>
+                            </div>
+
+                            <div class="relative group order-1 md:order-1 ">
+                                <img src="../images/gallery-5.jpg" alt="Gallery Image 2"
+                                    class=" w-2/4 rounded-lg shadow-md md:h-[377px] md:w-[464px] w-[180px] h-[154px]  object-cover">
+                                <div class=" absolute inset-0 group-hover:border-2 border-white md:m-10 m-5 transition-opacity
+                                    duration-300">
+                                </div>
+
+                                <div
+                                    class=" absolute inset-0 bg-gradient-to-b from-[rgba(204,13,49,0.9)] to-[rgba(2,20,96,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex justify-center top-0">
+
+                                    <h5
+                                        class="text-white text-lg font-semibold md:text-[35px] md:pt-[170px] pt-[80px] poppins">
+                                        Election
+                                    </h5>
+
+
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -481,8 +559,11 @@
                                 </div>
 
                                 <div class="content">
-                                    <p class="text-[21px] md:text-[26px] md:mt-1 ml-2 font-bold text-[#052B5A] poppins md:ml-4">9232+</p>
-                                    <p class="text-[14px] md:text-[17px] ml-2 text-[#7F7F7F] jost font-medium md:ml-4">Total volunteer
+                                    <p
+                                        class="text-[21px] md:text-[26px] md:mt-1 ml-2 font-bold text-[#052B5A] poppins md:ml-4">
+                                        9232+</p>
+                                    <p class="text-[14px] md:text-[17px] ml-2 text-[#7F7F7F] jost font-medium md:ml-4">
+                                        Total volunteer
                                     </p>
                                 </div>
                             </div>
@@ -496,8 +577,11 @@
                                 </div>
 
                                 <div class="content">
-                                    <p class="text-[21px] md:text-[26px] md:mt-1 ml-2 font-bold text-[#052B5A] poppins md:ml-4">9232+</p>
-                                    <p class="text-[14px] md:text-[17px] ml-2 text-[#7F7F7F] jost font-medium md:ml-4">Total volunteer
+                                    <p
+                                        class="text-[21px] md:text-[26px] md:mt-1 ml-2 font-bold text-[#052B5A] poppins md:ml-4">
+                                        9232+</p>
+                                    <p class="text-[14px] md:text-[17px] ml-2 text-[#7F7F7F] jost font-medium md:ml-4">
+                                        Total volunteer
                                     </p>
                                 </div>
                             </div>
@@ -511,8 +595,11 @@
                                 </div>
 
                                 <div class="content">
-                                    <p class="text-[21px] ml-2 md:mt-1 md:text-[26px] font-bold text-[#052B5A] poppins md:ml-3">9232+</p>
-                                    <p class="text-[14px]  md:text-[17px] ml-2 text-[#7F7F7F] jost font-medium md:ml-3">Total volunteer
+                                    <p
+                                        class="text-[21px] ml-2 md:mt-1 md:text-[26px] font-bold text-[#052B5A] poppins md:ml-3">
+                                        9232+</p>
+                                    <p class="text-[14px]  md:text-[17px] ml-2 text-[#7F7F7F] jost font-medium md:ml-3">
+                                        Total volunteer
                                     </p>
                                 </div>
                             </div>
@@ -526,8 +613,11 @@
                                 </div>
 
                                 <div class="content">
-                                    <p class="text-[21px] ml-2  md:mt-1 md:text-[26px] font-bold text-[#052B5A] poppins md:ml-3">9232+</p>
-                                    <p class="text-[14px] md:text-[17px]  ml-2 text-[#7F7F7F] jost font-medium md:ml-3">Total volunteer
+                                    <p
+                                        class="text-[21px] ml-2  md:mt-1 md:text-[26px] font-bold text-[#052B5A] poppins md:ml-3">
+                                        9232+</p>
+                                    <p class="text-[14px] md:text-[17px]  ml-2 text-[#7F7F7F] jost font-medium md:ml-3">
+                                        Total volunteer
                                     </p>
                                 </div>
                             </div>
@@ -633,17 +723,20 @@
             <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-6">
 
                 <!-- Card 1 -->
-                <div class="relative rounded-lg p-7 md:p-10 bg-cover bg-center md:h-[400px] md:w-[615px] h-[300px] px-4 object-cover mt-7 md:mt-0"
-                    style="background-image: url('../images/sec-4.3.png'); background-position: 50% 200%;">
-                    <!-- Background Overlay -->
-                    <div class="absolute inset-0 bg-[#052B5A] bg-opacity-90">
+                <div
+                    class="relative rounded-lg p-7 md:p-10 bg-cover bg-center md:h-[400px] md:w-[615px] h-[300px] px-4 object-cover mt-7 md:mt-0">
 
-                        <div class="md:p-16 md:mt-20 p-14 mt-10">
-                            <h2 class="text-xl font-semibold  mb-4 poppins">
+                    <img src="../images/sec-4.3.png" alt=""
+                        class="absolute scale-150 md:w-[900px] md:h-[350px] z-10  opacity-15  right-[10px] md:top-[6px] top-[80px]">
+                    <!-- Background Overlay -->
+                    <div class="absolute inset-0 bg-[#052B5A] ">
+
+                        <div class="md:p-16 md:mt-20 p-12 mt-10">
+                            <h2 class="text-[27px] font-semibold  mb-4 poppins">
                                 <span class="text-white md:text-[42px]">Upcoming</span> <span
                                     class="text-[#E3042E] font-semibold md:text-[42px]">Event</span>
                             </h2>
-                            <p class="jost font-normal	text-white md:text-lg">
+                            <p class="jost font-normal text-white md:text-lg">
                                 There are many variatioans of passages Lorem Ipsum labl, but the majority in some.
                             </p>
                         </div>
@@ -834,7 +927,7 @@
                     Testimonial
                 </h2>
             </div>
-            <div class="flex">
+            <div class="flex gap-8">
                 <div class="md:w-4/12">
                     <div class="bg-white shadow-lg rounded-lg p-6 relative">
                         <div class="absolute md:-top-14 -top-9 ">
@@ -871,7 +964,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="md:w-4/12 px-3 hidden md:block">
+                <div class="md:w-4/12 hidden md:block">
                     <div class="bg-white shadow-lg rounded-lg p-6 relative">
                         <div class="absolute -top-14 ">
                             <img src="../images/testimonial-2.png" alt="" class="md:w-[120px] md:h-[120px] border-4 rounded-lg
@@ -904,7 +997,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="md:w-4/12 px-3 hidden md:block">
+                <div class="md:w-4/12 hidden md:block">
                     <div class="bg-white shadow-lg rounded-lg p-6 relative">
                         <div class="absolute -top-14 ">
                             <img src="../images/testimonial-3.png" alt="" class="md:w-[120px] md:h-[120px] border-4 rounded-lg
@@ -998,8 +1091,7 @@
 
                                         (+91) 9106701061
                                     </li>
-                                    <li
-                                        class="flex items-center text-[#AFADAD] font-medium ml-2 md:ml-0  mb-5 md:mb-3">
+                                    <li class="flex items-center text-[#AFADAD] font-medium ml-2 md:ml-0  mb-5 md:mb-3">
                                         <div
                                             class=" md:w-[35px]  w-[30px] h-[30px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
                                             <span class="material-icons text-blue-300"><i class="fa-solid fa-envelope"
@@ -1086,4 +1178,3 @@
 </body>
 
 </html>
-

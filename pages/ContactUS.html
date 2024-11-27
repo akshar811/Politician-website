@@ -2,49 +2,56 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact US Page</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="../css/fonts.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/fonts.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
 
     <script>
         function toggleMenu() {
             const menu = document.getElementById('mobile-menu');
-            const toggleIconOpen = document.getElementById('menu-icon-open');
-            const toggleIconClose = document.getElementById('menu-icon-close');
+            const menuOpenIcon = document.getElementById('menu-icon-open');
+            const menuCloseIcon = document.getElementById('menu-icon-close');
+            const body = document.body;
 
-            menu.classList.toggle('hidden'); // Toggle visibility
-            menu.classList.toggle('max-h-0'); // For smooth opening/closing
-            menu.classList.toggle('max-h-screen'); // For smooth opening/closing
-            menu.classList.toggle('transition-transform');
-            menu.classList.toggle('duration-1000');
-            // Toggle icons
-            toggleIconOpen.classList.toggle('hidden');
-            toggleIconClose.classList.toggle('hidden');
+            if (menu.classList.contains('-translate-x-full')) {
+                // Open menu
+                menu.classList.remove('-translate-x-full');
+                menu.classList.add('translate-x-0');
+                menuOpenIcon.classList.add('hidden');
+                menuCloseIcon.classList.remove('hidden');
+                body.style.overflow = 'hidden'; // Prevent scrolling
+            } else {
+                // Close menu
+                menu.classList.add('-translate-x-full');
+                menu.classList.remove('translate-x-0');
+                menuOpenIcon.classList.remove('hidden');
+                menuCloseIcon.classList.add('hidden');
+                body.style.overflow = ''; // Restore scrolling
+            }
         }
+
     </script>
 </head>
 
-
 <body>
-
     <!-- header  -->
 
-    <header class="bg-white px-4">
+    <header class="bg-white">
         <div class="container mx-auto">
-            <div class=" px-4 py-6 flex items-center justify-between">
+            <div class="px-4 py-6 flex items-center justify-between">
                 <!-- Logo -->
-                <div class="flex lg:flex-1 ">
+                <div class="flex lg:flex-1">
                     <a href="#" class="-m-1 p-1">
-                        <img class="h-8 w-auto" src="../images/politicia-logo 1.png" alt="">
+                        <img class="h-8 w-auto" src="../images/politicia-logo 1.png" alt="" />
                     </a>
                 </div>
 
                 <!-- Desktop Menu -->
-                <nav class="hidden md:flex space-x-9 ">
+                <nav class="hidden md:flex space-x-9">
                     <a href="../pages/AboutUs.html" class="font-bold poppins text-lg text-[#052B5A]">Home</a>
                     <a href="../pages/AboutUs.html" class="font-normal poppins text-lg text-[#052B5A]">About Us</a>
                     <a href="../pages/Policies.html" class="font-normal poppins text-lg text-[#052B5A]">Policies</a>
@@ -57,20 +64,10 @@
 
                 <!-- Call to Action Button -->
                 <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-
-                    <div class="relative">
-                        <a href="../pages/Blog.html"
-                            class="bg-[#E3042E] md:ml-[6px] ml-[6px] md:mt-[3px] text-white font-semibold md:px-5 px-3 py-3 rounded-md poppins text-[14px] md:text-[16px]">
-                            Contact us
-                        </a>
-                        <a href="" class="relative block">
-
-                            <div
-                                class="absolute before:content-[''] before:absolute before:-bottom-[17px] before:left-[0px] before:border-b-2 before:border-l-2 before:border-[#E3042E] before:rounded-bl-lg md:before:rounded-bl-xl md:before:px-[58px] before:px-[53px] before:py-[19px] md:before:py-[19px] before:py-[15px]">
-                            </div>
-                        </a>
-                    </div>
-
+                    <a href="../pages/Blog.html"
+                        class="bg-[#E3042E] md:ml-[6px] ml-[6px] md:mt-[3px] text-white font-semibold md:px-5 px-3 py-3 rounded-md poppins text-[14px] md:text-[16px]">
+                        Contact us
+                    </a>
                 </div>
 
                 <!-- Mobile Menu Toggle Button -->
@@ -91,62 +88,76 @@
                     </svg>
                 </button>
             </div>
+        </div>
 
-            <!-- Mobile Menu -->
-            <div id="mobile-menu"
-                class="hidden max-h-0 overflow-hidden transition-all duration-3000  md:hidden  border-t border-gray-200 bg-transparent	">
-                <nav class="space-y-2 py-4 px-4">
-                    <a href="../pages/Home.html" class="block poppins font-bold text-[20px] ">Home</a>
-                    <a href="../pages/AboutUs.html"
-                        class="block text-gray-700 hover:text-blue-500  poppins text-[20px] font-normal ">About Us</a>
-                    <a href="../pages/Policies.html"
-                        class="block text-gray-700 hover:text-blue-500 poppins text-[20px] font-normal ">Policies</a>
-                    <a href="../pages/Blog.html"
-                        class="block text-gray-700 hover:text-blue-500 poppins text-[20px] font-normal	">Blog</a>
-                    <a href="../pages/Event.html"
-                        class="block text-gray-700 hover:text-blue-500 poppins text-[20px] font-normal ">Event</a>
-                    <a href="../pages/Media.html"
-                        class="block text-gray-700 hover:text-blue-500 poppins text-[20px] font-normal ">Media</a>
-                    <a href="../pages/VolunteerAndContribution.html"
-                        class="block text-gray-700 poppins text-[20px] font-normal	hover:text-blue-500">Volunteer and
-                        Contribution</a>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="fixed w-full h-full bg-[#001631] text-white transform -translate-x-full transition-transform duration-300 ease-in-out md:hidden z-50">
+            <div class="bg-[url(../images/bg-img.jpg)] bg-cover bg-no-repeat h-[699px] overflow-hidden bg-center">
 
-                </nav>
+                <div class="text-white font-sans bg-opacity-70">
+                    <div class="relative z-10">
+                        <div class="absolute inset-0 bg-[#001631] bg-opacity-85 backdrop-blur-[3px] h-[699px]"></div>
+                        <div class="relative z-10 container mx-auto px-6">
+                            <nav class="space-y-6 py-4 px-4 text-center pt-[60px]">
+                                <a href="../pages/Home.html" class="block poppins font-bold text-[20px]">Home</a>
+                                <a href="../pages/AboutUs.html"
+                                    class="block text-[#AFADAD] hover:text-blue-500 poppins text-[21px] font-normal">About
+                                    Us</a>
+                                <a href="../pages/Policies.html"
+                                    class="block text-[#AFADAD] hover:text-blue-500 poppins text-[21px] font-normal">Policies</a>
+                                <a href="../pages/Blog.html"
+                                    class="block text-[#AFADAD] hover:text-blue-500 poppins text-[21px] font-normal">Blog</a>
+                                <a href="../pages/Event.html"
+                                    class="block text-[#AFADAD] hover:text-blue-500 poppins text-[21px] font-normal">Event</a>
+                                <a href="../pages/Media.html"
+                                    class="block text-[#AFADAD] hover:text-blue-500 poppins text-[21px] font-normal">Media</a>
+                                <a href="../pages/VolunteerAndContribution.html"
+                                    class="block text-[#AFADAD] hover:text-blue-500 poppins text-[20px] font-normal">Volunteer
+                                    and
+                                    Contribution</a>
+                            </nav>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
             </div>
         </div>
     </header>
 
+
     <!-- banner section  -->
     <div class="bg-[url(../images/bg-img.jpg)] bg-cover bg-no-repeat md:h-[650px] overflow-hidden">
         <img src="../images/about-sec-banner-img-2.png" alt=""
-            class="absolute w-[600px] z-10 top-[500px] opacity-20 hidden md:block">
+            class="absolute w-[600px] z-10 top-[500px] opacity-20 hidden md:block" />
         <div class="text-white font-sans bg-opacity-70">
             <div class="relative">
-
                 <div class="absolute inset-0 bg-[#001631] bg-opacity-85 backdrop-blur-[3px] md:h-[650px]"></div>
 
-                <div class="container mx-auto px-6  relative z-10">
+                <div class="container mx-auto px-6 relative z-10">
                     <div class="flex flex-wrap lg:flex-nowrap pt-14">
-
                         <div class="w-full lg:w-1/2 lg:mb-0 md:mt-[260px] mt-[-20px]">
-                            <h1 class="font-semibold md:text-[53px] poppins text-[24px]">Contact US</h1>
+                            <h1 class="font-semibold md:text-[53px] poppins text-[24px]">
+                                Contact US
+                            </h1>
                             <div class="flex poppins md:mt-3 mt-2">
                                 <a href="../pages/Home.html" class="text-[#E3042E] md:text-[20px] text-[16px]">Home</a>
                                 <div
-                                    class=" md:h-[34px] md:w-[34px] h-[13px] w-[22px] md:ml-5 ml-3 mt-[5.3px] md:mt-[7px]">
-                                    <img src="../images/about-icon-1.png" alt="">
+                                    class="md:h-[34px] md:w-[34px] h-[13px] w-[22px] md:ml-5 ml-3 mt-[5.3px] md:mt-[7px]">
+                                    <img src="../images/about-icon-1.png" alt="" />
                                 </div>
                                 <a href="../pages/AboutUs.html"
-                                    class="poppins font-normal md:text-[20px] md:ml-5 ml-3  text-[15px] text-[#FFFFFF]">Contact
+                                    class="poppins font-normal md:text-[20px] md:ml-5 ml-3 text-[15px] text-[#FFFFFF]">Contact
                                     US</a>
-
                             </div>
                         </div>
 
-
                         <div class="md:w-1/2 w-full">
                             <img src="../images/about-us-banner-img.png" alt="Speaker Image"
-                                class="scale-x-[-1] md:ml-24 pt-9  md:w-[565px] object-cover">
+                                class="scale-x-[-1] md:ml-24 pt-9 md:w-[565px] object-cover" />
                         </div>
                     </div>
                 </div>
@@ -185,9 +196,9 @@
                             </div>
                         </div>
                         <textarea placeholder="Message"
-                            class="w-full  px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                             rows="3">
-                        </textarea>
+              </textarea>
                         <div class="relative md:pt-4 pt-4 pb-4">
                             <a href=""
                                 class="bg-[#E3042E] md:ml-[6px] ml-[6px] md:mt-[3px] text-white font-semibold md:px-5 px-7 py-3 rounded-md poppins text-[14px] md:text-[16px]">
@@ -204,33 +215,35 @@
                 </div>
                 <div class="md:w-5/12 md:pt-0 pt-10">
                     <div>
-                        <img src="../images/contact-us-sec-2.png" alt="" class="">
+                        <img src="../images/contact-us-sec-2.png" alt="" class="" />
                     </div>
                     <div class="shadow-lg bg-white md:p-6 p-4 rounded-lg md:mt-6 relative md:mt-0 mt-3">
                         <div class="flex">
-                            <p class="poppins md:text-[25px] text-[16px] text-[#052B5A] font-semibold ">Monday To
-                                Saturday</p>
-                            <p class="poppins md:text-[25px] text-[16px] text-[#7F7F7F] font-medium md:ml-16 ml-6">
-                                8:00am To 5:00am</p>
+                            <p class="poppins md:text-[25px] text-[15px] text-[#052B5A] font-semibold">
+                                Monday To Saturday
+                            </p>
+                            <p class="poppins md:text-[25px] text-[14px] text-[#7F7F7F] font-medium md:ml-16 ml-6">
+                                8:00am To 5:00am
+                            </p>
                         </div>
                         <div
-                            class="md:w-[575px] w-[350px] md:h-[1.5px] h-[2px] bg-[#9c9c9c] bg-opacity-40 absolute md:top-[75px] mt-2 md:mt-0">
+                            class="md:w-[575px] w-[280px] md:h-[1.5px] h-[2px] bg-[#9c9c9c] bg-opacity-40 absolute md:top-[75px] mt-2 md:mt-0">
                         </div>
                         <div
-                            class="md:w-[2px] w-[2px] md:h-[115px] h-[62px] bg-[#9c9c9c] bg-opacity-40 absolute md:top-[18px] top-[10px] md:left-[317px] left-[195px] mt-2 md:mt-0">
+                            class="md:w-[2px] w-[0px] md:h-[115px] h-[0px] bg-[#9c9c9c] bg-opacity-40 absolute md:top-[18px] top-[0px] md:left-[317px] left-[0px] mt-0 md:mt-0">
                         </div>
                         <div class="flex md:mt-7 mt-4">
-                            <p class="poppins md:text-[25px] text-[16px] text-[#052B5A] font-semibold ">Sunday</p>
+                            <p class="poppins md:text-[25px] text-[16px] text-[#052B5A] font-semibold">
+                                Sunday
+                            </p>
                             <p
-                                class="poppins md:text-[25px] text-[16px] text-[#7F7F7F] font-medium md:ml-[223px] ml-[125px]">
+                                class="poppins md:text-[25px] text-[16px] text-[#7F7F7F] font-medium md:ml-[223px] ml-[100px]">
                                 10:00am To 4:00am
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
-
-
         </div>
     </section>
 
@@ -251,106 +264,113 @@
                     class="w-[80%] bg-[#052B5A] text-white py-6 flex flex-wrap md:justify-evenly items-center text-center absolute md:left-[150px] left-[35px] md:top-[420px] top-[119px] rounded-lg md:round-none">
                     <!-- Phone -->
                     <div class="flex md:items-center space-x-2 ml-5 md:ml-0 md:mt-0">
-                        <div class="md:h-[40px] md:w-[40px] h-[30px] w-[30px] bg-white rounded-full ">
-                            <i class="fas fa-phone-alt md:pt-[10px]" style="color: #052B5A;"></i>
+                        <div class="md:h-[40px] md:w-[40px] h-[30px] w-[30px] bg-white rounded-full">
+                            <i class="fas fa-phone-alt md:pt-[10px]" style="color: #052b5a"></i>
                         </div>
                         <span class="jost md:text-[20px] font-medium md:pl-2 pl-1">(+91)9106701061</span>
                     </div>
                     <!-- Email -->
                     <div class="flex items-center space-x-2 ml-5 md:ml-0 mt-2 md:mt-0">
                         <div class="md:h-[40px] md:w-[40px] h-[30px] w-[30px] bg-white rounded-full mt-1 md:mt-0">
-                            <i class="fas fa-envelope  md:pt-[10px] pt-[7px]" style="color: #052B5A;"></i>
+                            <i class="fas fa-envelope md:pt-[10px] pt-[7px]" style="color: #052b5a"></i>
                         </div>
                         <span class="jost md:text-[20px] font-medium md:pl-2 pl-1">Politician@gmail.com</span>
                     </div>
                     <!-- Address -->
                     <div class="flex items-center space-x-2 ml-5 md:ml-0 mt-2 md:mt-0">
                         <div class="md:h-[40px] md:w-[40px] h-[30px] w-[45px] bg-white rounded-full">
-                            <i class="fas fa-map-marker-alt md:pt-[10px]" style="color: #052B5A;"></i>
+                            <i class="fas fa-map-marker-alt md:pt-[10px]" style="color: #052b5a"></i>
                         </div>
                         <span class="jost md:text-[20px] font-medium md:pl-2 pl-1 md:pt-0 pt-1">22 Brooklyn Street 30
-                            Road, New York, United
-                            States</span>
+                            Road, New York, United States</span>
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 
     <!-- footer  -->
-    <footer class="">
-        <div class="relative bg-cover bg-center md:h-[425px] h-[700px]"
-            style="background-image: url('../images/footer-bg.jpg'); background-position: 31% 34%;">
+    <footer>
+        <div class="relative bg-cover bg-center md:h-[425px] h-[700px]" style="
+          background-image: url('../images/footer-bg.jpg');
+          background-position: 31% 34%;
+        ">
             <!-- Overlay with color -->
             <div class="absolute inset-0 bg-[#001631] bg-opacity-90">
                 <div class="container mx-auto">
                     <div class="md:flex px-4 md:px-0">
                         <div class="md:w-4/12 w-full z-10 md:hidden">
                             <div class="md:mt-5 md:pt-9 mt-7">
-                                <div class="md:flex md:justify-center md:items-center">
-                                    <img src="../images/footer-logo.png" alt="" class="h-[45px]">
+                                <div class="">
+                                    <div class="flex justify-between">
+                                        <div>
+                                            <img src="../images/footer-logo.png" alt="" class="h-[45px]" />
+                                        </div>
+                                        <div class="flex mt-2 relative ">
+                                            <div class="flex ">
+                                                <div
+                                                    class="md:w-[35px] w-[33px] h-[33px] md:h-[35px]  mr-2 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                                    <span class=""><i class="fa-brands fa-facebook-f"
+                                                            style="color: #052b5a"></i></span>
+                                                </div>
+                                                <div
+                                                    class="md:w-[35px] w-[33px] h-[33px] md:h-[35px]  mr-2 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                                    <span class=""><i class="fa-brands fa-twitter"
+                                                            style="color: #052b5a"></i></span>
+                                                </div>
+                                                <div
+                                                    class="md:w-[35px] w-[33px] h-[33px] md:h-[35px]  rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                                    <span class=""><i class="fa-brands fa-instagram"
+                                                            style="color: #052b5a"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div class="h-[0.1px] bg-white opacity-30 mt-5"></div>
                                 </div>
                                 <div class="md:mt-5 mt-4 ml-3">
                                     <p class="text-gray-300 md:text-center jost font-medium text-[17px]">
-                                        Lorem ipsum dolor sit amet, consectetur elit. Ad assumenda fuga illo
-                                        laudantium magni sed temporibus. Amet atque.
+                                        Lorem ipsum dolor sit amet, consectetur elit. Ad assumenda
+                                        fuga illo laudantium magni sed temporibus. Amet atque.
                                     </p>
                                 </div>
-                                <div class="flex md:justify-center md:mt-4 relative">
-                                    <div class="absolute flex bottom-[115px] left-[247px]">
-                                        <div
-                                            class=" md:w-[35px]  w-[33px] h-[33px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
-                                            <span class=""><i class="fa-brands fa-facebook-f"
-                                                    style="color: #052B5A;"></i></span>
-                                        </div>
-                                        <div
-                                            class=" md:w-[35px]  w-[33px] h-[33px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
-                                            <span class=""><i class="fa-brands fa-twitter"
-                                                    style="color: #052B5A;"></i></span>
-                                        </div>
-                                        <div
-                                            class=" md:w-[35px] w-[33px] h-[33px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
-                                            <span class=""><i class="fa-brands fa-instagram"
-                                                    style="color: #052B5A;"></i></span>
-                                        </div>
-                                    </div>
-                                </div>
+
                             </div>
                         </div>
                         <div class="md:w-4/12 z-10">
                             <div class="md:mt-5 z-10 md:pt-14 pt-10">
-                                <h3 class="text-xl md:text-[22px] font-semibold mb-4 text-white hidden md:block">Contact
+                                <h3 class="text-xl md:text-[22px] font-semibold mb-4 text-white hidden md:block">
+                                    Contact
                                 </h3>
                                 <ul>
                                     <li
                                         class="flex items-center text-[#AFADAD] font-medium z-10 ml-2 md:ml-0 mb-5 md:mb-3">
                                         <div
-                                            class=" md:w-[35px] w-[30px] h-[30px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                            class="md:w-[35px] w-[30px] h-[30px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
                                             <span class=""><i class="fa-solid fa-phone-volume"
-                                                    style="color: #052B5A;"></i></span>
+                                                    style="color: #052b5a"></i></span>
                                         </div>
 
                                         (+91) 9106701061
                                     </li>
-                                    <li class="flex items-center text-[#AFADAD] font-medium ml-2 md:ml-0  mb-5 md:mb-3">
+                                    <li class="flex items-center text-[#AFADAD] font-medium ml-2 md:ml-0 mb-5 md:mb-3">
                                         <div
-                                            class=" md:w-[35px]  w-[30px] h-[30px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                            class="md:w-[35px] w-[30px] h-[30px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
                                             <span class="material-icons text-blue-300"><i class="fa-solid fa-envelope"
-                                                    style="color: #052B5A;"></i></span>
+                                                    style="color: #052b5a"></i></span>
                                         </div>
 
                                         Politician@gmail.com
                                     </li>
                                     <li class="flex items-center mb-2 text-[#AFADAD] font-medium ml-2 md:ml-0">
                                         <div
-                                            class=" md:w-[35px]  w-[30px] h-[30px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                            class="md:w-[35px] w-[30px] h-[30px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
                                             <span class="material-icons text-blue-300"><i
-                                                    class="fa-solid fa-location-dot" style="color: #052B5A;"></i></span>
+                                                    class="fa-solid fa-location-dot" style="color: #052b5a"></i></span>
                                         </div>
 
-                                        22 Brooklyn Street, 30 Road, New York, <br> United States
+                                        22 Brooklyn Street, 30 Road, New York, <br />
+                                        United States
                                     </li>
                                 </ul>
                             </div>
@@ -358,29 +378,31 @@
                         <div class="md:w-4/12 w-full z-10 hidden md:block">
                             <div class="md:mt-5 md:pt-9">
                                 <div class="flex justify-center items-center">
-                                    <img src="../images/footer-logo.png" alt="">
+                                    <img src="../images/footer-logo.png" alt="" />
                                 </div>
                                 <div class="md:mt-5">
                                     <p class="text-gray-300 text-center jost font-medium text-lg">
-                                        Lorem ipsum dolor sit amet, consectetur elit. Ad <br> assumenda fuga illo
-                                        laudantium magni sed temporibus. <br> Amet atque.
+                                        Lorem ipsum dolor sit amet, consectetur elit. Ad <br />
+                                        assumenda fuga illo laudantium magni sed temporibus.
+                                        <br />
+                                        Amet atque.
                                     </p>
                                 </div>
                                 <div class="flex justify-center md:mt-4 md:ml-14">
                                     <div
-                                        class=" md:w-[35px] md:h-[35px] md:mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                        class="md:w-[35px] md:h-[35px] md:mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
                                         <span class=""><i class="fa-brands fa-facebook-f"
-                                                style="color: #052B5A;"></i></span>
+                                                style="color: #052b5a"></i></span>
                                     </div>
                                     <div
-                                        class=" md:w-[35px] md:h-[35px] md:mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                        class="md:w-[35px] md:h-[35px] md:mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
                                         <span class=""><i class="fa-brands fa-twitter"
-                                                style="color: #052B5A;"></i></span>
+                                                style="color: #052b5a"></i></span>
                                     </div>
                                     <div
-                                        class=" md:w-[35px] md:h-[35px] md:mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                        class="md:w-[35px] md:h-[35px] md:mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
                                         <span class=""><i class="fa-brands fa-instagram"
-                                                style="color: #052B5A;"></i></span>
+                                                style="color: #052b5a"></i></span>
                                     </div>
                                 </div>
                             </div>
@@ -389,38 +411,32 @@
                             <div class="md:mt-5 md:pt-5">
                                 <div class="md:text-center md:ml-56 mt-8 md:mt-0 ml-3 md:ml-0">
                                     <h3
-                                        class="text-xl font-semibold mb-4 poppins font-semibold	text-white md:mt-10 md:mr-[130px]">
-                                        Open Hours</h3>
-                                    <ul class="jost font-medium	text-[#AFADAD] text-xl md:text-[22px]">
-                                        <li class="mb-3 ">Mon-Sat: 8:00am - 5:00pm</li>
+                                        class="text-xl font-semibold mb-4 poppins font-semibold text-white md:mt-10 md:mr-[130px]">
+                                        Open Hours
+                                    </h3>
+                                    <ul class="jost font-medium text-[#AFADAD] text-xl md:text-[22px]">
+                                        <li class="mb-3">Mon-Sat: 8:00am - 5:00pm</li>
                                         <li class="md:mt-3">Sunday: 10:00am - 4:00am</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-
-
                 </div>
                 <div class="h-[0.1px] bg-white opacity-30 mt-16"></div>
                 <div class="md:w-10/12 mx-auto flex flex-col md:flex-row justify-between text-sm text-gray-400 z-10">
-                    <p class="text-white mt-8 text-center">Copyright © 2023 Politician, All Rights Reserved</p>
+                    <p class="text-white mt-8 text-center">
+                        Copyright © 2023 Politician, All Rights Reserved
+                    </p>
                     <div class="flex space-x-4 mt-2 md:mt-0 text-white z-10">
                         <a href="#" class="hover:underline mt-3 md:mt-8 ml-24">Privacy Policy</a>
-                        <div class="w-[1.1px] h-[21px] bg-white opacity-30  md:mt-[30px]"></div>
-                        <a href="#" class="hover:underline mt-3 md:mt-8 ">Terms & Conditions</a>
+                        <div class="w-[1.1px] h-[21px] bg-white opacity-30 md:mt-[30px] mt-[13px]"></div>
+                        <a href="#" class="hover:underline mt-3 md:mt-8">Terms & Conditions</a>
                     </div>
                 </div>
             </div>
-
-
         </div>
     </footer>
-
-
-
-
 </body>
 
 </html>

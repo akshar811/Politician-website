@@ -9,62 +9,128 @@
     <link rel="stylesheet" href="../css/fonts.css">
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const menuOpenIcon = document.getElementById('menu-icon-open');
+            const menuCloseIcon = document.getElementById('menu-icon-close');
+            const body = document.body;
+
+            if (menu.classList.contains('-translate-x-full')) {
+                // Open menu
+                menu.classList.remove('-translate-x-full');
+                menu.classList.add('translate-x-0');
+                menuOpenIcon.classList.add('hidden');
+                menuCloseIcon.classList.remove('hidden');
+                body.style.overflow = 'hidden'; // Prevent scrolling
+            } else {
+                // Close menu
+                menu.classList.add('-translate-x-full');
+                menu.classList.remove('translate-x-0');
+                menuOpenIcon.classList.remove('hidden');
+                menuCloseIcon.classList.add('hidden');
+                body.style.overflow = ''; // Restore scrolling
+            }
+        }
+
+    </script>
+
 </head>
 
 <body>
-    <!-- header  -->
-    <header class="bg-white container mx-auto">
-        <nav class="mx-auto flex container items-center justify-between p-6 lg:px-8" aria-label="Global">
-            <div class="flex lg:flex-1">
-                <a href="#" class="-m-1.5 p-1.5">
-                    <span class="sr-only">Your Company</span>
-                    <img class="h-8 w-auto" src="../images/politicia-logo 1.png" alt="">
-                </a>
-            </div>
-            <div class="flex lg:hidden">
-                <button type="button"
-                    class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
-                    <span class="sr-only">Open main menu</span>
-                    <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                        aria-hidden="true" data-slot="icon">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                    </svg>
-                </button>
-            </div>
-            <div class="hidden lg:flex lg:gap-x-12">
-                <div class="relative">
-                    <button type="button" class="flex items-center gap-x-1 font-normal text-[#052B5A] text-lg poppins "
-                        aria-expanded="false">
-                        <a href="../pages/Home.html">Home</a>
-                    </button>
-                </div>
+     <!-- header  -->
 
-                <a href="../pages/AboutUs.html" class="font-normal poppins text-lg text-[#052B5A]">About Us</a>
-                <a href="../pages/Policies.html" class="font-normal poppins text-lg text-[#052B5A]">Policies</a>
-                <a href="../pages/Blog.html" class="font-normal poppins text-lg text-[#052B5A]">Blog</a>
-                <a href="../pages/Event.html" class="font-normal poppins text-lg text-[#052B5A]">Event</a>
-                <a href="../pages/Media.html" class="font-bold poppins text-lg text-[#052B5A]">Media</a>
-                <a href="../pages/VolunteerAndContribution.html"
-                    class="font-normal poppins text-lg text-[#052B5A]">Volunteer and Contribution</a>
-            </div>
-            <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-
-                <div class="relative">
-                    <a href="../pages/ContactUS.html"
-                        class="bg-[#E3042E] md:ml-[6px] ml-[6px] md:mt-[3px] text-white font-semibold md:px-5 px-3 py-3 rounded-md poppins text-[14px] md:text-[16px]">
-                        Contact us
-                </a>
-                    <a href="" class="relative block">
-                        <!-- Add the pseudo-element using Tailwind -->
-                        <div
-                            class="absolute before:content-[''] before:absolute before:-bottom-[17px] before:left-[0px] before:border-b-2 before:border-l-2 before:border-[#E3042E] before:rounded-bl-lg md:before:rounded-bl-xl md:before:px-[58px] before:px-[53px] before:py-[19px] md:before:py-[19px] before:py-[15px]">
-                        </div>
+    <header class="bg-white">
+        <div class="container mx-auto">
+            <div class="px-4 py-6 flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex lg:flex-1">
+                    <a href="#" class="-m-1 p-1">
+                        <img class="h-8 w-auto" src="../images/politicia-logo 1.png" alt="" />
                     </a>
                 </div>
 
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex space-x-9">
+                    <a href="../pages/Home.html" class="font-normal poppins text-lg text-[#052B5A]">Home</a>
+                    <a href="../pages/AboutUs.html" class="font-normal poppins text-lg text-[#052B5A]">About Us</a>
+                    <a href="../pages/Policies.html" class="font-normal poppins text-lg text-[#052B5A]">Policies</a>
+                    <a href="../pages/Blog.html" class="font-normal poppins text-lg text-[#052B5A]">Blog</a>
+                    <a href="../pages/Event.html" class="font-normal poppins text-lg text-[#052B5A]">Event</a>
+                    <a href="../pages/Media.html" class="font-bold poppins text-lg text-[#052B5A]">Media</a>
+                    <a href="../pages/VolunteerAndContribution.html"
+                        class="font-normal poppins text-lg text-[#052B5A]">Volunteer and Contribution</a>
+                </nav>
+
+                <!-- Call to Action Button -->
+                <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+                    <a href="../pages/ContactUS.html"
+                        class="bg-[#E3042E] md:ml-[6px] ml-[6px] md:mt-[3px] text-white font-semibold md:px-5 px-3 py-3 rounded-md poppins text-[14px] md:text-[16px]">
+                        Contact us
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Toggle Button -->
+                <button class="md:hidden text-gray-700 focus:outline-none" onclick="toggleMenu()">
+                    <!-- Hamburger Icon -->
+                    <svg id="menu-icon-open" xmlns="http://www.w3.org/2000/svg"
+                        class="h-6 w-6 transition-transform duration-1000" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                    <!-- Close Icon -->
+                    <svg id="menu-icon-close" xmlns="http://www.w3.org/2000/svg"
+                        class="h-6 w-6 hidden transition-transform duration-1000" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
             </div>
-        </nav>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="fixed w-full h-full bg-[#001631] text-white transform -translate-x-full transition-transform duration-300 ease-in-out md:hidden z-50">
+            <div class="bg-[url(../images/bg-img.jpg)] bg-cover bg-no-repeat h-[699px] overflow-hidden bg-center">
+
+                <div class="text-white font-sans bg-opacity-70">
+                    <div class="relative z-10">
+                        <div class="absolute inset-0 bg-[#001631] bg-opacity-85 backdrop-blur-[3px] h-[699px]"></div>
+                        <div class="relative z-10 container mx-auto px-6">
+                            <nav class="space-y-6 py-4 px-4 text-center pt-[120px]">
+                                <a href="../pages/Home.html"
+                                    class="block poppins font-normal text-[20px] text-[#AFADAD]">Home</a>
+                                <a href="../pages/AboutUs.html"
+                                    class="block text-[#AFADAD] hover:text-blue-500 poppins text-[21px] font-normal">About
+                                    Us</a>
+                                <a href="../pages/Policies.html"
+                                    class="block text-[#AFADAD] hover:text-blue-500 poppins text-[21px] font-normal">Policies</a>
+                                <a href="../pages/Blog.html"
+                                    class="block text-[#AFADAD] hover:text-blue-500 poppins text-[21px] font-normal">Blog</a>
+                                <a href="../pages/Event.html"
+                                    class="block text-[#AFADAD] hover:text-blue-500 poppins text-[21px] font-normal">Event</a>
+                                <a href="../pages/Media.html"
+                                    class="block text-[#FFFFFF] hover:text-blue-500 poppins text-[21px] font-bold">Media</a>
+                                <a href="../pages/VolunteerAndContribution.html"
+                                    class="block text-[#AFADAD] hover:text-blue-500 poppins text-[20px] font-normal">Volunteer
+                                    and
+                                    Contribution</a>
+                            </nav>
+                            <div>
+                                <img src="../images/about-sec-banner-img-2.png" alt=""
+                                    class="absolute  z-10 top-[514px] opacity-15 left-[-10px]">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
         </div>
     </header>
 

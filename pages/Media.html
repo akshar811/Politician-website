@@ -64,12 +64,13 @@
                 </nav>
 
                 <!-- Call to Action Button -->
-                <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-                    <a href="../pages/ContactUS.html"
-                        class="bg-[#E3042E] md:ml-[6px] ml-[6px] md:mt-[3px] text-white font-semibold md:px-5 px-3 py-3 rounded-md poppins text-[14px] md:text-[16px]">
-                        Contact us
-                    </a>
-                </div>
+
+                <div class="flex md:justify-end lg:flex-1">
+                    <div class=" relative bg-[#E3042E] px-[20px] py-[10px] w-fit object-cover  rounded-[10px]  ">
+                        <a  href="../pages/ContactUS.html" class="poppins text-[14px] font-semibold text-white">Contact us</a>
+                        <div class="  absolute w-[105px] h-[40px] border-2 border-[#E3042E] border-t-0 border-r-0 -left-[5%] -bottom-[13%] rounded-bl-[10px] -right-[5%]"></div>
+                      </div>
+                   </div>
 
                 <!-- Mobile Menu Toggle Button -->
                 <button class="md:hidden text-gray-700 focus:outline-none" onclick="toggleMenu()">
@@ -332,18 +333,10 @@
                 </div>
             </div>
 
-            <div class="relative text-center md:mt-10 mt-7">
-                <button
-                    class="bg-[#E3042E] md:ml-[6px] ml-[6px] md:mt-[3px] text-white font-semibold md:px-6 px-6 py-3 rounded-md poppins text-[14px] md:text-[16px]">
-                    Load More
-                </button>
-              
-                    <!-- Add the pseudo-element using Tailwind -->
-                    <div
-                        class="absolute before:content-[''] before:absolute before:-bottom-[6px] before:left-[126px] md:before:left-[699px] before:border-b-2 before:border-l-2 before:border-[#E3042E] before:rounded-bl-lg md:before:rounded-bl-xl md:before:px-[58px] before:px-[53px] before:py-[19px] md:before:py-[19px] before:py-[15px]">
-                    </div>
-                </a>
-            </div>
+            <div class="relative bg-[#E3042E] px-[20px] py-[10px] w-fit object-cover m-[20px] rounded-[10px] mx-auto">
+                <button class="poppins text-[14px] font-semibold text-white">Load More</button>
+                <div class="  absolute w-[105px] h-[40px] border-2 border-[#E3042E] border-t-0 border-r-0 -left-[5%] -bottom-[13%] rounded-bl-[10px] -right-[5%]"></div>
+              </div>
 
 
         </div>

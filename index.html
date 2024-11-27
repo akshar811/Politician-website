@@ -66,11 +66,14 @@
                 </nav>
 
                 <!-- Call to Action Button -->
-                <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-                    <a href="../pages/ContactUS.html"
-                        class="bg-[#E3042E] md:ml-[6px] ml-[6px] md:mt-[3px] text-white font-semibold md:px-5 px-3 py-3 rounded-md poppins text-[14px] md:text-[16px]">
-                        Contact us
-                    </a>
+                <div class="flex md:justify-end lg:flex-1">
+                    <div class=" relative bg-[#E3042E] px-[20px] py-[10px] w-fit object-cover  rounded-[10px]  ">
+                        <a href="/pages/ContactUS.html" class="poppins text-[14px] font-semibold text-white">Contact
+                            us</a>
+                        <div
+                            class="  absolute w-[105px] h-[40px] border-2 border-[#E3042E] border-t-0 border-r-0 -left-[5%] -bottom-[13%] rounded-bl-[10px] -right-[5%]">
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Mobile Menu Toggle Button -->
@@ -216,17 +219,14 @@
                         accountability in their public service. This could include information about their ethical
                         standards, financial disclosures, and measures to ensure openness and honesty in government.</p>
                 </div>
-                <div class="relative ml-6 md:ml-0 mt-6 md:mt-0 mb-7">
-                    <button
-                        class="bg-[#E3042E] md:ml-[6px] md:mt-[32px] text-white font-semibold md:px-5 px-3 py-2 rounded-md poppins text-[14px] md:text-[16px]">
-                        Read More
-                    </button>
-                    <a href="" class="relative block">
-                        <!-- Add the pseudo-element using Tailwind -->
-                        <div
-                            class="absolute before:content-[''] before:absolute before:-bottom-[5px] before:left-[0px] left-[-5px] md:left-[0px] before:border-b-2 before:border-l-2 before:border-[#E3042E] before:rounded-bl-lg md:before:rounded-bl-xl md:before:px-[55px] before:px-[42px] before:py-[17px] md:before:py-[17px] before:px-[43px] before:py-[15px]">
-                        </div>
-                    </a>
+
+
+                <div
+                    class="relative bg-[#E3042E] px-[24px] py-[12px] w-fit object-cover m-[20px] rounded-[10px] md:mt-8">
+                    <button class="poppins text-[14px] font-semibold text-white text-[18px]"> Read More</button>
+                    <div
+                        class="  absolute w-[130px] h-[42px] border-2 border-[#E3042E] border-t-0 border-r-0 -left-[4%] -bottom-[13%] rounded-bl-[10px] -right-[5%]">
+                    </div>
                 </div>
             </div>
 
@@ -339,29 +339,28 @@
     <!-- gallery  -->
     <section>
         <div class="container mx-auto">
-            <div class="max-w-7xl mx-auto md:py-16 py-12">
+            <div class=" mx-auto md:py-16 py-12">
                 <!-- Gallery Header -->
                 <div class="md:flex md:justify-between md:items-center">
                     <h2 class="text-[28px] md:text-3xl poppins font-semibold text-[#052B5A] mb-4 text-center">Gallery
                     </h2>
-                    <div class="relative hidden md:block">
-                        <button
-                            class="bg-[#E3042E] md:ml-[661px] text-white font-semibold md:px-5 px-3 py-2 rounded-md poppins text-[14px] md:text-[16px]">
-                            View More
-                        </button>
-                        <a href="" class="relative block">
-                            <!-- Add the pseudo-element using Tailwind -->
-                            <div
-                                class="absolute before:content-[''] before:absolute before:-bottom-[5px] before:left-[655px] before:border-b-2 before:border-l-2 before:border-[#E3042E] before:rounded-bl-lg md:before:rounded-bl-xl md:before:px-[55px] md:before:py-[17px] before:px-[43px] before:py-[15px]">
-                            </div>
-                        </a>
+
+
+                    <div
+                        class="relative bg-[#E3042E] px-[24px] py-[12px] w-fit object-cover m-[20px] rounded-[10px] hidden md:block">
+                        <button class="poppins text-[14px] font-semibold text-white text-[18px]">View More</button>
+                        <div
+                            class="  absolute w-[130px] h-[42px] border-2 border-[#E3042E] border-t-0 border-r-0 -left-[4%] -bottom-[13%] rounded-bl-[10px] -right-[5%]">
+                        </div>
                     </div>
+
+
                 </div>
 
                 <!-- Gallery Grid -->
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-4  mt-8">
                     <!-- Left Column -->
-                    <div class="flex flex-warp md:flex-col gap-3 px-4 md:px-0">
+                    <div class="flex flex-warp md:flex-col px-4 md:px-0 ">
                         <div class="flex gap-4 md:flex-wrap">
                             <div class="relative group order-1 md:order-1 ">
                                 <img src="/images/galley-1.jpg" alt="Gallery Image 1"
@@ -383,7 +382,7 @@
                             </div>
                             <div class="relative group order-1 md:order-1 ">
                                 <img src="/images/gallery-4.jpg" alt="Gallery Image 2"
-                                    class=" w-2/4 rounded-lg shadow-md md:h-[243px] md:w-[468px] w-[180px] h-[154px]  object-cover">
+                                    class=" w-2/4 rounded-lg shadow-md md:h-[243px] md:w-[487px] w-[180px] h-[154px]  object-cover">
                                 <div class=" absolute inset-0 group-hover:border-2 border-white md:m-10 m-5 transition-opacity
                                     duration-300">
                                 </div>
@@ -407,7 +406,7 @@
                         <div class="relative group">
 
                             <img src="/images/gallery-2.jpg" alt="Gallery Image 3"
-                                class="rounded-lg shadow-md md:h-[640px]  md:w-[468px] h-[145px] w-[345px] object-cover">
+                                class="rounded-lg shadow-md md:h-[640px]  md:w-[488px] h-[145px] w-[345px] object-cover">
                             <div class=" absolute inset-0 group-hover:border-2 border-white md:m-10 m-5 transition-opacity
                             duration-300">
                             </div>
@@ -472,18 +471,17 @@
                     </div>
                 </div>
 
-                <div class="relative mt-8 md:mt-0 text-center md:hidden">
-                    <button
-                        class="bg-[#E3042E] md:ml-[661px] text-white font-semibold md:px-5 md:py-2 px-4 py-3 rounded-md poppins text-[14px] md:text-[16px]">
-                        View More
-                    </button>
-                    <a href="" class="relative block">
-                        <!-- Add the pseudo-element using Tailwind -->
+
+                <div class="flex justify-center md:hidden ">
+                    <div class="relative bg-[#E3042E] px-[24px] py-[12px] w-fit object-cover m-[20px] rounded-[10px]  ">
+                        <button class="poppins text-[14px] font-semibold text-white text-[18px]">View More</button>
                         <div
-                            class="absolute before:content-[''] before:absolute before:-bottom-[5px] md:before:left-[675px] left-[121px] before:border-b-2 before:border-l-2 before:border-[#E3042E] before:rounded-bl-lg md:before:rounded-bl-xl md:before:px-[55px] md:before:py-[17px] before:px-[43px] before:py-[15px]">
+                            class="  absolute w-[130px] h-[42px] border-2 border-[#E3042E] border-t-0 border-r-0 -left-[4%] -bottom-[13%] rounded-bl-[10px] -right-[5%]">
                         </div>
-                    </a>
+                    </div>
                 </div>
+
+
             </div>
         </div>
     </section>
@@ -516,6 +514,10 @@
                                     </div>
                                 </a>
                             </div>
+
+
+
+
                         </div>
 
                         <div class="h-[0.1px] bg-white opacity-30 "></div>
@@ -597,18 +599,19 @@
 
                             <div class="h-[0.1px] bg-white opacity-30 "></div>
 
-                            <div class="relative md:hidden text-center  ">
-                                <button
-                                    class="bg-[#E3042E] md:ml-[6px] ml-[6px] md:mt-[3px] mt-5 text-white font-semibold md:px-5 px-4 py-3 rounded-md poppins text-[16px] md:text-[16px]">
-                                    View More
-                                </button>
-                                <a href="" class="relative block">
-                                    <!-- Add the pseudo-element using Tailwind -->
+
+                            <div class="justify-center flex">
+
+                                <div
+                                    class="relative bg-[#E3042E] px-[24px] py-[12px] w-fit object-cover m-[20px] rounded-[10px]  md:hidden">
+                                    <button class="poppins text-[14px] font-semibold text-white text-[18px]">View
+                                        More</button>
                                     <div
-                                        class="absolute before:content-[''] before:absolute before:-bottom-[6px] before:left-[90px] before:border-b-2 before:border-l-2 before:border-[#FFFFFF] before:rounded-bl-lg md:before:rounded-bl-xl md:before:px-[65px] before:px-[53px] before:py-[19px] md:before:py-[19px] before:px-[43px] before:py-[15px]">
+                                        class="  absolute w-[130px] h-[42px] border-2 border-[#ffffff] border-t-0 border-r-0 -left-[4%] -bottom-[13%] rounded-bl-[10px] -right-[5%]">
                                     </div>
-                                </a>
+                                </div>
                             </div>
+
 
 
 
@@ -856,7 +859,7 @@
                 </h2>
                 <div class="relative hidden md:block">
                     <button
-                        class="bg-[#E3042E] md:ml-[661px] text-white font-semibold md:px-5 px-3 py-2 rounded-md poppins text-[14px] md:text-[16px]">
+                        class="bg-[#E3042E] md:ml-[661px] text-white font-semibold md:px-5 px-[18px] py-[11px] rounded-md poppins text-[14px] md:text-[16px]">
                         Discover More
                     </button>
                     <a href="" class="relative block">
@@ -889,18 +892,19 @@
                 </div>
             </div>
 
-            <div class="relative md:hidden text-center mt-6 mb-12">
-                <button
-                    class="bg-[#E3042E] md:ml-[661px] text-white font-semibold md:px-5 px-3 py-3 rounded-md poppins text-[14px] md:text-[16px]">
-                    Discover More
-                </button>
-                <a href="" class="relative block">
-                    <!-- Add the pseudo-element using Tailwind -->
+            
+
+
+            <div class="flex justify-center md:hidden">
+                <div class="relative bg-[#E3042E] px-[18px] py-[11px] w-fit object-cover m-[20px] rounded-[10px] mt-10 mb-10">
+                    <button class="poppins text-[14px] font-semibold text-white text-[15px]">   Discover More</button>
                     <div
-                        class="absolute before:content-[''] before:absolute before:-bottom-[5px] before:left-[95px] before:border-b-2 before:border-l-2 before:border-[#E3042E] before:rounded-bl-lg md:before:rounded-bl-xl md:before:px-[68px] md:before:py-[17px] before:px-[55px] before:py-[15px]">
+                        class="  absolute w-[130px] h-[42px] border-2 border-[#E3042E] border-t-0 border-r-0 -left-[4%] -bottom-[13%] rounded-bl-[10px] -right-[5%]">
                     </div>
-                </a>
+                </div>
             </div>
+
+
         </div>
         </div>
     </section>
@@ -914,7 +918,7 @@
                 </h2>
                 <div class="relative hidden md:block">
                     <button
-                        class="bg-[#E3042E] md:ml-[661px] text-white font-semibold md:px-5 px-3 py-2 rounded-md poppins text-[14px] md:text-[16px]">
+                        class="bg-[#E3042E] md:ml-[661px] text-white font-semibold md:px-5 px-[18px] py-[11px] rounded-md poppins text-[14px] md:text-[16px]">
                         View More
                     </button>
                     <a href="" class="relative block">
@@ -924,6 +928,8 @@
                         </div>
                     </a>
                 </div>
+
+
 
             </div>
 

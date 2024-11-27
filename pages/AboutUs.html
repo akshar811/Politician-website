@@ -64,12 +64,12 @@
                 </nav>
 
                 <!-- Call to Action Button -->
-                <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-                    <a href="../pages/ContactUS.html"
-                        class="bg-[#E3042E] md:ml-[6px] ml-[6px] md:mt-[3px] text-white font-semibold md:px-5 px-3 py-3 rounded-md poppins text-[14px] md:text-[16px]">
-                        Contact us
-                    </a>
-                </div>
+                <div class="flex md:justify-end lg:flex-1">
+                    <div class=" relative bg-[#E3042E] px-[20px] py-[10px] w-fit object-cover  rounded-[10px]  ">
+                        <a  href="../pages/ContactUS.html" class="poppins text-[14px] font-semibold text-white">Contact us</a>
+                        <div class="  absolute w-[105px] h-[40px] border-2 border-[#E3042E] border-t-0 border-r-0 -left-[5%] -bottom-[13%] rounded-bl-[10px] -right-[5%]"></div>
+                      </div>
+                   </div>
 
                 <!-- Mobile Menu Toggle Button -->
                 <button class="md:hidden text-gray-700 focus:outline-none" onclick="toggleMenu()">
@@ -570,19 +570,15 @@
                 <h2 class="text-[28px] md:text-[45px] font-semibold poppins my-8 md:my-0 text-center">
                     <span class="text-[#052B5A] ">Our</span> <span class="text-red-600">Highlights</span>
                 </h2>
-                <div class="relative hidden md:block">
-                    <button
-                        class="bg-[#E3042E] md:ml-[661px] text-white font-semibold md:px-5 px-3 py-2 rounded-md poppins text-[14px] md:text-[16px]">
-                        Discover More
-                    </button>
-                    <a href="" class="relative block">
-                        <!-- Add the pseudo-element using Tailwind -->
-                        <div
-                            class="absolute before:content-[''] before:absolute before:-bottom-[5px] before:left-[655px] before:border-b-2 before:border-l-2 before:border-[#E3042E] before:rounded-bl-lg md:before:rounded-bl-xl md:before:px-[68px] md:before:py-[17px] before:px-[43px] before:py-[15px]">
-                        </div>
-                    </a>
-                </div>
+               
 
+               <div class="flex justify-end">
+                <div class="relative bg-[#E3042E] px-[24px] py-[12px] w-fit object-cover m-[20px] rounded-[10px] mx-auto  hidden md:block">
+                    <button class="poppins text-[14px] font-semibold text-white text-[18px]"> Discover More</button>
+                    <div class="  absolute w-[160px] h-[42px] border-2 border-[#E3042E] border-t-0 border-r-0 -left-[4%] -bottom-[13%] rounded-bl-[10px] -right-[5%]"></div>
+                  </div>
+
+               </div>
             </div>
 
             <!-- Video Section -->
@@ -605,18 +601,10 @@
                 </div>
             </div>
 
-            <div class="relative md:hidden text-center mt-6 mb-12">
-                <button
-                    class="bg-[#E3042E] md:ml-[661px] text-white font-semibold md:px-5 px-3 py-3 rounded-md poppins text-[14px] md:text-[16px]">
-                    Discover More
-                </button>
-                <a href="" class="relative block">
-                    <!-- Add the pseudo-element using Tailwind -->
-                    <div
-                        class="absolute before:content-[''] before:absolute before:-bottom-[5px] before:left-[96px] before:border-b-2 before:border-l-2 before:border-[#E3042E] before:rounded-bl-lg md:before:rounded-bl-xl md:before:px-[68px] md:before:py-[17px] before:px-[55px] before:py-[15px]">
-                    </div>
-                </a>
-            </div>
+            <div class="relative bg-[#E3042E] px-[20px] py-[12px] w-fit object-cover m-[20px] rounded-[10px] mx-auto md:hidden mt-8 mb-10">
+                <button class="poppins text-[14px] font-semibold text-white text-[17px]"> Discover More</button>
+                <div class="  absolute w-[150px] h-[42px] border-2 border-[#E3042E] border-t-0 border-r-0 -left-[4%] -bottom-[13%] rounded-bl-[10px] -right-[5%]"></div>
+              </div>
         </div>
         </div>
     </section>

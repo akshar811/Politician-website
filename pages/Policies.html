@@ -35,104 +35,104 @@
         }
 
     </script>
-    
+
 
 </head>
 
 <body>
-   <!-- header  -->
+    <!-- header  -->
 
-   <header class="bg-white">
-    <div class="container mx-auto">
-        <div class="px-4 py-6 flex items-center justify-between">
-            <!-- Logo -->
-            <div class="flex lg:flex-1">
-                <a href="#" class="-m-1 p-1">
-                    <img class="h-8 w-auto" src="/images/politicia-logo 1.png" alt="" />
-                </a>
+    <header class="bg-white">
+        <div class="container mx-auto">
+            <div class="px-4 py-6 flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex lg:flex-1">
+                    <a href="#" class="-m-1 p-1">
+                        <img class="h-8 w-auto" src="/images/politicia-logo 1.png" alt="" />
+                    </a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex space-x-9">
+                    <a href="/index.html" class="font-normal poppins text-lg text-[#052B5A]">Home</a>
+                    <a href="../pages/AboutUs.html" class="font-normal poppins text-lg text-[#052B5A]">About Us</a>
+                    <a href="../pages/Policies.html" class="font-bold poppins text-lg text-[#052B5A]">Policies</a>
+                    <a href="../pages/Blog.html" class="font-normal poppins text-lg text-[#052B5A]">Blog</a>
+                    <a href="../pages/Event.html" class="font-normal poppins text-lg text-[#052B5A]">Event</a>
+                    <a href="../pages/Media.html" class="font-normal poppins text-lg text-[#052B5A]">Media</a>
+                    <a href="../pages/VolunteerAndContribution.html"
+                        class="font-normal poppins text-lg text-[#052B5A]">Volunteer and Contribution</a>
+                </nav>
+
+                <!-- Call to Action Button -->
+                <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+                    <a href="../pages/ContactUS.html"
+                        class="bg-[#E3042E] md:ml-[6px] ml-[6px] md:mt-[3px] text-white font-semibold md:px-5 px-3 py-3 rounded-md poppins text-[14px] md:text-[16px]">
+                        Contact us
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Toggle Button -->
+                <button class="md:hidden text-gray-700 focus:outline-none" onclick="toggleMenu()">
+                    <!-- Hamburger Icon -->
+                    <svg id="menu-icon-open" xmlns="http://www.w3.org/2000/svg"
+                        class="h-6 w-6 transition-transform duration-1000" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                    <!-- Close Icon -->
+                    <svg id="menu-icon-close" xmlns="http://www.w3.org/2000/svg"
+                        class="h-6 w-6 hidden transition-transform duration-1000" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
             </div>
-
-            <!-- Desktop Menu -->
-            <nav class="hidden md:flex space-x-9">
-                <a href="/index.html" class="font-normal poppins text-lg text-[#052B5A]">Home</a>
-                <a href="../pages/AboutUs.html" class="font-normal poppins text-lg text-[#052B5A]">About Us</a>
-                <a href="../pages/Policies.html" class="font-bold poppins text-lg text-[#052B5A]">Policies</a>
-                <a href="../pages/Blog.html" class="font-normal poppins text-lg text-[#052B5A]">Blog</a>
-                <a href="../pages/Event.html" class="font-normal poppins text-lg text-[#052B5A]">Event</a>
-                <a href="../pages/Media.html" class="font-normal poppins text-lg text-[#052B5A]">Media</a>
-                <a href="../pages/VolunteerAndContribution.html"
-                    class="font-normal poppins text-lg text-[#052B5A]">Volunteer and Contribution</a>
-            </nav>
-
-            <!-- Call to Action Button -->
-            <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-                <a href="../pages/ContactUS.html"
-                    class="bg-[#E3042E] md:ml-[6px] ml-[6px] md:mt-[3px] text-white font-semibold md:px-5 px-3 py-3 rounded-md poppins text-[14px] md:text-[16px]">
-                    Contact us
-                </a>
-            </div>
-
-            <!-- Mobile Menu Toggle Button -->
-            <button class="md:hidden text-gray-700 focus:outline-none" onclick="toggleMenu()">
-                <!-- Hamburger Icon -->
-                <svg id="menu-icon-open" xmlns="http://www.w3.org/2000/svg"
-                    class="h-6 w-6 transition-transform duration-1000" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M4 6h16M4 12h16m-7 6h7" />
-                </svg>
-                <!-- Close Icon -->
-                <svg id="menu-icon-close" xmlns="http://www.w3.org/2000/svg"
-                    class="h-6 w-6 hidden transition-transform duration-1000" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M6 18L18 6M6 6l12 12" />
-                </svg>
-            </button>
         </div>
-    </div>
 
-    <!-- Mobile Menu -->
-    <div id="mobile-menu"
-        class="fixed w-full h-full bg-[#001631] text-white transform -translate-x-full transition-transform duration-300 ease-in-out md:hidden z-50">
-        <div class="bg-[url(../images/bg-img.jpg)] bg-cover bg-no-repeat h-[699px] overflow-hidden bg-center">
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="fixed w-full h-full bg-[#001631] text-white transform -translate-x-full transition-transform duration-300 ease-in-out md:hidden z-50">
+            <div class="bg-[url(../images/bg-img.jpg)] bg-cover bg-no-repeat h-[699px] overflow-hidden bg-center">
 
-            <div class="text-white font-sans bg-opacity-70">
-                <div class="relative z-10">
-                    <div class="absolute inset-0 bg-[#001631] bg-opacity-85 backdrop-blur-[3px] h-[699px]"></div>
-                    <div class="relative z-10 container mx-auto px-6">
-                        <nav class="space-y-6 py-4 px-4 text-center pt-[120px]">
-                            <a href="/index.html" class="block poppins font-normal text-[20px]">Home</a>
-                            <a href="../pages/AboutUs.html"
-                                class="block text-[#AFADAD] hover:text-blue-500 poppins text-[21px] font-normal">About
-                                Us</a>
-                            <a href="../pages/Policies.html"
-                                class="block text-[#FFFFFF] hover:text-blue-500 poppins text-[21px] font-bold">Policies</a>
-                            <a href="../pages/Blog.html"
-                                class="block text-[#AFADAD] hover:text-blue-500 poppins text-[21px] font-normal">Blog</a>
-                            <a href="../pages/Event.html"
-                                class="block text-[#AFADAD] hover:text-blue-500 poppins text-[21px] font-normal">Event</a>
-                            <a href="../pages/Media.html"
-                                class="block text-[#AFADAD] hover:text-blue-500 poppins text-[21px] font-normal">Media</a>
-                            <a href="../pages/VolunteerAndContribution.html"
-                                class="block text-[#AFADAD] hover:text-blue-500 poppins text-[20px] font-normal">Volunteer
-                                and
-                                Contribution</a>
-                        </nav>
-                        <div>
-                            <img src="../images/about-sec-banner-img-2.png" alt=""
-                                class="absolute  z-10 top-[514px] opacity-15 left-[-10px]">
+                <div class="text-white font-sans bg-opacity-70">
+                    <div class="relative z-10">
+                        <div class="absolute inset-0 bg-[#001631] bg-opacity-85 backdrop-blur-[3px] h-[699px]"></div>
+                        <div class="relative z-10 container mx-auto px-6">
+                            <nav class="space-y-6 py-4 px-4 text-center pt-[120px]">
+                                <a href="/index.html" class="block poppins font-normal text-[20px]">Home</a>
+                                <a href="../pages/AboutUs.html"
+                                    class="block text-[#AFADAD] hover:text-blue-500 poppins text-[21px] font-normal">About
+                                    Us</a>
+                                <a href="../pages/Policies.html"
+                                    class="block text-[#FFFFFF] hover:text-blue-500 poppins text-[21px] font-bold">Policies</a>
+                                <a href="../pages/Blog.html"
+                                    class="block text-[#AFADAD] hover:text-blue-500 poppins text-[21px] font-normal">Blog</a>
+                                <a href="../pages/Event.html"
+                                    class="block text-[#AFADAD] hover:text-blue-500 poppins text-[21px] font-normal">Event</a>
+                                <a href="../pages/Media.html"
+                                    class="block text-[#AFADAD] hover:text-blue-500 poppins text-[21px] font-normal">Media</a>
+                                <a href="../pages/VolunteerAndContribution.html"
+                                    class="block text-[#AFADAD] hover:text-blue-500 poppins text-[20px] font-normal">Volunteer
+                                    and
+                                    Contribution</a>
+                            </nav>
+                            <div>
+                                <img src="../images/about-sec-banner-img-2.png" alt=""
+                                    class="absolute  z-10 top-[514px] opacity-15 left-[-10px]">
+                            </div>
+
                         </div>
-
                     </div>
                 </div>
+
+
+
             </div>
-
-
-
         </div>
-    </div>
-</header>
+    </header>
 
 
     <!-- banner section  -->
@@ -250,112 +250,146 @@
                 <h1 class="poppins font-semibold md:text-[42px] text-[#052B5A] hidden md:block">
                     Population <span class="text-[#E3042E]">Control</span>
                 </h1>
-                  <div  class="md:ml-2">
+                <div class="md:ml-2">
                     <p class="text-[#7F7F7F] jost font-normal md:text-[18px]  md:mt-4">
                         <i class="fa-solid fa-share md:mr-1 md:leading-7" style="color: #052b5a;"></i>
-                        Strives to address the challenges facing our community, population control emerges as a critical issue requiring thoughtful consideration and effective policies. Our approach focuses on empowering individuals and families to make informed choices about family planning while ensuring access to necessary resources and support systems. Here's how we're working towards this goal.
+                        Strives to address the challenges facing our community, population control emerges as a critical
+                        issue requiring thoughtful consideration and effective policies. Our approach focuses on
+                        empowering individuals and families to make informed choices about family planning while
+                        ensuring access to necessary resources and support systems. Here's how we're working towards
+                        this goal.
                     </p>
                     <p class="text-[#7F7F7F] jost font-normal md:text-[18px] md:mt-3 mt-3 md:leading-7">
                         <i class="fa-solid fa-share md:mr-1" style="color: #052b5a;"></i>
-                        Supporting policies that ensure access to affordable and comprehensive reproductive healthcare services, including contraception, family planning counseling, and reproductive health education.
+                        Supporting policies that ensure access to affordable and comprehensive reproductive healthcare
+                        services, including contraception, family planning counseling, and reproductive health
+                        education.
                     </p>
-                  </div>
-                  <div>
-                    <h2 class="md:text-[29px] text-[22px] font-semibold text-[#052B5A] md:mt-5 mt-4">Advocating for Accessible Healthcare</h2>
+                </div>
+                <div>
+                    <h2 class="md:text-[29px] text-[22px] font-semibold text-[#052B5A] md:mt-5 mt-4">Advocating for
+                        Accessible Healthcare</h2>
                     <div class="md:ml-2">
                         <p class="text-[#7F7F7F] jost font-normal md:text-[18px]  md:mt-4 mt-4">
                             <i class="fa-solid fa-share md:mr-1 md:leading-7" style="color: #052b5a;"></i>
-                            Promoting initiatives to expand access to prenatal care, maternal health services, and support for expectant mothers to ensure healthy pregnancies and childbirth experiences.
+                            Promoting initiatives to expand access to prenatal care, maternal health services, and
+                            support for expectant mothers to ensure healthy pregnancies and childbirth experiences.
                         </p>
                         <p class="text-[#7F7F7F] jost font-normal md:text-[18px] md:mt-3 mt-3 md:leading-7">
                             <i class="fa-solid fa-share md:mr-1" style="color: #052b5a;"></i>
-                            Advocating for comprehensive sex education programs in schools and communities to equip individuals with the knowledge and resources to make informed decisions about their reproductive health and family planning options.
+                            Advocating for comprehensive sex education programs in schools and communities to equip
+                            individuals with the knowledge and resources to make informed decisions about their
+                            reproductive health and family planning options.
                         </p>
                         <p class="text-[#7F7F7F] jost font-normal md:text-[18px] md:mt-3 mt-3 md:leading-7">
                             <i class="fa-solid fa-share md:mr-1" style="color: #052b5a;"></i>
-                            Recognizing the interconnectedness of population dynamics with broader societal and environmental challenges, advocating for policies that promote sustainable development, resource conservation, and environmental stewardship.
+                            Recognizing the interconnectedness of population dynamics with broader societal and
+                            environmental challenges, advocating for policies that promote sustainable development,
+                            resource conservation, and environmental stewardship.
                         </p>
-                      </div>
-                  </div>
-                  <div>
-                    <h2 class="md:text-[29px] text-[22px] font-semibold text-[#052B5A] md:mt-5 mt-4">Addressing Societal and Environmental Impacts</h2>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="md:text-[29px] text-[22px] font-semibold text-[#052B5A] md:mt-5 mt-4">Addressing Societal
+                        and Environmental Impacts</h2>
                     <div class="md:ml-2">
                         <p class="text-[#7F7F7F] jost font-normal md:text-[18px]  md:mt-4 mt-4">
                             <i class="fa-solid fa-share md:mr-1 md:leading-7" style="color: #052b5a;"></i>
-                            Supporting efforts to address the root causes of population growth, such as poverty, lack of education, and limited access to healthcare, through targeted interventions and social welfare programs.
+                            Supporting efforts to address the root causes of population growth, such as poverty, lack of
+                            education, and limited access to healthcare, through targeted interventions and social
+                            welfare programs.
                         </p>
                         <p class="text-[#7F7F7F] jost font-normal md:text-[18px] md:mt-3 mt-3 md:leading-7">
                             <i class="fa-solid fa-share md:mr-1" style="color: #052b5a;"></i>
-                            As we navigate the complexities of population control, [Politician's Name] remains committed to promoting policies and initiatives that empower individuals, support families, and contribute to the well-being and sustainability of our community.
+                            As we navigate the complexities of population control, [Politician's Name] remains committed
+                            to promoting policies and initiatives that empower individuals, support families, and
+                            contribute to the well-being and sustainability of our community.
                         </p>
                         <p class="text-[#7F7F7F] jost font-normal md:text-[18px] md:mt-3 mt-3 md:leading-7">
                             <i class="fa-solid fa-share md:mr-1" style="color: #052b5a;"></i>
-                            This approach emphasizes the importance of promoting responsible family planning while addressing the broader societal, environmental, and ethical considerations associated with population control.
+                            This approach emphasizes the importance of promoting responsible family planning while
+                            addressing the broader societal, environmental, and ethical considerations associated with
+                            population control.
                         </p>
-                      </div>
-                  </div>
-                  <div>
-                    <h2 class="md:text-[29px] text-[22px] font-semibold text-[#052B5A] md:mt-5 mt-4">Do you have any Questions?</h2>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="md:text-[29px] text-[22px] font-semibold text-[#052B5A] md:mt-5 mt-4">Do you have any
+                        Questions?</h2>
                     <div class="md:ml-2">
                         <p class="text-[#7F7F7F] jost font-normal md:text-[18px]  md:mt-4 mt-4">
                             <i class="fa-solid fa-share md:mr-1 md:leading-7" style="color: #052b5a;"></i>
-                            Our team of Twillers gets your cargo on the vessel that best suits your needs. You book with us, and you’ll get the same network as the world’s biggest brands at no extra cost across 300+ locations in over 150 countries.
+                            Our team of Twillers gets your cargo on the vessel that best suits your needs. You book with
+                            us, and you’ll get the same network as the world’s biggest brands at no extra cost across
+                            300+ locations in over 150 countries.
                         </p>
-                       
-                      </div>
-                  </div>
+
+                    </div>
+                </div>
             </div>
 
             <div class="md:pt-12 md:pb-10 pb-10 px-4 pt-6">
                 <!-- Container -->
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 ">
-                  <!-- Image Section -->
-                  <div>
-                    <img src="../images/Policies-page-sec-3.jpg" alt="Speaker at a public event" class="w-full rounded-lg shadow-lg ">
-                  </div>
-              
-                  <!-- Accordion Section -->
-                  <div class="space-y-5">
-                    <!-- Accordion Item 1 -->
-                    <div class="border rounded-lg shadow-sm overflow-hidden  ">
-                      <div class="bg-[#F9F9FF]">
-                        <button class="w-full flex md:items-center md:justify-between md:px-6 px-3 py-4 font-medium ">
-                            <span class="text-[#052B5A] poppins md:text-[21px] text-[18px] font-medium md:mt-2">What you need to know before caucus?</span>
-                            <div class="md:h-30px md:w-50px bg-[#052B5A] py-1 px-2 rounded-full	">
-                                <i class="fa-solid fa-angle-down md:text-[18px] md:pt-[5px]" style="color: #ffffff;"></i>
+                    <!-- Image Section -->
+                    <div>
+                        <img src="../images/Policies-page-sec-3.jpg" alt="Speaker at a public event"
+                            class="w-full rounded-lg shadow-lg ">
+                    </div>
+
+                    <!-- Accordion Section -->
+                    <div class="space-y-5">
+                        <!-- Accordion Item 1 -->
+                        <div class="border rounded-lg shadow-sm overflow-hidden  ">
+                            <div class="bg-[#F9F9FF]">
+                                <button
+                                    class="w-full flex md:items-center md:justify-between md:px-6 px-3 py-4 font-medium ">
+                                    <span
+                                        class="text-[#052B5A] poppins md:text-[21px] text-[18px] font-medium md:mt-2">What
+                                        you need to know before caucus?</span>
+                                    <div class="md:h-30px md:w-50px bg-[#052B5A] py-1 px-2 rounded-full	">
+                                        <i class="fa-solid fa-angle-down md:text-[18px] md:pt-[5px]"
+                                            style="color: #ffffff;"></i>
+                                    </div>
+                                </button>
+                                <div class="px-6 pb-6 pt-2 text-[#7F7F7F] jost font-normal text-[16px]	md:text-[19px]">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit sed sol iusmod tempor
+                                    incididunt ut labore et dolore.
+                                </div>
                             </div>
-                          </button>
-                          <div class="px-6 pb-6 pt-2 text-[#7F7F7F] jost font-normal text-[16px]	md:text-[19px]">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit sed sol iusmod tempor incididunt ut labore et dolore.
-                          </div>
-                      </div>
-                    </div>
-              
-                    <!-- Accordion Item 2 -->
-                    <div class="border rounded-lg shadow-sm overflow-hidden">
-                      <button class="w-full flex md:items-center md:justify-between md:px-6 px-3 py-5 md:py-6 text-gray-800 font-medium">
-                        <span class="text-[#052B5A] poppins md:text-[19px] text-[18px]">How do I know that I’ve voted?</span>
-                        <div class="md:h-30px md:w-50px bg-[#052B5A] md:py-1 md:px-2 py-1 px-2 ml-5 md:ml-5 rounded-full	">
-                            <i class="fa-solid fa-angle-down md:text-[18px] md:pt-[5px]" style="color: #ffffff;"></i>
                         </div>
-                      </button>
-                     
-                    </div>
-              
-                    <!-- Accordion Item 3 -->
-                    <div class="border rounded-lg shadow-sm overflow-hidden">
-                      <button class="w-full flex items-center justify-between px-6 py-6 text-gray-800 font-medium">
-                        <span  class="text-[#052B5A] poppins text-[19px]">Reasons to Vote for us?</span>
-                        <div class="md:h-30px md:w-50px bg-[#052B5A] py-1 px-2 rounded-full	">
-                            <i class="fa-solid fa-angle-down md:text-[18px] md:pt-[5px]" style="color: #ffffff;"></i>
+
+                        <!-- Accordion Item 2 -->
+                        <div class="border rounded-lg shadow-sm overflow-hidden">
+                            <button
+                                class="w-full flex md:items-center md:justify-between md:px-6 px-3 py-5 md:py-6 text-gray-800 font-medium">
+                                <span class="text-[#052B5A] poppins md:text-[19px] text-[18px]">How do I know that I’ve
+                                    voted?</span>
+                                <div
+                                    class="md:h-30px md:w-50px bg-[#052B5A] md:py-1 md:px-2 py-1 px-2 ml-5 md:ml-5 rounded-full	">
+                                    <i class="fa-solid fa-angle-down md:text-[18px] md:pt-[5px]"
+                                        style="color: #ffffff;"></i>
+                                </div>
+                            </button>
+
                         </div>
-                      </button>
-                    
+
+                        <!-- Accordion Item 3 -->
+                        <div class="border rounded-lg shadow-sm overflow-hidden">
+                            <button
+                                class="w-full flex items-center justify-between px-6 py-6 text-gray-800 font-medium">
+                                <span class="text-[#052B5A] poppins text-[19px]">Reasons to Vote for us?</span>
+                                <div class="md:h-30px md:w-50px bg-[#052B5A] py-1 px-2 rounded-full	">
+                                    <i class="fa-solid fa-angle-down md:text-[18px] md:pt-[5px]"
+                                        style="color: #ffffff;"></i>
+                                </div>
+                            </button>
+
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
-              
+            </div>
+
 
         </div>
     </section>
@@ -369,51 +403,77 @@
                 <div class="absolute inset-0 bg-[#052B5A] bg-opacity-80 rounded-lg"></div>
 
                 <!-- Content Section -->
-                 <div class="relative z-10 text-center md:pt-32 pt-20">
-                    <h1 class="text-white poppins md:text-[40px] text-[24px] font-semibold	">Transparency and Accountability <span class="text-[#E3042E]">in Action</span></h1>
-                    <p class="jost text-white text-center font-normal md:text-[17px] text-[15px] md:leading-6 pt-6 md:pt-0">This approach emphasizes the importance of promoting responsible family planning while <br> addressing the broader societal, environmental.</p>
-                 </div>
-              
+                <div class="relative z-10 text-center md:pt-32 pt-20">
+                    <h1 class="text-white poppins md:text-[40px] text-[24px] font-semibold	">Transparency and
+                        Accountability <span class="text-[#E3042E]">in Action</span></h1>
+                    <p
+                        class="jost text-white text-center font-normal md:text-[17px] text-[15px] md:leading-6 pt-6 md:pt-0">
+                        This approach emphasizes the importance of promoting responsible family planning while <br>
+                        addressing the broader societal, environmental.</p>
+                </div>
+
 
                 <div class="relative z-10 md:top-20 container mx-auto bg-white rounded-xl md:p-8 p-5 md:w-[1500px] md:top-20 top-12"
                     style="box-shadow: 0px 4px 21px 1px #052B5A0D;">
                     <div class="flex flex-wrap md:pl-24">
-                        
+
                         <div class="md:w-1/4 w-2/4">
                             <div class="flex flex-wrap">
                                 <div class="content ">
-                                    <p class="text-[21px] md:text-[38px] md:mt-1 md:ml-2 font-semibold text-[#052B5A] poppins md:ml-4 text-center">210k</p>
-                                    <p class="text-[14px] md:text-[18px] ml-2 text-[#7F7F7F] jost font-medium md:ml-4 text-center">Archive Speeches
+                                    <p
+                                        class="text-[21px] md:text-[38px] md:mt-1 md:ml-2 font-semibold text-[#052B5A] poppins md:ml-4 text-center">
+                                        210k</p>
+                                    <p
+                                        class="text-[14px] md:text-[18px] ml-2 text-[#7F7F7F] jost font-medium md:ml-4 text-center">
+                                        Archive Speeches
                                     </p>
                                 </div>
-                                <div class="md:w-[1px] w-[0px] md:h-[80px] h-[0px] bg-[#D7D7D7] absolute md:top-[44px] md:left-[380px] hidden md:block"></div>
+                                <div
+                                    class="md:w-[1px] w-[0px] md:h-[80px] h-[0px] bg-[#D7D7D7] absolute md:top-[44px] md:left-[380px] hidden md:block">
+                                </div>
                             </div>
                         </div>
                         <div class="md:w-1/4 w-2/4">
                             <div class="flex flex-wrap relative  ml-2 md:ml-0">
                                 <div class="content">
-                                    <p class="text-[21px] md:text-[38px] md:mt-1 ml-2 font-semibold text-[#052B5A] poppins md:ml-4 text-center">159k</p>
-                                    <p class="text-[14px] md:text-[18px] ml-2 text-[#7F7F7F] jost font-medium md:ml-4 text-center">voting records
+                                    <p
+                                        class="text-[21px] md:text-[38px] md:mt-1 ml-2 font-semibold text-[#052B5A] poppins md:ml-4 text-center">
+                                        159k</p>
+                                    <p
+                                        class="text-[14px] md:text-[18px] ml-2 text-[#7F7F7F] jost font-medium md:ml-4 text-center">
+                                        voting records
                                     </p>
                                 </div>
-                                <div class="absolute md:w-[1px] w-[0px] md:h-[80px] h-[0px] bg-[#D7D7D7] absolute top-[0px] md:top-[15px] md:left-[240px] left-[0px] "></div>
+                                <div
+                                    class="absolute md:w-[1px] w-[0px] md:h-[80px] h-[0px] bg-[#D7D7D7] absolute top-[0px] md:top-[15px] md:left-[240px] left-[0px] ">
+                                </div>
                             </div>
                         </div>
                         <div class="md:w-1/4 w-2/4">
                             <div class="flex flex-wrap mt-6  md:mt-0 relative ">
                                 <div class="content">
-                                    <p class="text-[21px] md:text-[38px] md:mt-1 ml-2 font-semibold text-[#052B5A] poppins md:ml-4 text-center">200k</p>
-                                    <p class="text-[14px] md:text-[18px] ml-2 text-[#7F7F7F] jost font-medium md:ml-4 text-center">Special Clients
+                                    <p
+                                        class="text-[21px] md:text-[38px] md:mt-1 ml-2 font-semibold text-[#052B5A] poppins md:ml-4 text-center">
+                                        200k</p>
+                                    <p
+                                        class="text-[14px] md:text-[18px] ml-2 text-[#7F7F7F] jost font-medium md:ml-4 text-center">
+                                        Special Clients
                                     </p>
                                 </div>
-                                <div class="absolute md:w-[1px] w-[0px] md:h-[80px] h-[0px] bg-[#D7D7D7] absolute md:top-[15px] md:left-[240px] left-[0px]"></div>
+                                <div
+                                    class="absolute md:w-[1px] w-[0px] md:h-[80px] h-[0px] bg-[#D7D7D7] absolute md:top-[15px] md:left-[240px] left-[0px]">
+                                </div>
                             </div>
                         </div>
                         <div class="md:w-1/4 w-2/4">
                             <div class="flex flex-wrap mt-6 ml-2 md:ml-0 md:mt-0">
                                 <div class="content">
-                                    <p class="text-[21px] md:text-[38px] md:mt-1 ml-2 font-semibold text-[#052B5A] poppins md:ml-4 text-center">115k</p>
-                                    <p class="text-[14px] md:text-[18px] ml-2 text-[#7F7F7F] jost font-medium md:ml-4 text-center"> accomplishments
+                                    <p
+                                        class="text-[21px] md:text-[38px] md:mt-1 ml-2 font-semibold text-[#052B5A] poppins md:ml-4 text-center">
+                                        115k</p>
+                                    <p
+                                        class="text-[14px] md:text-[18px] ml-2 text-[#7F7F7F] jost font-medium md:ml-4 text-center">
+                                        accomplishments
                                     </p>
                                 </div>
                             </div>
@@ -427,8 +487,8 @@
         </div>
     </section>
 
-     <!-- Our Highlights  -->
-     <section class="px-4 md:pt-10 md:pb-10">
+    <!-- Our Highlights  -->
+    <section class="px-4 md:pt-10 md:pb-10">
         <div class="container mx-auto md:mb-10">
             <div class="md:flex md:justify-between md:items-center md:mb-14">
                 <h2 class="text-[28px] md:text-[45px] font-semibold poppins mb-5 md:mb-0 md:my-0 text-center">
@@ -442,7 +502,7 @@
                     <a href="" class="relative block">
                         <!-- Add the pseudo-element using Tailwind -->
                         <div
-                            class="absolute before:content-[''] before:absolute before:-bottom-[5px] before:left-[655px] before:border-b-2 before:border-l-2 before:border-[#E3042E] before:rounded-bl-lg md:before:rounded-bl-xl md:before:px-[68px] md:before:py-[17px] before:px-[43px] before:py-[15px]">
+                            class="absolute before:content-[''] before:absolute before:-bottom-[17px] md:before:-bottom-[6px] before:left-[0px] md:before:left-[655px] before:border-b-2 before:border-l-2 before:border-[#E3042E] before:rounded-bl-lg md:before:rounded-bl-xl md:before:px-[41px] before:px-[45px] before:py-[19px] md:before:py-[19px] before:py-[15px]">
                         </div>
                     </a>
                 </div>
@@ -477,163 +537,163 @@
                 <a href="" class="relative block">
                     <!-- Add the pseudo-element using Tailwind -->
                     <div
-                        class="absolute before:content-[''] before:absolute before:-bottom-[5px] before:left-[122px] before:border-b-2 before:border-l-2 before:border-[#E3042E] before:rounded-bl-lg md:before:rounded-bl-xl md:before:px-[68px] md:before:py-[17px] before:px-[55px] before:py-[15px]">
-                    </div>
+                            class="absolute before:content-[''] before:absolute before:-bottom-[6px] md:before:-bottom-[6px] before:left-[95px] md:before:left-[655px] before:border-b-2 before:border-l-2 before:border-[#E3042E] before:rounded-bl-lg md:before:rounded-bl-xl md:before:px-[41px] before:px-[45px] before:py-[19px] md:before:py-[19px] before:py-[15px]">
+                        </div>
                 </a>
             </div>
         </div>
         </div>
-    </section>  
+    </section>
 
-       <!-- footer  -->
-   <footer>
+    <!-- footer  -->
+    <footer>
 
-    <div class="relative bg-cover bg-center md:h-[425px] h-[700px]" style="
+        <div class="relative bg-cover bg-center md:h-[425px] h-[700px]" style="
       background-image: url('../images/footer-bg.jpg');
       background-position: 31% 34%;
     ">
-        <!-- Overlay with color -->
-        <div class="absolute inset-0 bg-[#001631] bg-opacity-90">
-            <div class="container mx-auto">
-                <div class="md:flex px-4 md:px-0">
-                    <div class="md:w-4/12 w-full z-10 md:hidden">
-                        <div class="md:mt-5 md:pt-9 mt-7">
-                            <div class="">
-                                <div class="flex justify-between">
-                                    <div>
-                                        <img src="../images/footer-logo.png" alt="" class="h-[45px]" />
-                                    </div>
-                                    <div class="flex mt-2 relative ">
-                                        <div class="flex ">
-                                            <div
-                                                class="md:w-[35px] w-[33px] h-[33px] md:h-[35px]  mr-2 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
-                                                <span class=""><i class="fa-brands fa-facebook-f"
-                                                        style="color: #052b5a"></i></span>
-                                            </div>
-                                            <div
-                                                class="md:w-[35px] w-[33px] h-[33px] md:h-[35px]  mr-2 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
-                                                <span class=""><i class="fa-brands fa-twitter"
-                                                        style="color: #052b5a"></i></span>
-                                            </div>
-                                            <div
-                                                class="md:w-[35px] w-[33px] h-[33px] md:h-[35px]  rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
-                                                <span class=""><i class="fa-brands fa-instagram"
-                                                        style="color: #052b5a"></i></span>
+            <!-- Overlay with color -->
+            <div class="absolute inset-0 bg-[#001631] bg-opacity-90">
+                <div class="container mx-auto">
+                    <div class="md:flex px-4 md:px-0">
+                        <div class="md:w-4/12 w-full z-10 md:hidden">
+                            <div class="md:mt-5 md:pt-9 mt-7">
+                                <div class="">
+                                    <div class="flex justify-between">
+                                        <div>
+                                            <img src="../images/footer-logo.png" alt="" class="h-[45px]" />
+                                        </div>
+                                        <div class="flex mt-2 relative ">
+                                            <div class="flex ">
+                                                <div
+                                                    class="md:w-[35px] w-[33px] h-[33px] md:h-[35px]  mr-2 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                                    <span class=""><i class="fa-brands fa-facebook-f"
+                                                            style="color: #052b5a"></i></span>
+                                                </div>
+                                                <div
+                                                    class="md:w-[35px] w-[33px] h-[33px] md:h-[35px]  mr-2 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                                    <span class=""><i class="fa-brands fa-twitter"
+                                                            style="color: #052b5a"></i></span>
+                                                </div>
+                                                <div
+                                                    class="md:w-[35px] w-[33px] h-[33px] md:h-[35px]  rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                                    <span class=""><i class="fa-brands fa-instagram"
+                                                            style="color: #052b5a"></i></span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="h-[0.1px] bg-white opacity-30 mt-5"></div>
                                 </div>
-                                <div class="h-[0.1px] bg-white opacity-30 mt-5"></div>
-                            </div>
-                            <div class="md:mt-5 mt-4 ml-3">
-                                <p class="text-gray-300 md:text-center jost font-medium text-[17px]">
-                                    Lorem ipsum dolor sit amet, consectetur elit. Ad assumenda
-                                    fuga illo laudantium magni sed temporibus. Amet atque.
-                                </p>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="md:w-4/12 z-10">
-                        <div class="md:mt-5 z-10 md:pt-14 pt-10">
-                            <h3 class="text-xl md:text-[22px] font-semibold mb-4 text-white hidden md:block">
-                                Contact
-                            </h3>
-                            <ul>
-                                <li
-                                    class="flex items-center text-[#AFADAD] font-medium z-10 ml-2 md:ml-0 mb-5 md:mb-3">
-                                    <div
-                                        class="md:w-[35px] w-[30px] h-[30px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
-                                        <span class=""><i class="fa-solid fa-phone-volume"
-                                                style="color: #052b5a"></i></span>
-                                    </div>
-
-                                    (+91) 9106701061
-                                </li>
-                                <li class="flex items-center text-[#AFADAD] font-medium ml-2 md:ml-0 mb-5 md:mb-3">
-                                    <div
-                                        class="md:w-[35px] w-[30px] h-[30px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
-                                        <span class="material-icons text-blue-300"><i class="fa-solid fa-envelope"
-                                                style="color: #052b5a"></i></span>
-                                    </div>
-
-                                    Politician@gmail.com
-                                </li>
-                                <li class="flex items-center mb-2 text-[#AFADAD] font-medium ml-2 md:ml-0">
-                                    <div
-                                        class="md:w-[35px] w-[30px] h-[30px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
-                                        <span class="material-icons text-blue-300"><i
-                                                class="fa-solid fa-location-dot" style="color: #052b5a"></i></span>
-                                    </div>
-
-                                    22 Brooklyn Street, 30 Road, New York, <br />
-                                    United States
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="md:w-4/12 w-full z-10 hidden md:block">
-                        <div class="md:mt-5 md:pt-9">
-                            <div class="flex justify-center items-center">
-                                <img src="../images/footer-logo.png" alt="" />
-                            </div>
-                            <div class="md:mt-5">
-                                <p class="text-gray-300 text-center jost font-medium text-lg">
-                                    Lorem ipsum dolor sit amet, consectetur elit. Ad <br />
-                                    assumenda fuga illo laudantium magni sed temporibus.
-                                    <br />
-                                    Amet atque.
-                                </p>
-                            </div>
-                            <div class="flex justify-center md:mt-4 md:ml-14">
-                                <div
-                                    class="md:w-[35px] md:h-[35px] md:mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
-                                    <span class=""><i class="fa-brands fa-facebook-f"
-                                            style="color: #052b5a"></i></span>
+                                <div class="md:mt-5 mt-4 ml-3">
+                                    <p class="text-gray-300 md:text-center jost font-medium text-[17px]">
+                                        Lorem ipsum dolor sit amet, consectetur elit. Ad assumenda
+                                        fuga illo laudantium magni sed temporibus. Amet atque.
+                                    </p>
                                 </div>
-                                <div
-                                    class="md:w-[35px] md:h-[35px] md:mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
-                                    <span class=""><i class="fa-brands fa-twitter"
-                                            style="color: #052b5a"></i></span>
-                                </div>
-                                <div
-                                    class="md:w-[35px] md:h-[35px] md:mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
-                                    <span class=""><i class="fa-brands fa-instagram"
-                                            style="color: #052b5a"></i></span>
-                                </div>
+
                             </div>
                         </div>
-                    </div>
-                    <div class="md:w-4/12 w-full z-10">
-                        <div class="md:mt-5 md:pt-5">
-                            <div class="md:text-center md:ml-56 mt-8 md:mt-0 ml-3 md:ml-0">
-                                <h3
-                                    class="text-xl font-semibold mb-4 poppins font-semibold text-white md:mt-10 md:mr-[130px]">
-                                    Open Hours
+                        <div class="md:w-4/12 z-10">
+                            <div class="md:mt-5 z-10 md:pt-14 pt-10">
+                                <h3 class="text-xl md:text-[22px] font-semibold mb-4 text-white hidden md:block">
+                                    Contact
                                 </h3>
-                                <ul class="jost font-medium text-[#AFADAD] text-xl md:text-[22px]">
-                                    <li class="mb-3">Mon-Sat: 8:00am - 5:00pm</li>
-                                    <li class="md:mt-3">Sunday: 10:00am - 4:00am</li>
+                                <ul>
+                                    <li
+                                        class="flex items-center text-[#AFADAD] font-medium z-10 ml-2 md:ml-0 mb-5 md:mb-3">
+                                        <div
+                                            class="md:w-[35px] w-[30px] h-[30px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                            <span class=""><i class="fa-solid fa-phone-volume"
+                                                    style="color: #052b5a"></i></span>
+                                        </div>
+
+                                        (+91) 9106701061
+                                    </li>
+                                    <li class="flex items-center text-[#AFADAD] font-medium ml-2 md:ml-0 mb-5 md:mb-3">
+                                        <div
+                                            class="md:w-[35px] w-[30px] h-[30px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                            <span class="material-icons text-blue-300"><i class="fa-solid fa-envelope"
+                                                    style="color: #052b5a"></i></span>
+                                        </div>
+
+                                        Politician@gmail.com
+                                    </li>
+                                    <li class="flex items-center mb-2 text-[#AFADAD] font-medium ml-2 md:ml-0">
+                                        <div
+                                            class="md:w-[35px] w-[30px] h-[30px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                            <span class="material-icons text-blue-300"><i
+                                                    class="fa-solid fa-location-dot" style="color: #052b5a"></i></span>
+                                        </div>
+
+                                        22 Brooklyn Street, 30 Road, New York, <br />
+                                        United States
+                                    </li>
                                 </ul>
                             </div>
                         </div>
+                        <div class="md:w-4/12 w-full z-10 hidden md:block">
+                            <div class="md:mt-5 md:pt-9">
+                                <div class="flex justify-center items-center">
+                                    <img src="../images/footer-logo.png" alt="" />
+                                </div>
+                                <div class="md:mt-5">
+                                    <p class="text-gray-300 text-center jost font-medium text-lg">
+                                        Lorem ipsum dolor sit amet, consectetur elit. Ad <br />
+                                        assumenda fuga illo laudantium magni sed temporibus.
+                                        <br />
+                                        Amet atque.
+                                    </p>
+                                </div>
+                                <div class="flex justify-center md:mt-4 md:ml-14">
+                                    <div
+                                        class="md:w-[35px] md:h-[35px] md:mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                        <span class=""><i class="fa-brands fa-facebook-f"
+                                                style="color: #052b5a"></i></span>
+                                    </div>
+                                    <div
+                                        class="md:w-[35px] md:h-[35px] md:mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                        <span class=""><i class="fa-brands fa-twitter"
+                                                style="color: #052b5a"></i></span>
+                                    </div>
+                                    <div
+                                        class="md:w-[35px] md:h-[35px] md:mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                        <span class=""><i class="fa-brands fa-instagram"
+                                                style="color: #052b5a"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:w-4/12 w-full z-10">
+                            <div class="md:mt-5 md:pt-5">
+                                <div class="md:text-center md:ml-56 mt-8 md:mt-0 ml-3 md:ml-0">
+                                    <h3
+                                        class="text-xl font-semibold mb-4 poppins font-semibold text-white md:mt-10 md:mr-[130px]">
+                                        Open Hours
+                                    </h3>
+                                    <ul class="jost font-medium text-[#AFADAD] text-xl md:text-[22px]">
+                                        <li class="mb-3">Mon-Sat: 8:00am - 5:00pm</li>
+                                        <li class="md:mt-3">Sunday: 10:00am - 4:00am</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="h-[0.1px] bg-white opacity-30 mt-16"></div>
+                <div class="md:w-10/12 mx-auto flex flex-col md:flex-row justify-between text-sm text-gray-400 z-10">
+                    <p class="text-white mt-8 text-center">
+                        Copyright © 2023 Politician, All Rights Reserved
+                    </p>
+                    <div class="flex space-x-4 mt-2 md:mt-0 text-white z-10">
+                        <a href="#" class="hover:underline mt-3 md:mt-8 ml-24">Privacy Policy</a>
+                        <div class="w-[1.1px] h-[21px] bg-white opacity-30 md:mt-[30px] mt-[13px]"></div>
+                        <a href="#" class="hover:underline mt-3 md:mt-8">Terms & Conditions</a>
                     </div>
                 </div>
             </div>
-            <div class="h-[0.1px] bg-white opacity-30 mt-16"></div>
-            <div class="md:w-10/12 mx-auto flex flex-col md:flex-row justify-between text-sm text-gray-400 z-10">
-                <p class="text-white mt-8 text-center">
-                    Copyright © 2023 Politician, All Rights Reserved
-                </p>
-                <div class="flex space-x-4 mt-2 md:mt-0 text-white z-10">
-                    <a href="#" class="hover:underline mt-3 md:mt-8 ml-24">Privacy Policy</a>
-                    <div class="w-[1.1px] h-[21px] bg-white opacity-30 md:mt-[30px] mt-[13px]"></div>
-                    <a href="#" class="hover:underline mt-3 md:mt-8">Terms & Conditions</a>
-                </div>
-            </div>
         </div>
-    </div>
-   </footer>
+    </footer>
 
 
 </body>

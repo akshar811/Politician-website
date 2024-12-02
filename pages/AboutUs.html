@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="../css/fonts.css">
     <link rel="stylesheet" href="../css/style.css">
@@ -39,9 +40,9 @@
 </head>
 
 <body>
-     <!-- header  -->
+    <!-- header  -->
 
-     <header class="bg-white">
+    <header class="bg-white">
         <div class="container mx-auto">
             <div class="px-4 py-6 flex items-center justify-between">
                 <!-- Logo -->
@@ -63,18 +64,19 @@
                         class="font-normal poppins text-lg text-[#052B5A]">Volunteer and Contribution</a>
                 </nav>
 
-              <!-- Call to Action Button -->
-              <div class="md:flex md:justify-end md:flex-1 md:block hidden">
-                <div class=" relative bg-[#E3042E] px-[20px] py-[10px] w-fit object-cover  rounded-[10px]  ">
-                    <button>
-                        <a href="/pages/ContactUS.html" class="poppins text-[14px] font-semibold text-white z-[10] relative">Contact
-                            us</a>
-                         </button>
-                    <div
-                        class="  absolute w-[105px] h-[40px] border-2 border-[#E3042E] border-t-0 border-r-0 -left-[5%] -bottom-[13%] rounded-bl-[10px] -right-[5%] ">
+                <!-- Call to Action Button -->
+                <div class="md:flex md:justify-end md:flex-1 md:block hidden">
+                    <div class=" relative bg-[#E3042E] px-[20px] py-[10px] w-fit object-cover  rounded-[10px]  ">
+                        <button>
+                            <a href="/pages/ContactUS.html"
+                                class="poppins text-[14px] font-semibold text-white z-[10] relative">Contact
+                                us</a>
+                        </button>
+                        <div
+                            class="  absolute w-[105px] h-[40px] border-2 border-[#E3042E] border-t-0 border-r-0 -left-[5%] -bottom-[13%] rounded-bl-[10px] -right-[5%] ">
+                        </div>
                     </div>
                 </div>
-            </div>
 
                 <!-- Mobile Menu Toggle Button -->
                 <button class="md:hidden text-gray-700 focus:outline-none" onclick="toggleMenu()">
@@ -140,6 +142,7 @@
 
 
     <!-- banner section  -->
+     
     <div class="bg-[url(../images/bg-img.jpg)] bg-cover bg-no-repeat md:h-[650px] overflow-hidden">
         <img src="../images/about-sec-banner-img-2.png" alt=""
             class="absolute w-[600px] z-10 top-[500px] opacity-20 hidden md:block">
@@ -416,150 +419,309 @@
                     </h2>
                 </div>
                 <div class="md:flex px-4 md:px-0">
-                    <div class="md:w-4/12 w-full md:pt-16 hidden md:block">
-                        <div>
-                            <div class="relative md:h-[374px] md:w-[347px] group">
-                                <img src="../images/about-sec-4.1.png" alt=""
-                                    class="md:h-[374px] md:w-[347px] object-cover rounded-[10px]">
-                                <div
-                                    class="absolute inset-0 group-hover:border-2 border-white m-2 opacity-20 transition-opacity duration-300 z-10">
+
+
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper gap-4 md:gap-1">
+                            <div class="swiper-slide md:w-4/12 w-full md:pt-16 ">
+                                <div>
+                                    <div class="relative md:h-[374px] md:w-[347px]  group">
+                                        <img src="../images/about-sec-4.1.png" alt=""
+                                            class="md:h-[374px] md:w-[347px] h-[374px] w-full object-cover rounded-[10px]">
+                                        <div
+                                            class="absolute inset-0 group-hover:border-2 border-white m-2 opacity-20 transition-opacity duration-300 z-10">
+                                        </div>
+                                        <div
+                                            class="md:h-[374px] md:w-[347px]  absolute inset-0 bg-gradient-to-b from-[rgba(204,13,49,0.9)] to-[rgba(2,20,96,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex justify-center border-2 border-white">
+                                            <h5
+                                                class="text-white text-lg font-semibold md:text-[26px] md:pt-[130px] pt-[130px]">
+                                                Elaine Chao</h5>
+                                            <p
+                                                class="absolute text-white md:text-[20px] font-medium md:pt-[166px]	pt-[166px]">
+                                                Founder</p>
+                                            <div class="absolute flex md:bottom-[126px] bottom-[140px]">
+                                                <div
+                                                    class=" md:w-[35px]  w-[33px] h-[33px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                                    <span class=""><i class="fa-brands fa-facebook-f"
+                                                            style="color: #052B5A;"></i></span>
+                                                </div>
+                                                <div
+                                                    class=" md:w-[35px]  w-[33px] h-[33px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                                    <span class=""><i class="fa-brands fa-twitter"
+                                                            style="color: #052B5A;"></i></span>
+                                                </div>
+                                                <div
+                                                    class=" md:w-[35px] w-[33px] h-[33px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                                    <span class=""><i class="fa-brands fa-instagram"
+                                                            style="color: #052B5A;"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div
-                                    class="md:h-[374px] md:w-[347px] absolute inset-0 bg-gradient-to-b from-[rgba(204,13,49,0.9)] to-[rgba(2,20,96,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex justify-center border-2 border-white">
-                                    <h5
-                                        class="text-white text-lg font-semibold md:text-[26px] md:pt-[130px] pt-[130px]">
-                                        Elaine Chao</h5>
-                                    <p class="absolute text-white md:text-[20px] font-medium md:pt-[166px]	pt-[166px]">
-                                        Founder</p>
-                                    <div class="absolute flex md:bottom-[126px] bottom-[140px]">
+                            </div>
+                            <div class="swiper-slide md:w-4/12 w-full md:pt-16 md:mt-[50px]">
+                                <div>
+                                    <div class="relative md:h-[374px] md:w-[347px] group">
+                                        <img src="../images/about-sec-4.2.jpg" alt=""
+                                            class="md:h-[374px] md:w-[347px] h-[374px] w-full object-cover rounded-[10px]">
                                         <div
-                                            class=" md:w-[35px]  w-[33px] h-[33px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
-                                            <span class=""><i class="fa-brands fa-facebook-f"
-                                                    style="color: #052B5A;"></i></span>
+                                            class="absolute inset-0 group-hover:border-2 border-white m-2 opacity-20 transition-opacity duration-300 z-10">
                                         </div>
                                         <div
-                                            class=" md:w-[35px]  w-[33px] h-[33px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
-                                            <span class=""><i class="fa-brands fa-twitter"
-                                                    style="color: #052B5A;"></i></span>
+                                            class="md:h-[374px] md:w-[347px] absolute inset-0 bg-gradient-to-b from-[rgba(204,13,49,0.9)] to-[rgba(2,20,96,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex justify-center border-2 border-white">
+                                            <h5
+                                                class="text-white text-[26px] font-semibold md:text-[26px] md:pt-[130px] pt-[130px]">
+                                                Elaine Chao</h5>
+                                            <p
+                                                class="absolute text-white md:text-[20px] font-medium md:pt-[166px]	pt-[166px]">
+                                                Founder</p>
+                                            <div class="absolute flex md:bottom-[126px] bottom-[140px]">
+                                                <div
+                                                    class=" md:w-[35px]  w-[33px] h-[33px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                                    <span class=""><i class="fa-brands fa-facebook-f"
+                                                            style="color: #052B5A;"></i></span>
+                                                </div>
+                                                <div
+                                                    class=" md:w-[35px]  w-[33px] h-[33px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                                    <span class=""><i class="fa-brands fa-twitter"
+                                                            style="color: #052B5A;"></i></span>
+                                                </div>
+                                                <div
+                                                    class=" md:w-[35px] w-[33px] h-[33px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                                    <span class=""><i class="fa-brands fa-instagram"
+                                                            style="color: #052B5A;"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide md:w-4/12 w-full md:pt-16 hidden md:block">
+                                <div>
+                                    <div class="relative md:h-[374px] md:w-[347px] group">
+                                        <img src="../images/about-sec-4.3.jpg" alt=""
+                                            class="md:h-[374px] md:w-[347px] h-[374px] w-full object-cover rounded-[10px]">
+                                        <div
+                                            class="absolute inset-0 group-hover:border-2 border-white m-2 opacity-20 transition-opacity duration-300 z-10">
                                         </div>
                                         <div
-                                            class=" md:w-[35px] w-[33px] h-[33px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
-                                            <span class=""><i class="fa-brands fa-instagram"
-                                                    style="color: #052B5A;"></i></span>
+                                            class="md:h-[374px] md:w-[347px] absolute inset-0 bg-gradient-to-b from-[rgba(204,13,49,0.9)] to-[rgba(2,20,96,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex justify-center border-2 border-white">
+                                            <h5
+                                                class="text-white text-lg font-semibold md:text-[26px] md:pt-[130px] pt-[130px]">
+                                                Elaine Chao</h5>
+                                            <p
+                                                class="absolute text-white md:text-[20px] font-medium md:pt-[166px]	pt-[166px]">
+                                                Founder</p>
+                                            <div class="absolute flex md:bottom-[126px] bottom-[140px] ">
+                                                <div
+                                                    class=" md:w-[35px]  w-[33px] h-[33px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                                    <span class=""><i class="fa-brands fa-facebook-f"
+                                                            style="color: #052B5A;"></i></span>
+                                                </div>
+                                                <div
+                                                    class=" md:w-[35px]  w-[33px] h-[33px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                                    <span class=""><i class="fa-brands fa-twitter"
+                                                            style="color: #052B5A;"></i></span>
+                                                </div>
+                                                <div
+                                                    class=" md:w-[35px] w-[33px] h-[33px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                                    <span class=""><i class="fa-brands fa-instagram"
+                                                            style="color: #052B5A;"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide md:w-4/12 w-full md:pt-16 md:mt-[50px]">
+                                <div>
+                                    <div class="relative md:h-[374px] md:w-[347px] group">
+                                        <img src="../images/about-sec-4.4.jpg" alt=""
+                                            class="md:h-[374px] md:w-[347px] h-[374px] w-full object-cover rounded-[10px]">
+                                        <div
+                                            class="absolute inset-0 group-hover:border-2 border-white m-2 opacity-20 transition-opacity duration-300 z-10">
+                                        </div>
+                                        <div
+                                            class="md:h-[374px] md:w-[347px] absolute inset-0 bg-gradient-to-b from-[rgba(204,13,49,0.9)] to-[rgba(2,20,96,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex justify-center border-2 border-white">
+                                            <h5
+                                                class="text-white text-lg font-semibold md:text-[26px] md:pt-[130px] pt-[130px]">
+                                                Elaine Chao</h5>
+                                            <p
+                                                class="absolute text-white md:text-[20px] font-medium md:pt-[166px]	pt-[166px]">
+                                                Founder</p>
+                                            <div class="absolute flex md:bottom-[126px] bottom-[140px]">
+                                                <div
+                                                    class=" md:w-[35px]  w-[33px] h-[33px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                                    <span class=""><i class="fa-brands fa-facebook-f"
+                                                            style="color: #052B5A;"></i></span>
+                                                </div>
+                                                <div
+                                                    class=" md:w-[35px]  w-[33px] h-[33px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                                    <span class=""><i class="fa-brands fa-twitter"
+                                                            style="color: #052B5A;"></i></span>
+                                                </div>
+                                                <div
+                                                    class=" md:w-[35px] w-[33px] h-[33px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                                    <span class=""><i class="fa-brands fa-instagram"
+                                                            style="color: #052B5A;"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide md:w-4/12 w-full md:pt-16 ">
+                                <div>
+                                    <div class="relative md:h-[374px] md:w-[347px] group">
+                                        <img src="../images/about-sec-4.1.png" alt=""
+                                            class="md:h-[374px] md:w-[347px] h-[374px] w-full object-cover rounded-[10px]">
+                                        <div
+                                            class="absolute inset-0 group-hover:border-2 border-white m-2 opacity-20 transition-opacity duration-300 z-10">
+                                        </div>
+                                        <div
+                                            class="md:h-[374px] md:w-[347px] absolute inset-0 bg-gradient-to-b from-[rgba(204,13,49,0.9)] to-[rgba(2,20,96,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex justify-center border-2 border-white">
+                                            <h5
+                                                class="text-white text-lg font-semibold md:text-[26px] md:pt-[130px] pt-[130px]">
+                                                Elaine Chao</h5>
+                                            <p
+                                                class="absolute text-white md:text-[20px] font-medium md:pt-[166px]	pt-[166px]">
+                                                Founder</p>
+                                            <div class="absolute flex md:bottom-[126px] bottom-[140px]">
+                                                <div
+                                                    class=" md:w-[35px]  w-[33px] h-[33px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                                    <span class=""><i class="fa-brands fa-facebook-f"
+                                                            style="color: #052B5A;"></i></span>
+                                                </div>
+                                                <div
+                                                    class=" md:w-[35px]  w-[33px] h-[33px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                                    <span class=""><i class="fa-brands fa-twitter"
+                                                            style="color: #052B5A;"></i></span>
+                                                </div>
+                                                <div
+                                                    class=" md:w-[35px] w-[33px] h-[33px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                                    <span class=""><i class="fa-brands fa-instagram"
+                                                            style="color: #052B5A;"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide md:w-4/12 w-full md:pt-16 md:mt-[50px]">
+                                <div>
+                                    <div class="relative md:h-[374px] md:w-[347px] group">
+                                        <img src="../images/about-sec-4.2.jpg" alt=""
+                                            class="md:h-[374px] md:w-[347px] h-[374px] w-full object-cover rounded-[10px]">
+                                        <div
+                                            class="absolute inset-0 group-hover:border-2 border-white m-2 opacity-20 transition-opacity duration-300 z-10">
+                                        </div>
+                                        <div
+                                            class="md:h-[374px] md:w-[347px] absolute inset-0 bg-gradient-to-b from-[rgba(204,13,49,0.9)] to-[rgba(2,20,96,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex justify-center border-2 border-white">
+                                            <h5
+                                                class="text-white text-[26px] font-semibold md:text-[26px] md:pt-[130px] pt-[130px]">
+                                                Elaine Chao</h5>
+                                            <p
+                                                class="absolute text-white md:text-[20px] font-medium md:pt-[166px]	pt-[166px]">
+                                                Founder</p>
+                                            <div class="absolute flex md:bottom-[126px] bottom-[140px]">
+                                                <div
+                                                    class=" md:w-[35px]  w-[33px] h-[33px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                                    <span class=""><i class="fa-brands fa-facebook-f"
+                                                            style="color: #052B5A;"></i></span>
+                                                </div>
+                                                <div
+                                                    class=" md:w-[35px]  w-[33px] h-[33px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                                    <span class=""><i class="fa-brands fa-twitter"
+                                                            style="color: #052B5A;"></i></span>
+                                                </div>
+                                                <div
+                                                    class=" md:w-[35px] w-[33px] h-[33px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                                    <span class=""><i class="fa-brands fa-instagram"
+                                                            style="color: #052B5A;"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide md:w-4/12 w-full md:pt-16 hidden md:block">
+                                <div>
+                                    <div class="relative md:h-[374px] md:w-[347px] group">
+                                        <img src="../images/about-sec-4.3.jpg" alt=""
+                                            class="md:h-[374px] md:w-[347px] h-[374px] w-full object-cover rounded-[10px]">
+                                        <div
+                                            class="absolute inset-0 group-hover:border-2 border-white m-2 opacity-20 transition-opacity duration-300 z-10">
+                                        </div>
+                                        <div
+                                            class="md:h-[374px] md:w-[347px] absolute inset-0 bg-gradient-to-b from-[rgba(204,13,49,0.9)] to-[rgba(2,20,96,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex justify-center border-2 border-white">
+                                            <h5
+                                                class="text-white text-lg font-semibold md:text-[26px] md:pt-[130px] pt-[130px]">
+                                                Elaine Chao</h5>
+                                            <p
+                                                class="absolute text-white md:text-[20px] font-medium md:pt-[166px]	pt-[166px]">
+                                                Founder</p>
+                                            <div class="absolute flex md:bottom-[126px] bottom-[140px] ">
+                                                <div
+                                                    class=" md:w-[35px]  w-[33px] h-[33px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                                    <span class=""><i class="fa-brands fa-facebook-f"
+                                                            style="color: #052B5A;"></i></span>
+                                                </div>
+                                                <div
+                                                    class=" md:w-[35px]  w-[33px] h-[33px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                                    <span class=""><i class="fa-brands fa-twitter"
+                                                            style="color: #052B5A;"></i></span>
+                                                </div>
+                                                <div
+                                                    class=" md:w-[35px] w-[33px] h-[33px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                                    <span class=""><i class="fa-brands fa-instagram"
+                                                            style="color: #052B5A;"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide md:w-4/12 w-full md:pt-16 md:mt-[50px]">
+                                <div>
+                                    <div class="relative md:h-[374px] md:w-[347px] group">
+                                        <img src="../images/about-sec-4.4.jpg" alt=""
+                                            class="md:h-[374px] md:w-[347px] h-[374px] w-full object-cover rounded-[10px]">
+                                        <div
+                                            class="absolute inset-0 group-hover:border-2 border-white m-2 opacity-20 transition-opacity duration-300 z-10">
+                                        </div>
+                                        <div
+                                            class="md:h-[374px] md:w-[347px] absolute inset-0 bg-gradient-to-b from-[rgba(204,13,49,0.9)] to-[rgba(2,20,96,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex justify-center border-2 border-white">
+                                            <h5
+                                                class="text-white text-lg font-semibold md:text-[26px] md:pt-[130px] pt-[130px]">
+                                                Elaine Chao</h5>
+                                            <p
+                                                class="absolute text-white md:text-[20px] font-medium md:pt-[166px]	pt-[166px]">
+                                                Founder</p>
+                                            <div class="absolute flex md:bottom-[126px] bottom-[140px]">
+                                                <div
+                                                    class=" md:w-[35px]  w-[33px] h-[33px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                                    <span class=""><i class="fa-brands fa-facebook-f"
+                                                            style="color: #052B5A;"></i></span>
+                                                </div>
+                                                <div
+                                                    class=" md:w-[35px]  w-[33px] h-[33px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                                    <span class=""><i class="fa-brands fa-twitter"
+                                                            style="color: #052B5A;"></i></span>
+                                                </div>
+                                                <div
+                                                    class=" md:w-[35px] w-[33px] h-[33px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                                    <span class=""><i class="fa-brands fa-instagram"
+                                                            style="color: #052B5A;"></i></span>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="md:w-4/12 w-full md:pt-16 md:mt-[50px]">
-                        <div>
-                            <div class="relative md:h-[374px] md:w-[347px] group">
-                                <img src="../images/about-sec-4.2.jpg" alt=""
-                                    class="md:h-[374px] md:w-[347px] h-[374px] w-full object-cover rounded-[10px]">
-                                <div
-                                    class="absolute inset-0 group-hover:border-2 border-white m-2 opacity-20 transition-opacity duration-300 z-10">
-                                </div>
-                                <div
-                                    class="md:h-[374px] md:w-[347px] absolute inset-0 bg-gradient-to-b from-[rgba(204,13,49,0.9)] to-[rgba(2,20,96,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex justify-center border-2 border-white">
-                                    <h5
-                                        class="text-white text-[26px] font-semibold md:text-[26px] md:pt-[130px] pt-[130px]">
-                                        Elaine Chao</h5>
-                                    <p class="absolute text-white md:text-[20px] font-medium md:pt-[166px]	pt-[166px]">
-                                        Founder</p>
-                                    <div class="absolute flex md:bottom-[126px] bottom-[140px]">
-                                        <div
-                                            class=" md:w-[35px]  w-[33px] h-[33px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
-                                            <span class=""><i class="fa-brands fa-facebook-f"
-                                                    style="color: #052B5A;"></i></span>
-                                        </div>
-                                        <div
-                                            class=" md:w-[35px]  w-[33px] h-[33px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
-                                            <span class=""><i class="fa-brands fa-twitter"
-                                                    style="color: #052B5A;"></i></span>
-                                        </div>
-                                        <div
-                                            class=" md:w-[35px] w-[33px] h-[33px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
-                                            <span class=""><i class="fa-brands fa-instagram"
-                                                    style="color: #052B5A;"></i></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="md:w-4/12 w-full md:pt-16 hidden md:block">
-                        <div>
-                            <div class="relative md:h-[374px] md:w-[347px] group">
-                                <img src="../images/about-sec-4.3.jpg" alt=""
-                                    class="md:h-[374px] md:w-[347px] object-cover rounded-[10px]">
-                                <div
-                                    class="absolute inset-0 group-hover:border-2 border-white m-2 opacity-20 transition-opacity duration-300 z-10">
-                                </div>
-                                <div
-                                    class="md:h-[374px] md:w-[347px] absolute inset-0 bg-gradient-to-b from-[rgba(204,13,49,0.9)] to-[rgba(2,20,96,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex justify-center border-2 border-white">
-                                    <h5
-                                        class="text-white text-lg font-semibold md:text-[26px] md:pt-[130px] pt-[130px]">
-                                        Elaine Chao</h5>
-                                    <p class="absolute text-white md:text-[20px] font-medium md:pt-[166px]	pt-[166px]">
-                                        Founder</p>
-                                    <div class="absolute flex md:bottom-[126px] bottom-[140px] ">
-                                        <div
-                                            class=" md:w-[35px]  w-[33px] h-[33px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
-                                            <span class=""><i class="fa-brands fa-facebook-f"
-                                                    style="color: #052B5A;"></i></span>
-                                        </div>
-                                        <div
-                                            class=" md:w-[35px]  w-[33px] h-[33px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
-                                            <span class=""><i class="fa-brands fa-twitter"
-                                                    style="color: #052B5A;"></i></span>
-                                        </div>
-                                        <div
-                                            class=" md:w-[35px] w-[33px] h-[33px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
-                                            <span class=""><i class="fa-brands fa-instagram"
-                                                    style="color: #052B5A;"></i></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="md:w-4/12 w-full md:pt-16 md:mt-[50px] hidden md:block">
-                        <div>
-                            <div class="relative md:h-[374px] md:w-[347px] group">
-                                <img src="../images/about-sec-4.4.jpg" alt=""
-                                    class="md:h-[374px] md:w-[347px] object-cover rounded-[10px]">
-                                <div
-                                    class="absolute inset-0 group-hover:border-2 border-white m-2 opacity-20 transition-opacity duration-300 z-10">
-                                </div>
-                                <div
-                                    class="md:h-[374px] md:w-[347px] absolute inset-0 bg-gradient-to-b from-[rgba(204,13,49,0.9)] to-[rgba(2,20,96,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex justify-center border-2 border-white">
-                                    <h5
-                                        class="text-white text-lg font-semibold md:text-[26px] md:pt-[130px] pt-[130px]">
-                                        Elaine Chao</h5>
-                                    <p class="absolute text-white md:text-[20px] font-medium md:pt-[166px]	pt-[166px]">
-                                        Founder</p>
-                                    <div class="absolute flex md:bottom-[126px] bottom-[140px]">
-                                        <div
-                                            class=" md:w-[35px]  w-[33px] h-[33px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
-                                            <span class=""><i class="fa-brands fa-facebook-f"
-                                                    style="color: #052B5A;"></i></span>
-                                        </div>
-                                        <div
-                                            class=" md:w-[35px]  w-[33px] h-[33px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
-                                            <span class=""><i class="fa-brands fa-twitter"
-                                                    style="color: #052B5A;"></i></span>
-                                        </div>
-                                        <div
-                                            class=" md:w-[35px] w-[33px] h-[33px] md:h-[35px] md:mr-3 mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
-                                            <span class=""><i class="fa-brands fa-instagram"
-                                                    style="color: #052B5A;"></i></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
 
                 </div>
             </div>
@@ -575,15 +737,18 @@
                 <h2 class="text-[28px] md:text-[45px] font-semibold poppins my-8 md:my-0 text-center">
                     <span class="text-[#052B5A] ">Our</span> <span class="text-red-600">Highlights</span>
                 </h2>
-               
 
-               <div class="flex justify-end">
-                <div class="relative bg-[#E3042E] px-[24px] py-[12px] w-fit object-cover m-[20px] rounded-[10px] mx-auto  hidden md:block">
-                    <button class="poppins text-[14px] font-semibold text-white text-[18px]"> Discover More</button>
-                    <div class="  absolute w-[160px] h-[42px] border-2 border-[#E3042E] border-t-0 border-r-0 -left-[4%] -bottom-[13%] rounded-bl-[10px] -right-[5%]"></div>
-                  </div>
 
-               </div>
+                <div class="flex justify-end">
+                    <div
+                        class="relative bg-[#E3042E] px-[24px] py-[12px] w-fit object-cover m-[20px] rounded-[10px] mx-auto  hidden md:block">
+                        <button class="poppins text-[14px] font-semibold text-white text-[18px]"> Discover More</button>
+                        <div
+                            class="  absolute w-[160px] h-[42px] border-2 border-[#E3042E] border-t-0 border-r-0 -left-[4%] -bottom-[13%] rounded-bl-[10px] -right-[5%]">
+                        </div>
+                    </div>
+
+                </div>
             </div>
 
             <!-- Video Section -->
@@ -606,10 +771,13 @@
                 </div>
             </div>
 
-            <div class="relative bg-[#E3042E] px-[18px] md:px-[24px] md:py-[12px] py-[9px] w-fit object-cover m-[20px] rounded-[10px] mx-auto md:hidden mt-8 mb-10">
+            <div
+                class="relative bg-[#E3042E] px-[18px] md:px-[24px] md:py-[12px] py-[9px] w-fit object-cover m-[20px] rounded-[10px] mx-auto md:hidden mt-8 mb-10">
                 <button class="poppins text-[16px] font-semibold text-white md:text-[17px]"> Discover More</button>
-                <div class="  absolute w-[150px] h-[42px] border-2 border-[#E3042E] border-t-0 border-r-0 -left-[4%] -bottom-[13%] rounded-bl-[10px] -right-[5%]"></div>
-              </div>
+                <div
+                    class="  absolute w-[150px] h-[42px] border-2 border-[#E3042E] border-t-0 border-r-0 -left-[4%] -bottom-[13%] rounded-bl-[10px] -right-[5%]">
+                </div>
+            </div>
         </div>
         </div>
     </section>
@@ -763,6 +931,21 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            breakpoints: {
+                1024: {
+                    slidesPerView: 4,
+                },
+            },
+        });
+        
+    </script>
 
 
 </body>

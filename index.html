@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../css/fonts.css">
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <script>
         function toggleMenu() {
@@ -69,9 +70,10 @@
                 <div class="md:flex md:justify-end md:flex-1 md:block hidden">
                     <div class=" relative bg-[#E3042E] px-[20px] py-[10px] w-fit object-cover  rounded-[10px]  ">
                         <button>
-                            <a href="/pages/ContactUS.html" class="poppins text-[14px] font-semibold text-white z-[10] relative">Contact
+                            <a href="/pages/ContactUS.html"
+                                class="poppins text-[14px] font-semibold text-white z-[10] relative">Contact
                                 us</a>
-                             </button>
+                        </button>
                         <div
                             class="  absolute w-[105px] h-[40px] border-2 border-[#E3042E] border-t-0 border-r-0 -left-[5%] -bottom-[13%] rounded-bl-[10px] -right-[5%] ">
                         </div>
@@ -176,7 +178,7 @@
                                         Get A Consult
                                     </button>
                                     <a href="" class="relative block">
-                                        <!-- Add the pseudo-element using Tailwind -->
+
                                         <div
                                             class="absolute before:content-[''] before:absolute before:-bottom-[6px] before:left-[0px] before:border-b-2 before:border-l-2 before:border-[#FFFFFF] before:rounded-bl-lg md:before:rounded-bl-xl md:before:px-[65px] before:px-[53px] before:py-[19px] md:before:py-[19px] before:px-[43px] before:py-[15px]">
                                         </div>
@@ -475,7 +477,8 @@
 
 
                 <div class="flex justify-center md:hidden ">
-                    <div class="relative bg-[#E3042E] px-[22px] md:px-[24px] md:py-[12px] py-[10px] w-fit object-cover m-[20px] rounded-[10px]  ">
+                    <div
+                        class="relative bg-[#E3042E] px-[22px] md:px-[24px] md:py-[12px] py-[10px] w-fit object-cover m-[20px] rounded-[10px]  ">
                         <button class="poppins text-[17px] font-semibold text-white md:text-[18px]">View More</button>
                         <div
                             class="  absolute w-[130px] h-[42px] border-2 border-[#E3042E] border-t-0 border-r-0 -left-[4%] -bottom-[13%] rounded-bl-[10px] -right-[5%]">
@@ -794,60 +797,119 @@
     </section>
 
     <!-- Upcoming Event  -->
-    <section class="md:mt-28 md:mb-28 px-4">
+    <section class="md:mt-28 md:mb-28 px-4 overflow-hidden">
         <div class="container mx-auto">
-            <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-6">
 
-                <!-- Card 1 -->
-                <div
-                    class="relative rounded-lg p-7 md:p-10 bg-cover bg-center md:h-[400px] md:w-[615px] h-[300px] px-4 object-cover mt-7 md:mt-0">
+            <div class="swiper mySwiper overflow-visible">
+                <div class="swiper-wrapper gap-6">
+                    <!-- slider 1 -->
+                    <div
+                        class="swiper-slide relative rounded-lg p-7 md:p-10 bg-cover bg-center md:h-[400px] md:w-[615px] h-[300px] px-4 object-cover mt-7 md:mt-0">
+
+                        <img src="/images/sec-4.3.png" alt=""
+                            class="absolute  md:w-[900px] md:h-[350px] z-10  opacity-15  right-[10px] md:top-[48px] top-[168px]">
+
+                        <div class="absolute inset-0 bg-[#052B5A] ">
+
+                            <div class="md:p-10 md:mt-24 p-8 mt-12">
+                                <h2 class="text-[27px] font-semibold  mb-4 poppins">
+                                    <span class="text-white md:text-[35px] text-[22px]">Upcoming</span> <span
+                                        class="text-[#E3042E] font-semibold md:text-[42px]  text-[22px]">Event</span>
+                                </h2>
+                                <p class="jost font-normal text-white md:text-lg text-[15px]">
+                                    There are many variatioans of passages Lorem Ipsum labl, but the majority in some.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- slider 2  -->
+                    <div class="swiper-slide bg-white rounded-lg mt-7 md:mt-0">
+                        <img src="/images/SEC-7.1.jpg" alt="Event Image"
+                            class="rounded-lg md:h-[400px] h-[300px] md:w-full ">
+                    </div>
+
+                    <!-- slider 3 -->
+                    <div class="swiper-slide relative flex group overflow-hidden h-[300px] md:h-full mt-7 md:mt-0">
+
+                        <img src="/images/sec-7.2.jpg" alt="Gallery Image 3"
+                            class="rounded-lg shadow-md md:h-[400px] md:w-[494px] w-full object-cover">
+                        <div
+                            class="absolute overflow-hidden	inset-0 md:w-[460px] h-[400px]  bg-gradient-to-b from-[rgba(204,13,49,0.9)] to-[rgba(2,20,96,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex  justify-center border-2 border-white">
+                            <div class="border-white border-3"></div>
+
+                            <div class="md:mt-36 mt-28" >
+                                <h3 class="text-white text-xl md:text-[32px] font-semibold  poppins">Knowledge Is Power
+                                </h3>
+                                <br>
+                                <p class="poppins text-white md:text-xl font-medium	text-center"><i
+                                        class="fa-regular fa-clock"></i> 15 March 2013 </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- slider 4  -->
+                    <div class="swiper-slide bg-white rounded-lg mt-7 md:mt-0">
+                        <img src="/images/slider-img.jpg" alt="Event Image"
+                            class="rounded-lg md:h-[400px] h-[300px] md:w-full object-cover">
+                    </div>
+
+                    <!-- slider 5 -->
+                    <div
+                    class="swiper-slide relative rounded-lg p-7 md:p-10 bg-cover bg-center md:h-[400px] md:w-[615px] h-[300px] px-4 object-cover mt-7 md:mt-0">
 
                     <img src="/images/sec-4.3.png" alt=""
-                        class="absolute  md:w-[900px] md:h-[350px] z-10  opacity-15  right-[10px] md:top-[6px] top-[105px]">
-                    <!-- Background Overlay -->
+                        class="absolute  md:w-[900px] md:h-[350px] z-10  opacity-15  right-[10px] md:top-[48px] top-[168px]">
+
                     <div class="absolute inset-0 bg-[#052B5A] ">
 
-                        <div class="md:p-16 md:mt-20 p-12 mt-10">
+                        <div class="md:p-10 md:mt-24 p-8 mt-12">
                             <h2 class="text-[27px] font-semibold  mb-4 poppins">
-                                <span class="text-white md:text-[42px]">Upcoming</span> <span
-                                    class="text-[#E3042E] font-semibold md:text-[42px]">Event</span>
+                                <span class="text-white md:text-[35px] text-[22px]">Upcoming</span> <span
+                                    class="text-[#E3042E] font-semibold md:text-[42px]  text-[22px]">Event</span>
                             </h2>
-                            <p class="jost font-normal text-white md:text-lg">
+                            <p class="jost font-normal text-white md:text-lg text-[15px]">
                                 There are many variatioans of passages Lorem Ipsum labl, but the majority in some.
                             </p>
                         </div>
                     </div>
 
-                </div>
+                   </div>
 
+                    <!-- slider 6  -->
+                    <div class="swiper-slide bg-white rounded-lg mt-7 md:mt-0">
+                        <img src="/images/SEC-7.1.jpg" alt="Event Image"
+                            class="rounded-lg md:h-[400px] h-[300px] md:w-full ">
+                    </div>
 
-                <!-- Card 2 -->
-                <div class="bg-white rounded-lg hidden md:block">
-                    <img src="/images/SEC-7.1.jpg" alt="Event Image"
-                        class="rounded-lg md:h-[400px] md:w-[400px] md:ml-32 ml-0">
+                    <!-- slider 7 -->
+                    <div class="swiper-slide relative flex group overflow-hidden h-[300px] md:h-full mt-7 md:mt-0">
 
-                </div>
+                        <img src="/images/sec-7.2.jpg" alt="Gallery Image 3"
+                            class="rounded-lg shadow-md md:h-[400px] md:w-[494px] w-full object-cover">
+                        <div
+                            class="absolute overflow-hidden	inset-0 md:w-[460px] h-[400px]  bg-gradient-to-b from-[rgba(204,13,49,0.9)] to-[rgba(2,20,96,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex  justify-center border-2 border-white">
+                            <div class="border-white border-3"></div>
 
-                <!-- Card 3 -->
-                <div class="relative flex group overflow-hidden	h-[160px] md:h-full ">
-                    <img src="/images/sec-7.2.jpg" alt="Gallery Image 3"
-                        class="rounded-lg shadow-md md:h-[400px] md:w-[494px] w-full md:ml-10 object-cover">
-                    <div
-                        class="absolute overflow-hidden	inset-0 md:w-[460px] h-[400px] md:ml-10 bg-gradient-to-b from-[rgba(204,13,49,0.9)] to-[rgba(2,20,96,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex items-center justify-center border-2 border-white">
-                        <div class="border-white border-3"></div>
-                        <!-- Text on Hover -->
-                        <div>
-                            <h3 class="text-white text-xl md:text-[32px] font-semibold  poppins">Knowledge Is Power</h3>
-                            <br>
-                            <p class="poppins text-white md:text-xl font-medium	text-center"><i
-                                    class="fa-regular fa-clock"></i> 15 March 2013 </p>
+                            <div class="md:mt-36 mt-28" >
+                                <h3 class="text-white text-xl md:text-[32px] font-semibold  poppins">Knowledge Is Power
+                                </h3>
+                                <br>
+                                <p class="poppins text-white md:text-xl font-medium	text-center"><i
+                                        class="fa-regular fa-clock"></i> 15 March 2013 </p>
+                            </div>
                         </div>
                     </div>
+
+                    <!-- slider 8  -->
+                    <div class="swiper-slide bg-white rounded-lg mt-7 md:mt-0">
+                        <img src="/images/slider-img.jpg" alt="Event Image"
+                            class="rounded-lg md:h-[400px] h-[300px] md:w-full object-cover">
+                    </div>
+
                 </div>
-
-
             </div>
-
         </div>
 
     </section>
@@ -894,12 +956,13 @@
                 </div>
             </div>
 
-            
+
 
 
             <div class="flex justify-center md:hidden">
-                <div class="relative bg-[#E3042E] px-[18px] py-[11px] w-fit object-cover m-[20px] rounded-[10px] mt-10 mb-10">
-                    <button class="poppins text-[14px] font-semibold text-white text-[15px]">   Discover More</button>
+                <div
+                    class="relative bg-[#E3042E] px-[18px] py-[11px] w-fit object-cover m-[20px] rounded-[10px] mt-10 mb-10">
+                    <button class="poppins text-[14px] font-semibold text-white text-[15px]"> Discover More</button>
                     <div
                         class="  absolute w-[130px] h-[42px] border-2 border-[#E3042E] border-t-0 border-r-0 -left-[4%] -bottom-[13%] rounded-bl-[10px] -right-[5%]">
                     </div>
@@ -1262,6 +1325,24 @@
             </div>
         </div>
     </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1.5,
+            breakpoints: {
+                1024: {
+                    slidesPerView: 3.5,
+                },
+            },
+        });
+    </script>
+    
 
 </body>
 

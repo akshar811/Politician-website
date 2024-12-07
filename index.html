@@ -46,11 +46,11 @@
 
     <header class="bg-white">
         <div class="container mx-auto">
-            <div class="px-4 py-6 flex items-center justify-between">
+            <div class="px-4 py-5 flex items-center justify-between">
                 <!-- Logo -->
                 <div class="flex lg:flex-1">
                     <a href="#" class="-m-1 p-1">
-                        <img class="h-8 w-auto" src="/images/politicia-logo 1.png" alt="" />
+                        <img class="md:h-[55px] h-10" src="/images/politicia-logo 1.png" alt="" />
                     </a>
                 </div>
 
@@ -143,7 +143,6 @@
     </header>
 
 
-
     <!-- banner section  -->
     <div class="bg-[url(/images/bg-img.jpg)] bg-cover bg-no-repeat">
         <img src="../images/about-sec-banner-img-2.png" alt=""
@@ -165,8 +164,10 @@
                             <span
                                 class="pt-5 text-2xl md:text-5xl font-bold md:leading-10 mb-4 poppins text-white">Every
                                 Citizen</span>
-
-                            <p class="text-sm text-white my-6 jost md:text-xl font-normal">
+                            <div class="relative ">
+                                <div class="md:h-[50px] h-[57px] w-[3px] md:w-[3px] bg-[#E3042E] absolute top-7 "></div>
+                            </div>
+                            <p class="text-sm text-white my-6 jost md:text-xl font-norma ml-3">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras at velit risus. Nulla
                                 eleifend libero ac massa sollicitudin.
                             </p>
@@ -500,133 +501,151 @@
                 <!-- Overlay with color -->
                 <div class="absolute inset-0 bg-[#001631] bg-opacity-90 rounded-lg"></div>
 
-                <!-- Content Section -->
-                <div class="relative z-10 text-white p-7 ">
-                    <div class="c">
-                        <div class="flex flex-wrap md:mt-16">
+            </div>
+
+            <div class="relative z-10 text-white px-4 md:px-0">
+                <div>
+                    <div class="container mx-auto">
+                        <div class="flex md:pt-16 md:pb-12 p-6 md:p-0 pt-9 text-center">
                             <h2
-                                class="text-[24px] sm:text-3xl md:text-4xl lg:text-[42px] font-semibold mb-6 poppins text-white md:mb-10">
+                                class="text-[26px] sm:text-3xl md:text-4xl lg:text-[42px] font-semibold poppins text-white ">
                                 Biography Of Political <span class="text-[#E3042E]">Party</span></h2>
                             <div class="relative hidden md:block">
                                 <button
-                                    class="bg-[#E3042E] md:ml-[770px]  text-white font-semibold md:px-5 px-3 py-2 rounded-md poppins text-[14px] md:text-[16px]">
+                                    class="bg-[#E3042E] md:ml-[831px]  text-white font-semibold md:px-5 px-3 py-2 rounded-md poppins text-[14px] md:text-[16px]">
                                     View More
                                 </button>
                                 <a href="" class="relative block">
                                     <!-- Add the pseudo-element using Tailwind -->
                                     <div
-                                        class="absolute before:content-[''] before:absolute before:-bottom-[5px] before:left-[765px] before:border-b-2 before:border-l-2 before:border-[#E3042E] before:rounded-bl-lg md:before:rounded-bl-xl md:before:px-[55px] md:before:py-[17px] before:px-[43px] before:py-[15px]">
+                                        class="absolute before:content-[''] before:absolute before:-bottom-[7px] before:left-[825px] before:border-b-2 before:border-l-2 before:border-[#E3042E] before:rounded-bl-lg md:before:rounded-bl-xl md:before:px-[55px] md:before:py-[17px] before:px-[43px] before:py-[15px]">
                                     </div>
                                 </a>
                             </div>
-
-
-
-
-                        </div>
-
-                        <div class="h-[0.1px] bg-white opacity-30 "></div>
-
-                        <div class="space-y-6">
-
-                            <!-- Timeline Item 1 -->
-
-                            <div class="flex justify-between items-center flex-col sm:flex-row md:mt-8 md:mb-7">
-                                <p class="text-xl md:text-[22px] md:font-semibold font-bold md:mt-1 md:mb-1 mt-4">
-                                    Political Commentator
-                                </p>
-                                <p class="md:text-gray-300 text-white font-semibold	mt-3 text-lg">15 March 2015</p>
-                            </div>
-
-                            <div class="h-[0.1px] bg-white opacity-30 "></div>
-
-                            <div class="flex justify-between items-center flex-col sm:flex-row md:mt-8 md:mb-7">
-                                <p class="text-white md:font-semibold font-bold md:text-[22px] text-[20px] md:hidden">
-                                    Leading The
-                                    Party</p>
-                                <p class="text-lg sm:text-xl md:mt-2 md:mb-2 text-gray-300 mt-2 font-semibold">18 April
-                                    2015
-                                </p>
-                                <p
-                                    class="text-white md:font-semibold font-bold md:text-[22px] text-[20px] hidden md:block">
-                                    Leading The
-                                    Party</p>
-                            </div>
-
-                            <div class="h-[0.1px] bg-white opacity-30 "></div>
-
-                            <!-- Timeline Item 2 -->
-                            <div class="relative flex flex-col sm:flex-row bg-cover bg-center 
-                            rounded-lg"
-                                style="background-image: url('../images/sec-5.2.jpg'); background-position: 30% 66%;">
-                                <!-- Gradient Overlay -->
-                                <div
-                                    class="absolute inset-0 bg-gradient-to-r from-[rgba(204,13,49,0.8)] to-[rgba(2,20,96,0.9)] rounded-lg">
-                                </div>
-
-                                <!-- Content Section (Text) -->
-                                <div class="relative z-10 text-white p-6 sm:p-8 md:flex md:flex-warp text-center">
-                                    <p class="text-lg sm:text-xl font-bold md:font-medium md:mt-2 md:mb-2">International
-                                        Agency</p>
-                                    <p class="text-gray-300 md:ml-[1030px] md:mt-[10px] font-semibold">08 May 2016</p>
-                                </div>
-                            </div>
-
-
-                            <div class="h-[0.1px] bg-white opacity-30 "></div>
-
-                            <!-- Timeline Item 3 -->
-                            <div class="flex justify-between items-center flex-col sm:flex-row">
-                                <p
-                                    class="text-lg sm:text-[17px] font-normal text-[#AFADAD] text-[14px] text-center md:text-start">
-                                    Lorem ipsum
-                                    dolor sit amet,
-                                    consectetur adipiscing elit. Quisque aliquet vitae augue id laoreet. Ut finibus,
-                                    enim efficitur pretium vestibulum, eros massa egestas mauris, nec fringilla sem nibh
-                                    ac ex. Proin pellentesque justo tempor lacus fringilla elementum. Cras commodo sit
-                                    amet quam et auctor. Quisque finibus tortor non nunc convallis vel lacinia erat
-                                    varius.</p>
-
-                            </div>
-
-                            <div class="h-[0.1px] bg-white opacity-30 "></div>
-
-                            <!-- Timeline Item 4 -->
-                            <div class="flex justify-between items-center flex-col sm:flex-row">
-                                <p
-                                    class="text-gray-300 font-bold md:font-semibold text-white md:text-[23px] text-[25px] mt-2 md:hidden">
-                                    Public Affairs</p>
-                                <p class="text-[18px] sm:text-xl font-medium md:mt-2 md:mb-2 mt-2">21 June 2015</p>
-                                <p
-                                    class="text-gray-300 font-bold md:font-semibold text-white md:text-[23px] text-[22px] mt-2 hidden md:block">
-                                    Public Affairs</p>
-                            </div>
-
-                            <div class="h-[0.1px] bg-white opacity-30 "></div>
-
-
-                            <div class="justify-center flex">
-
-                                <div
-                                    class="relative bg-[#E3042E] px-[24px] py-[12px] w-fit object-cover m-[20px] rounded-[10px]  md:hidden">
-                                    <button class="poppins text-[14px] font-semibold text-white text-[18px]">View
-                                        More</button>
-                                    <div
-                                        class="  absolute w-[130px] h-[42px] border-2 border-[#ffffff] border-t-0 border-r-0 -left-[4%] -bottom-[13%] rounded-bl-[10px] -right-[5%]">
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-
                         </div>
                     </div>
 
+                    <div class="h-[0.1px] bg-white opacity-20 "></div>
+
+                    <div class="container mx-auto">
+                        <div class="text-center pt-3 pb-5 md:pt-0 md:pb-0">
+                            <div class="flex justify-between  flex-col sm:flex-row md:mt-10 md:mb-9">
+                                <p class="text-[22px] md:text-[22px] md:font-semibold font-bold md:mt-1 md:mb-1 mt-4">
+                                    Political Commentator
+                                </p>
+                                <div class="flex justify-center pt-3">
+                                    <i class="fa-solid fa-calendar-days md:mt-[6px] mt-[8px] text-[19px]"
+                                        style="color: #f5f9ff;"></i>
+                                    <p class="md:text-gray-300 text-white md:font-semibold ml-3 md:text-lg text-[22px]">
+                                        15 March 2015</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="h-[0.1px] bg-white opacity-20 "></div>
+
+                    <div class="container mx-auto">
+                        <div class="flex justify-between items-center flex-col sm:flex-row md:mt-10 md:mb-9 mt-6 mb-7">
+                            <p class="text-white md:font-semibold font-bold md:text-[22px] text-[24px] md:hidden">
+                                Leading The
+                                Party</p>
+                            <div class="flex mt-2 md:mt-0">
+                                <i class="fa-solid fa-calendar-days mt-[14px] text-[22px]" style="color: #f5f9ff;"></i>
+                                <p
+                                    class="text-[22px] sm:text-xl md:mt-2 md:mb-2 mt-2 text-gray-300 ml-[10px] md:font-semibold">
+                                    18
+                                    April
+                                    2015
+                            </div>
+                            </p>
+                            <p class="text-white md:font-semibold font-bold md:text-[22px] text-[20px] hidden md:block">
+                                Leading The
+                                Party</p>
+                        </div>
+                    </div>
 
                 </div>
+            </div>
 
-                <div class="relative z-10 md:top-20 container mx-auto bg-white rounded-xl md:p-8 p-5 md:w-[1500px] w-[332px]  top-20"
+
+
+            <div>
+                <!-- Timeline Item 2 -->
+                <div class="relative bg-cover bg-center  "
+                    style="background-image: url('../images/sec-5.2.jpg'); background-position: 30% 66%;  ">
+                    <!-- Gradient Overlay -->
+                    <div class="absolute inset-0 bg-gradient-to-r from-[rgba(204,13,49,0.8)] to-[rgba(2,20,96,0.9)]">
+                    </div>
+
+                    <div class="container mx-auto py-3 text-center">
+                        <!-- Content Section (Text) -->
+                        <div class="relative z-10 text-white py-6  md:flex md:flex-warp justify-between">
+                            <p class="text-[22px] sm:text-xl font-bold md:font-medium md:mt-2 md:mb-2">International
+                                Agency</p>
+                            <div class="flex justify-center mt-1 md:mt-0">
+                                <i class="fa-solid fa-calendar-days mt-[14px] text-[22px]" style="color: #f5f9ff;"></i>
+                                <p
+                                    class="text-gray-300  md:mt-[10px] ml-3 mt-2 md:font-semibold text-[22px] md:text-[20px]">
+                                    08 May 2016</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container mx-auto p-4 md:p-0">
+
+                <!-- Timeline Item 3 -->
+                <div class=" relative z-10 md:mt-8 md:mb-9 ">
+                    <p
+                        class="text-lg sm:text-[17px] font-normal text-[#AFADAD] text-[14px] mx-10 md:mx-0 text-center md:text-start">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque aliquet vitae augue id laoreet.
+                        Ut finibus, enim efficitur pretium vestibulum, eros massa egestas mauris, nec fringilla sem nibh
+                        ac ex. Proin pellentesque justo tempor lacus fringilla elementum. </p>
+
+                </div>
+            </div>
+
+            <div class="h-[0.1px] bg-white opacity-20 "></div>
+
+            <div class="container mx-auto">
+                <!-- Timeline Item 4 -->
+                <div
+                    class="flex justify-between items-center flex-col sm:flex-row relative z-10 md:mt-10 md:mb-9 mt-3 mb-7">
+                    <p
+                        class="text-gray-300 font-bold md:font-semibold text-white md:text-[23px] text-[23px] mt-2 md:hidden">
+                        Public Affairs</p>
+                    <div class="flex">
+                        <i class="fa-solid fa-calendar-days mt-[14px]" style="color: #f5f9ff;"></i>
+                        <p class="text-[18px] sm:text-xl md:font-medium md:mt-2 md:mb-2 mt-2 text-white ml-3">21 June
+                            2015</p>
+                    </div>
+                    <p
+                        class="text-gray-300 font-bold md:font-semibold text-white md:text-[23px] text-[22px] mt-2 hidden md:block">
+                        Public Affairs</p>
+                </div>
+            </div>
+
+            <div class="h-[0.1px] bg-white opacity-20 "></div>
+
+            <div class="container mx-auto">
+                <div class="justify-center flex mt-5">
+
+                    <div
+                        class="relative bg-[#E3042E] px-[24px] py-[12px] w-fit object-cover m-[20px] rounded-[10px]  md:hidden">
+                        <button class="poppins text-[14px] font-semibold text-white text-[18px]">View
+                            More</button>
+                        <div
+                            class="  absolute w-[130px] h-[42px] border-2 border-[#ffffff] border-t-0 border-r-0 -left-[4%] -bottom-[12%] rounded-bl-[10px] -right-[5%]">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container mx-auto">
+
+                <div class="relative z-10 md:top-14 container mx-auto bg-white rounded-xl md:p-8 p-5 md:w-[1500px] w-[332px]  top-20"
                     style="box-shadow: 0px 4px 21px 1px #052B5A0D;">
                     <div class="flex flex-wrap md:pl-24">
                         <div class="md:w-1/4 w-2/4">
@@ -704,8 +723,8 @@
 
                     </div>
                 </div>
-
             </div>
+
 
         </div>
     </section>
@@ -839,7 +858,7 @@
                             class="absolute overflow-hidden	inset-0 md:w-[460px] h-[400px]  bg-gradient-to-b from-[rgba(204,13,49,0.9)] to-[rgba(2,20,96,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex  justify-center border-2 border-white">
                             <div class="border-white border-3"></div>
 
-                            <div class="md:mt-36 mt-28" >
+                            <div class="md:mt-36 mt-28">
                                 <h3 class="text-white text-xl md:text-[32px] font-semibold  poppins">Knowledge Is Power
                                 </h3>
                                 <br>
@@ -857,25 +876,25 @@
 
                     <!-- slider 5 -->
                     <div
-                    class="swiper-slide relative rounded-lg p-7 md:p-10 bg-cover bg-center md:h-[400px] md:w-[615px] h-[300px] px-4 object-cover mt-7 md:mt-0">
+                        class="swiper-slide relative rounded-lg p-7 md:p-10 bg-cover bg-center md:h-[400px] md:w-[615px] h-[300px] px-4 object-cover mt-7 md:mt-0">
 
-                    <img src="/images/sec-4.3.png" alt=""
-                        class="absolute  md:w-[900px] md:h-[350px] z-10  opacity-15  right-[10px] md:top-[48px] top-[168px]">
+                        <img src="/images/sec-4.3.png" alt=""
+                            class="absolute  md:w-[900px] md:h-[350px] z-10  opacity-15  right-[10px] md:top-[48px] top-[168px]">
 
-                    <div class="absolute inset-0 bg-[#052B5A] ">
+                        <div class="absolute inset-0 bg-[#052B5A] ">
 
-                        <div class="md:p-10 md:mt-24 p-8 mt-12">
-                            <h2 class="text-[27px] font-semibold  mb-4 poppins">
-                                <span class="text-white md:text-[35px] text-[22px]">Upcoming</span> <span
-                                    class="text-[#E3042E] font-semibold md:text-[42px]  text-[22px]">Event</span>
-                            </h2>
-                            <p class="jost font-normal text-white md:text-lg text-[15px]">
-                                There are many variatioans of passages Lorem Ipsum labl, but the majority in some.
-                            </p>
+                            <div class="md:p-10 md:mt-24 p-8 mt-12">
+                                <h2 class="text-[27px] font-semibold  mb-4 poppins">
+                                    <span class="text-white md:text-[35px] text-[22px]">Upcoming</span> <span
+                                        class="text-[#E3042E] font-semibold md:text-[42px]  text-[22px]">Event</span>
+                                </h2>
+                                <p class="jost font-normal text-white md:text-lg text-[15px]">
+                                    There are many variatioans of passages Lorem Ipsum labl, but the majority in some.
+                                </p>
+                            </div>
                         </div>
-                    </div>
 
-                   </div>
+                    </div>
 
                     <!-- slider 6  -->
                     <div class="swiper-slide bg-white rounded-lg mt-7 md:mt-0">
@@ -892,7 +911,7 @@
                             class="absolute overflow-hidden	inset-0 md:w-[460px] h-[400px]  bg-gradient-to-b from-[rgba(204,13,49,0.9)] to-[rgba(2,20,96,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex  justify-center border-2 border-white">
                             <div class="border-white border-3"></div>
 
-                            <div class="md:mt-36 mt-28" >
+                            <div class="md:mt-36 mt-28">
                                 <h3 class="text-white text-xl md:text-[32px] font-semibold  poppins">Knowledge Is Power
                                 </h3>
                                 <br>
@@ -944,12 +963,15 @@
                 <div class="absolute inset-0 bg-[#052B5A] bg-opacity-45 rounded-lg"></div>
                 <!-- Play Button -->
                 <div class="absolute inset-0 flex items-center justify-center">
-                    <div class="md:w-[110px] md:h-[110px] rounded-full bg-[#ffffff] flex items-center justify-center">
+                    <div class="md:w-[115px] md:h-[115px] w-[80px] h-[80px] rounded-full bg-[#ffffff] flex items-center justify-center">
 
                         <div
-                            class=" md:w-[80px] md:h-[80px] rounded-full bg-[#052B5A] flex items-center justify-center z-10">
-                            <div>
-                                <i class="fa-solid fa-play text-[30px] md:ml-2" style="color: #ffffff;"></i>
+                            class="md:w-[84px] md:h-[84px] w-[60px] h-[60px] rounded-full bg-[#052B5A] bg-opacity-30 flex items-center justify-center">
+                            <div
+                                class=" md:w-[61px] md:h-[61px] w-[45px] h-[45px] rounded-full bg-[#052B5A] flex items-center justify-center z-10">
+                                <div>
+                                    <i class="fa-solid fa-play md:text-[25px] text-[18px] md:ml-1 ml-[2px]" style="color: #ffffff;"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1014,7 +1036,7 @@
                             </p>
                             <div class="h-[0.1px] bg-[#052B5A] opacity-30 "></div>
                             <h3
-                                class="poppins text-[#052B5A] md:text-[21px] font-semibold md:py-5 pb-3 md:pb-3 pt-4 md:pt-3">
+                                class="poppins text-[#052B5A] md:text-[21px] font-semibold md:py-5 pb-3 md:pb-[22px] pt-4 md:pt-4">
                                 Read More</h3>
                         </div>
                     </div>
@@ -1180,9 +1202,9 @@
     <!-- footer  -->
     <footer>
         <div class="relative bg-cover bg-center md:h-[425px] h-[700px]" style="
-  background-image: url('/images/footer-bg.jpg');
-  background-position: 31% 34%;
-">
+                background-image: url('/images/footer-bg.jpg');
+                background-position: 31% 34%;
+                ">
             <!-- Overlay with color -->
             <div class="absolute inset-0 bg-[#001631] bg-opacity-90">
                 <div class="container mx-auto">
@@ -1263,8 +1285,11 @@
                                 </ul>
                             </div>
                         </div>
+
+                        <div class="w-[1.5px] h-[125px] bg-[#FFF4FA] bg-opacity-10 mt-[120px] absolute left-[610px] hidden md:block"></div>
+
                         <div class="md:w-4/12 w-full z-10 hidden md:block">
-                            <div class="md:mt-5 md:pt-9">
+                            <div class="md:mt-10 md:pt-9">
                                 <div class="flex justify-center items-center">
                                     <img src="/images/footer-logo.png" alt="" />
                                 </div>
@@ -1295,8 +1320,10 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="w-[1.5px] h-[125px] bg-[#FFF4FA] bg-opacity-10 mt-[120px] absolute left-[1270px] hidden md:block"></div>
+
                         <div class="md:w-4/12 w-full z-10">
-                            <div class="md:mt-5 md:pt-5">
+                            <div class="md:mt-8 md:pt-5">
                                 <div class="md:text-center md:ml-56 mt-8 md:mt-0 ml-3 md:ml-0">
                                     <h3
                                         class="text-xl font-semibold mb-4 poppins font-semibold text-white md:mt-10 md:mr-[130px]">
@@ -1311,7 +1338,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="h-[0.1px] bg-white opacity-30 mt-16"></div>
+                <div class="h-[0.1px] bg-[#FFF4FA] opacity-10 mt-16"></div>
+
                 <div class="md:w-10/12 mx-auto flex flex-col md:flex-row justify-between text-sm text-gray-400 z-10">
                     <p class="text-white mt-8 text-center">
                         Copyright © 2023 Politician, All Rights Reserved
@@ -1342,7 +1370,7 @@
             },
         });
     </script>
-    
+
 
 </body>
 

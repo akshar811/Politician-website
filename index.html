@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="/js/script.js"></script>
+
 
     <script>
         function toggleMenu() {
@@ -205,6 +208,9 @@
 
     <!-- about us  -->
     <section>
+        <div class="relative hidden md:block">
+            <img src="./images/Home-vector-img.png" alt="" class="absolute right-0 top-[-91px]">
+        </div>
         <div class="container mx-auto flex flex-wrap">
             <div class="lg:w-5/12 lg:py-24 px-6 py-7">
                 <h2 class="poppins text-[27px] mb-5 font-semibold text-[#052B5A] md:hidden">About <span
@@ -343,6 +349,9 @@
 
     <!-- gallery  -->
     <section>
+        <div class="relative hidden md:block">
+            <img src="./images/Home-vector-img.png" alt="" class="absolute right-0 top-[160px]">
+        </div>
         <div class="container mx-auto">
             <div class=" mx-auto md:py-16 py-12">
                 <!-- Gallery Header -->
@@ -730,87 +739,97 @@
     </section>
 
     <!-- What Our Priorities  -->
-    <section class="px-4">
-        <div class="container mx-auto md:mb-8">
-            <!-- Title -->
-            <h2 class="text-[33px] sm:text-4xl font-semibold text-center text-[#052B5A] md:pt-10">
-                What Our <span class="text-[#E3042E]">Priorities</span>
-            </h2>
+    <section>
+        <div class="relative hidden md:block">
+            <img src="./images/home-vector-img-2.png" alt="" class="absolute  top-[-15px]">
+        </div>
+        <div class="px-4">
+            <div class="container mx-auto md:mb-8">
+                <!-- Title -->
+                <h2 class="text-[33px] sm:text-4xl font-semibold text-center text-[#052B5A] md:pt-10">
+                    What Our <span class="text-[#E3042E]">Priorities</span>
+                </h2>
 
 
-            <!-- Card Grid -->
-            <div class="grid gap-8 mt-10 sm:grid-cols-2 lg:grid-cols-3">
-                <!-- Card 1 -->
-                <div class="bg-white rounded-lg shadow-lg">
-                    <img src="/images/sec-6.1.jpg" alt="Family Protection"
-                        class="rounded-t-lg  object-cover scale-x-[-1]">
-                    <div class="mt-4 flex justify-center md:mt-[-35px] mt-[-35px]">
-                        <div
-                            class="md:w-[70px] md:h-[70px] w-[70px] h-[70px] rounded-full bg-white flex items-center justify-center z-10">
+                <!-- Card Grid -->
+                <div class="grid gap-8 mt-10 sm:grid-cols-2 lg:grid-cols-3">
+                    <!-- Card 1 -->
+                    <div class="bg-white rounded-lg shadow-lg">
+                        <img src="/images/sec-6.1.jpg" alt="Family Protection"
+                            class="rounded-t-lg  object-cover scale-x-[-1]">
+                        <div class="mt-4 flex justify-center md:mt-[-35px] mt-[-35px]">
                             <div
-                                class="md:w-16 md:h-16 w-16 h-16 rounded-full bg-[#052B5A] flex items-center justify-center">
-                                <img src="/images/icon-5.png" alt="Icon" class="md:w-10 md:h-10 ">
+                                class="md:w-[70px] md:h-[70px] w-[70px] h-[70px] rounded-full bg-white flex items-center justify-center z-10">
+                                <div
+                                    class="md:w-16 md:h-16 w-16 h-16 rounded-full bg-[#052B5A] flex items-center justify-center">
+                                    <img src="/images/icon-5.png" alt="Icon" class="md:w-10 md:h-10 ">
+                                </div>
                             </div>
+
                         </div>
-
+                        <div class="px-6">
+                            <h3 class="text-xl font-semibold text-center mt-4 text-[#052B5A] poppins md:text-3xl">Family
+                                Protection</h3>
+                            <p
+                                class="text-[#7F7F7F] text-center mt-2 jost font-normal md:leading-[29px] md:text-xl md:pt-2 md:pb-8 pb-8">
+                                Lorem ipsum dolor sit amet, consectetur elit. <br> Ad assumenda fuga illo laudantium
+                                magni
+                                sed <br> temporibus. Amet atque aut autem.
+                            </p>
+                        </div>
                     </div>
-                    <div class="px-6">
-                        <h3 class="text-xl font-semibold text-center mt-4 text-[#052B5A] poppins md:text-3xl">Family
-                            Protection</h3>
-                        <p
-                            class="text-[#7F7F7F] text-center mt-2 jost font-normal md:leading-[29px] md:text-xl md:pt-2 md:pb-8 pb-8">
-                            Lorem ipsum dolor sit amet, consectetur elit. <br> Ad assumenda fuga illo laudantium magni
-                            sed <br> temporibus. Amet atque aut autem.
-                        </p>
-                    </div>
-                </div>
 
-                <!-- Card 2 -->
-                <div class="bg-white rounded-lg shadow-lg hidden md:block">
-                    <img src="/images/sec-6.2.jpg" alt="Family Protection"
-                        class="rounded-t-lg  object-cover scale-x-[-1]">
-                    <div class="mt-4 flex justify-center md:mt-[-35px]">
-                        <div class="w-[70px] h-[70px] rounded-full bg-white flex items-center justify-center z-10">
-                            <div class="w-16 h-16 rounded-full bg-[#052B5A] flex items-center justify-center">
-                                <img src="/images/icon-6.png" alt="Icon" class="w-8 h-9 ">
+                    <!-- Card 2 -->
+                    <div class="bg-white rounded-lg shadow-lg hidden md:block">
+                        <img src="/images/sec-6.2.jpg" alt="Family Protection"
+                            class="rounded-t-lg  object-cover scale-x-[-1]">
+                        <div class="mt-4 flex justify-center md:mt-[-35px]">
+                            <div class="w-[70px] h-[70px] rounded-full bg-white flex items-center justify-center z-10">
+                                <div class="w-16 h-16 rounded-full bg-[#052B5A] flex items-center justify-center">
+                                    <img src="/images/icon-6.png" alt="Icon" class="w-8 h-9 ">
+                                </div>
                             </div>
+
                         </div>
-
+                        <div class="px-6">
+                            <h3 class="text-xl font-semibold text-center mt-4 text-[#052B5A] poppins md:text-3xl">
+                                Political
+                                Speech</h3>
+                            <p
+                                class="text-[#7F7F7F] text-center mt-2 jost font-normal md:leading-[29px] md:text-xl md:pt-2 md:pb-8 pb-8">
+                                Lorem ipsum dolor sit amet, consectetur elit. <br> Ad assumenda fuga illo laudantium
+                                magni
+                                sed <br> temporibus. Amet atque aut autem.
+                            </p>
+                        </div>
                     </div>
-                    <div class="px-6">
-                        <h3 class="text-xl font-semibold text-center mt-4 text-[#052B5A] poppins md:text-3xl">Political
-                            Speech</h3>
-                        <p
-                            class="text-[#7F7F7F] text-center mt-2 jost font-normal md:leading-[29px] md:text-xl md:pt-2 md:pb-8 pb-8">
-                            Lorem ipsum dolor sit amet, consectetur elit. <br> Ad assumenda fuga illo laudantium magni
-                            sed <br> temporibus. Amet atque aut autem.
-                        </p>
-                    </div>
-                </div>
 
-                <!-- Card 3 -->
-                <div class="bg-white rounded-lg shadow-lg hidden md:block">
-                    <img src="/images/sec-6.3.jpg" alt="Family Protection"
-                        class="rounded-t-lg  object-cover scale-x-[-1] md:w-[479px] md:h-[275px] w-[460px] h-[275px]">
-                    <div class="mt-4 flex justify-center md:mt-[-35px]">
-                        <div class="w-[70px] h-[70px] rounded-full bg-white flex items-center justify-center z-10">
-                            <div class="w-16 h-16 rounded-full bg-[#052B5A] flex items-center justify-center">
-                                <img src="/images/icon-7.png" alt="Icon" class="w-10 h-9 ">
+                    <!-- Card 3 -->
+                    <div class="bg-white rounded-lg shadow-lg hidden md:block">
+                        <img src="/images/sec-6.3.jpg" alt="Family Protection"
+                            class="rounded-t-lg  object-cover scale-x-[-1] md:w-[479px] md:h-[275px] w-[460px] h-[275px]">
+                        <div class="mt-4 flex justify-center md:mt-[-35px]">
+                            <div class="w-[70px] h-[70px] rounded-full bg-white flex items-center justify-center z-10">
+                                <div class="w-16 h-16 rounded-full bg-[#052B5A] flex items-center justify-center">
+                                    <img src="/images/icon-7.png" alt="Icon" class="w-10 h-9 ">
+                                </div>
                             </div>
+
                         </div>
+                        <div class="">
+                            <h3 class="text-xl font-semibold text-center mt-4 text-[#052B5A] poppins md:text-3xl">
+                                Veterans
+                                Benefits</h3>
+                            <p
+                                class="text-[#7F7F7F] text-center mt-2 jost font-normal md:leading-[29px] md:text-xl md:pt-2 md:pb-8 pb-8">
+                                Lorem ipsum dolor sit amet, consectetur elit. <br> Ad assumenda fuga illo laudantium
+                                magni
+                                sed <br> temporibus. Amet atque aut autem.
+                            </p>
+                        </div>
+                    </div>
 
-                    </div>
-                    <div class="">
-                        <h3 class="text-xl font-semibold text-center mt-4 text-[#052B5A] poppins md:text-3xl">Veterans
-                            Benefits</h3>
-                        <p
-                            class="text-[#7F7F7F] text-center mt-2 jost font-normal md:leading-[29px] md:text-xl md:pt-2 md:pb-8 pb-8">
-                            Lorem ipsum dolor sit amet, consectetur elit. <br> Ad assumenda fuga illo laudantium magni
-                            sed <br> temporibus. Amet atque aut autem.
-                        </p>
-                    </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -963,14 +982,16 @@
                 <div class="absolute inset-0 bg-[#052B5A] bg-opacity-45 rounded-lg"></div>
                 <!-- Play Button -->
                 <div class="absolute inset-0 flex items-center justify-center">
-                    <div class="md:w-[115px] md:h-[115px] w-[80px] h-[80px] rounded-full bg-[#ffffff] flex items-center justify-center">
+                    <div
+                        class="md:w-[115px] md:h-[115px] w-[80px] h-[80px] rounded-full bg-[#ffffff] flex items-center justify-center">
 
                         <div
                             class="md:w-[84px] md:h-[84px] w-[60px] h-[60px] rounded-full bg-[#052B5A] bg-opacity-30 flex items-center justify-center">
                             <div
                                 class=" md:w-[61px] md:h-[61px] w-[45px] h-[45px] rounded-full bg-[#052B5A] flex items-center justify-center z-10">
                                 <div>
-                                    <i class="fa-solid fa-play md:text-[25px] text-[18px] md:ml-1 ml-[2px]" style="color: #ffffff;"></i>
+                                    <i class="fa-solid fa-play md:text-[25px] text-[18px] md:ml-1 ml-[2px]"
+                                        style="color: #ffffff;"></i>
                                 </div>
                             </div>
                         </div>
@@ -997,93 +1018,98 @@
     </section>
 
     <!-- Latest news  -->
-    <section class="bg-[#F9F9FF] px-4 py-12 pb-20">
-        <div class="container mx-auto">
-            <div class="md:flex md:justify-between md:items-center md:mb-14">
-                <h2 class="text-2xl md:text-[45px] font-semibold poppins text-center mb-6 md:mb-0">
-                    <span class="text-[#052B5A]  ">Latest </span> <span class="text-red-600">news</span>
-                </h2>
-                <div class="relative hidden md:block">
-                    <button
-                        class="bg-[#E3042E] md:ml-[661px] text-white font-semibold md:px-5 px-[18px] py-[11px] rounded-md poppins text-[14px] md:text-[16px]">
-                        View More
-                    </button>
-                    <a href="" class="relative block">
-                        <!-- Add the pseudo-element using Tailwind -->
-                        <div
-                            class="absolute before:content-[''] before:absolute before:-bottom-[5px] before:left-[655px] before:border-b-2 before:border-l-2 before:border-[#E3042E] before:rounded-bl-lg md:before:rounded-bl-xl md:before:px-[55px] md:before:py-[17px] before:px-[43px] before:py-[15px]">
-                        </div>
-                    </a>
+    <section class="bg-[#F9F9FF]">
+        <div class="px-4 py-12 pb-20">
+            <div class="container mx-auto">
+                <div class="md:flex md:justify-between md:items-center md:mb-14">
+                    <h2 class="text-2xl md:text-[45px] font-semibold poppins text-center mb-6 md:mb-0">
+                        <span class="text-[#052B5A]  ">Latest </span> <span class="text-red-600">news</span>
+                    </h2>
+                    <div class="relative hidden md:block">
+                        <button
+                            class="bg-[#E3042E] md:ml-[661px] text-white font-semibold md:px-5 px-[18px] py-[11px] rounded-md poppins text-[14px] md:text-[16px]">
+                            View More
+                        </button>
+                        <a href="" class="relative block">
+                            <!-- Add the pseudo-element using Tailwind -->
+                            <div
+                                class="absolute before:content-[''] before:absolute before:-bottom-[5px] before:left-[655px] before:border-b-2 before:border-l-2 before:border-[#E3042E] before:rounded-bl-lg md:before:rounded-bl-xl md:before:px-[55px] md:before:py-[17px] before:px-[43px] before:py-[15px]">
+                            </div>
+                        </a>
+                    </div>
+
+
+
                 </div>
 
+                <div class="flex flex-warp">
+                    <div class="md:w-4/12 md:mr-7 ">
+                        <div class="bg-white rounded-lg shadow-lg">
+                            <img src="/images/sec-9.1.jpg" alt="Family Protection"
+                                class="md:rounded-t-2xl rounded-t-xl object-cover">
 
-
-            </div>
-
-            <div class="flex flex-warp">
-                <div class="md:w-4/12 md:mr-7 ">
-                    <div class="bg-white rounded-lg shadow-lg">
-                        <img src="/images/sec-9.1.jpg" alt="Family Protection"
-                            class="md:rounded-t-2xl rounded-t-xl object-cover">
-
-                        <div class="px-6">
-                            <h3 class="text-xl font-semibold mt-4 text-[#052B5A] poppins md:text-2xl">The Importance of
-                                Prenatal Vitamins The Importance </h3>
-                            <p
-                                class="text-[#7F7F7F] mt-2 jost font-normal md:leading-[29px] md:text-xl md:pt-1 md:pb-8 pb-4">
-                                Governments are prioritizing domestic policies to address pressingissues such as
-                                healthcare, education
-                            </p>
-                            <div class="h-[0.1px] bg-[#052B5A] opacity-30 "></div>
-                            <h3
-                                class="poppins text-[#052B5A] md:text-[21px] font-semibold md:py-5 pb-3 md:pb-[22px] pt-4 md:pt-4">
-                                Read More</h3>
+                            <div class="px-6">
+                                <h3 class="text-xl font-semibold mt-4 text-[#052B5A] poppins md:text-2xl">The Importance
+                                    of
+                                    Prenatal Vitamins The Importance </h3>
+                                <p
+                                    class="text-[#7F7F7F] mt-2 jost font-normal md:leading-[29px] md:text-xl md:pt-1 md:pb-8 pb-4">
+                                    Governments are prioritizing domestic policies to address pressingissues such as
+                                    healthcare, education
+                                </p>
+                                <div class="h-[0.1px] bg-[#052B5A] opacity-30 "></div>
+                                <h3
+                                    class="poppins text-[#052B5A] md:text-[21px] font-semibold md:py-5 pb-3 md:pb-[22px] pt-4 md:pt-4">
+                                    Read More</h3>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="md:w-8/12 hidden md:block">
-                    <div class="bg-white md:flex flex-warp py-5 px-5 rounded-md">
-                        <div>
-                            <img src="/images/sec-9.2.jpg"
-                                class="md:h-[200px] md:w-[470px] h-[200px] w-[490px] rounded-md object-cover" alt="">
+                    <div class="md:w-8/12 hidden md:block">
+                        <div class="bg-white md:flex flex-warp py-5 px-5 rounded-md">
+                            <div>
+                                <img src="/images/sec-9.2.jpg"
+                                    class="md:h-[200px] md:w-[470px] h-[200px] w-[490px] rounded-md object-cover"
+                                    alt="">
+                            </div>
+                            <div class="md:px-8 pl-1">
+                                <h3 class="text-xl font-semibold text-[#052B5A] poppins md:text-2xl">The Importance of
+                                    Prenatal Vitamins The Importance </h3>
+                                <p
+                                    class="text-[#7F7F7F] mt-2 jost font-normal md:leading-[29px] md:text-xl md:pt-1 md:pb-5 pb-8">
+                                    Governments are prioritizing domestic policies to address pressingissues such as
+                                    healthcare, education
+                                </p>
+                                <div class="h-[0.1px] bg-[#052B5A] opacity-30 "></div>
+                                <h3 class="poppins text-[#7F7F7F] md:text-[19px] font-semibold md:py-4">Read More</h3>
+                            </div>
                         </div>
-                        <div class="md:px-8 pl-1">
-                            <h3 class="text-xl font-semibold text-[#052B5A] poppins md:text-2xl">The Importance of
-                                Prenatal Vitamins The Importance </h3>
-                            <p
-                                class="text-[#7F7F7F] mt-2 jost font-normal md:leading-[29px] md:text-xl md:pt-1 md:pb-5 pb-8">
-                                Governments are prioritizing domestic policies to address pressingissues such as
-                                healthcare, education
-                            </p>
-                            <div class="h-[0.1px] bg-[#052B5A] opacity-30 "></div>
-                            <h3 class="poppins text-[#7F7F7F] md:text-[19px] font-semibold md:py-4">Read More</h3>
+                        <div class="bg-white md:flex flex-warp py-5 px-5 rounded-md md:mt-6">
+                            <div>
+                                <img src="/images/sec-9.3.jpg"
+                                    class="md:h-[200px] md:w-[470px] h-[200px] w-[490px] rounded-md object-cover"
+                                    alt="">
+                            </div>
+                            <div class="md:px-8 pl-1">
+                                <h3 class="text-xl font-semibold text-[#052B5A] poppins md:text-2xl">The Importance of
+                                    Prenatal Vitamins The Importance </h3>
+                                <p
+                                    class="text-[#7F7F7F] mt-2 jost font-normal md:leading-[29px] md:text-xl md:pt-1 md:pb-5 pb-8">
+                                    Governments are prioritizing domestic policies to address pressingissues such as
+                                    healthcare, education
+                                </p>
+                                <div class="h-[0.1px] bg-[#052B5A] opacity-30 "></div>
+                                <h3 class="poppins text-[#7F7F7F] md:text-[19px] font-semibold md:py-4">Read More</h3>
+                            </div>
                         </div>
-                    </div>
-                    <div class="bg-white md:flex flex-warp py-5 px-5 rounded-md md:mt-6">
-                        <div>
-                            <img src="/images/sec-9.3.jpg"
-                                class="md:h-[200px] md:w-[470px] h-[200px] w-[490px] rounded-md object-cover" alt="">
-                        </div>
-                        <div class="md:px-8 pl-1">
-                            <h3 class="text-xl font-semibold text-[#052B5A] poppins md:text-2xl">The Importance of
-                                Prenatal Vitamins The Importance </h3>
-                            <p
-                                class="text-[#7F7F7F] mt-2 jost font-normal md:leading-[29px] md:text-xl md:pt-1 md:pb-5 pb-8">
-                                Governments are prioritizing domestic policies to address pressingissues such as
-                                healthcare, education
-                            </p>
-                            <div class="h-[0.1px] bg-[#052B5A] opacity-30 "></div>
-                            <h3 class="poppins text-[#7F7F7F] md:text-[19px] font-semibold md:py-4">Read More</h3>
-                        </div>
-                    </div>
 
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Testimonial  -->
-    <section class="px-4">
+    <section class="px-4 ">
         <div class="container mx-auto md:mb-28 mb-16">
             <div class="title">
                 <h2
@@ -1091,111 +1117,237 @@
                     Testimonial
                 </h2>
             </div>
-            <div class="flex gap-8">
-                <div class="md:w-4/12">
-                    <div class="bg-white shadow-lg rounded-lg p-6 relative">
-                        <div class="absolute md:-top-14 -top-9 ">
-                            <img src="/images/testimonial-1.png" alt="" class="md:w-[120px] md:h-[120px] w-[80px] h-[80px] border-4 rounded-lg
-                            border-white shadow-lg object-cover
-                            ">
+            <div class="swiper mySwiper1 pt-14 pb-10">
+                <div class="swiper-wrapper flex gap-8">
+                    <div class="swiper-slide">
+                        <div>
+                            <div class="">
+                                <div class="bg-white shadow-lg rounded-lg p-6 relative">
+                                    <div class="absolute md:-top-14 -top-9 ">
+                                        <img src="/images/testimonial-1.png" alt="" class="md:w-[120px] md:h-[120px] w-[80px] h-[80px] border-4 rounded-lg
+                                    border-white shadow-lg object-cover
+                                    ">
+                                    </div>
+                                    <div class="md:ml-[350px] md:mt-3 ml-[220px]">
+                                        <img src="/images/testimonial-icon.png" alt="">
+                                    </div>
+                                    <br>
+                                    <div class="md:mt-[-5px] mt-[-30px]">
+                                        <h3 class="poppins text-[20px] font-semibold md:text-2xl text-[#052B5A]">George
+                                            Johnston
+                                        </h3>
+                                        <p
+                                            class="text-[18px] jost md:text-[21px] text-[#7F7F7F] font-normal md:pt-2 md:pb-2 pb-5 pt-1">
+                                            Candidate
+                                        </p>
+                                    </div>
+                                    <div class="h-[0.1px] bg-[#2f2f2f] opacity-10 "></div>
+                                    <p class="mt-4 md:text-[20px] text-[#7F7F7F] font-normal">
+                                        Lorem ipsum dolor sit amet, consectetur elit. Ad assumenda fuga illo
+                                        laudantium magni sed temporibus. Amet atque aut autem consectetur
+                                        consequuntur dolorem enim.
+                                    </p>
+                                    <div class="mt-4">
+                                        <div class="flex md:text-[22px]">
+                                            <i class="fa-solid fa-star" style="color: #FFc107;"></i>
+                                            <i class="fa-solid fa-star" style="color: #FFc107;"></i>
+                                            <i class="fa-solid fa-star" style="color: #FFc107;"></i>
+                                            <i class="fa-solid fa-star" style="color: #FFc107;"></i>
+                                            <i class="fa-solid fa-star" style="color: #FFc107;"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="md:ml-[350px] md:mt-3 ml-[220px]">
-                            <img src="/images/testimonial-icon.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <div class=" hidden md:block">
+                            <div class="bg-white shadow-lg rounded-lg p-6 relative">
+                                <div class="absolute -top-14 ">
+                                    <img src="/images/testimonial-2.png" alt="" class="md:w-[120px] md:h-[120px] border-4 rounded-lg
+                                    border-white shadow-lg
+                                    ">
+                                </div>
+                                <div class="md:ml-[350px] md:mt-3">
+                                    <img src="/images/testimonial-icon.png" alt="">
+                                </div>
+                                <br>
+                                <div class="md:mt-[-5px]">
+                                    <h3 class="poppins font-semibold md:text-2xl text-[#052B5A]">Prateek Tosniwal</h3>
+                                    <p class="text-sm jost md:text-[21px] text-[#7F7F7F] font-normal md:pt-2 md:pb-5">
+                                        Tosniwal &
+                                        Co.</p>
+                                </div>
+                                <div class="h-[0.1px] bg-[#2f2f2f] opacity-10 "></div>
+                                <p class="mt-4 md:text-[20px] text-[#7F7F7F] font-normal	">
+                                    Lorem ipsum dolor sit amet, consectetur elit. Ad assumenda fuga illo
+                                    laudantium magni sed temporibus. Amet atque aut autem consectetur
+                                    consequuntur dolorem enim.
+                                </p>
+                                <div class="mt-4">
+                                    <div class="flex md:text-[22px]">
+                                        <i class="fa-solid fa-star" style="color: #FFc107;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFc107;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFc107;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFc107;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFc107;"></i>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <br>
-                        <div class="md:mt-[-25px] mt-[-30px]">
-                            <h3 class="poppins text-[20px] font-semibold md:text-2xl text-[#052B5A]">George Johnston
-                            </h3>
-                            <p
-                                class="text-[18px] jost md:text-[21px] text-[#7F7F7F] font-normal md:pt-2 md:pb-2 pb-5 pt-1">
-                                Candidate
-                            </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class=" hidden md:block">
+                            <div class="bg-white shadow-lg rounded-lg p-6 relative">
+                                <div class="absolute -top-14 ">
+                                    <img src="/images/testimonial-3.png" alt="" class="md:w-[120px] md:h-[120px] border-4 rounded-lg
+                                    border-white shadow-lg
+                                    ">
+                                </div>
+                                <div class="md:ml-[350px] md:mt-3">
+                                    <img src="/images/testimonial-icon.png" alt="">
+                                </div>
+                                <br>
+                                <div class="md:mt-[-5px]">
+                                    <h3 class="poppins font-semibold md:text-2xl text-[#052B5A]">George Johnston</h3>
+                                    <p class="text-sm jost md:text-[21px] text-[#7F7F7F] font-normal md:pt-2 md:pb-5">
+                                        Candidate
+                                    </p>
+                                </div>
+                                <div class="h-[0.1px] bg-[#2f2f2f] opacity-10 "></div>
+                                <p class="mt-4 md:text-[20px] text-[#7F7F7F] font-normal	">
+                                    Lorem ipsum dolor sit amet, consectetur elit. Ad assumenda fuga illo
+                                    laudantium magni sed temporibus. Amet atque aut autem consectetur
+                                    consequuntur dolorem enim.
+                                </p>
+                                <div class="mt-4">
+                                    <div class="flex md:text-[22px]">
+                                        <i class="fa-solid fa-star" style="color: #FFc107;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFc107;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFc107;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFc107;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFc107;"></i>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="h-[0.1px] bg-[#2f2f2f] opacity-10 "></div>
-                        <p class="mt-4 md:text-[20px] text-[#7F7F7F] font-normal">
-                            Lorem ipsum dolor sit amet, consectetur elit. Ad assumenda fuga illo
-                            laudantium magni sed temporibus. Amet atque aut autem consectetur
-                            consequuntur dolorem enim.
-                        </p>
-                        <div class="mt-4">
-                            <div class="flex md:text-[22px]">
-                                <i class="fa-solid fa-star" style="color: #FFc107;"></i>
-                                <i class="fa-solid fa-star" style="color: #FFc107;"></i>
-                                <i class="fa-solid fa-star" style="color: #FFc107;"></i>
-                                <i class="fa-solid fa-star" style="color: #FFc107;"></i>
-                                <i class="fa-solid fa-star" style="color: #FFc107;"></i>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <div class="">
+                                <div class="bg-white shadow-lg rounded-lg p-6 relative">
+                                    <div class="absolute md:-top-14 -top-9 ">
+                                        <img src="/images/testimonial-1.png" alt="" class="md:w-[120px] md:h-[120px] w-[80px] h-[80px] border-4 rounded-lg
+                                    border-white shadow-lg object-cover
+                                    ">
+                                    </div>
+                                    <div class="md:ml-[350px] md:mt-3 ml-[220px]">
+                                        <img src="/images/testimonial-icon.png" alt="">
+                                    </div>
+                                    <br>
+                                    <div class="md:mt-[-5px] mt-[-30px]">
+                                        <h3 class="poppins text-[20px] font-semibold md:text-2xl text-[#052B5A]">George
+                                            Johnston
+                                        </h3>
+                                        <p
+                                            class="text-[18px] jost md:text-[21px] text-[#7F7F7F] font-normal md:pt-2 md:pb-2 pb-5 pt-1">
+                                            Candidate
+                                        </p>
+                                    </div>
+                                    <div class="h-[0.1px] bg-[#2f2f2f] opacity-10 "></div>
+                                    <p class="mt-4 md:text-[20px] text-[#7F7F7F] font-normal">
+                                        Lorem ipsum dolor sit amet, consectetur elit. Ad assumenda fuga illo
+                                        laudantium magni sed temporibus. Amet atque aut autem consectetur
+                                        consequuntur dolorem enim.
+                                    </p>
+                                    <div class="mt-4">
+                                        <div class="flex md:text-[22px]">
+                                            <i class="fa-solid fa-star" style="color: #FFc107;"></i>
+                                            <i class="fa-solid fa-star" style="color: #FFc107;"></i>
+                                            <i class="fa-solid fa-star" style="color: #FFc107;"></i>
+                                            <i class="fa-solid fa-star" style="color: #FFc107;"></i>
+                                            <i class="fa-solid fa-star" style="color: #FFc107;"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class=" hidden md:block">
+                            <div class="bg-white shadow-lg rounded-lg p-6 relative">
+                                <div class="absolute -top-14 ">
+                                    <img src="/images/testimonial-2.png" alt="" class="md:w-[120px] md:h-[120px] border-4 rounded-lg
+                                    border-white shadow-lg
+                                    ">
+                                </div>
+                                <div class="md:ml-[350px] md:mt-3">
+                                    <img src="/images/testimonial-icon.png" alt="">
+                                </div>
+                                <br>
+                                <div class="md:mt-[-5px]">
+                                    <h3 class="poppins font-semibold md:text-2xl text-[#052B5A]">Prateek Tosniwal</h3>
+                                    <p class="text-sm jost md:text-[21px] text-[#7F7F7F] font-normal md:pt-2 md:pb-5">
+                                        Tosniwal &
+                                        Co.</p>
+                                </div>
+                                <div class="h-[0.1px] bg-[#2f2f2f] opacity-10 "></div>
+                                <p class="mt-4 md:text-[20px] text-[#7F7F7F] font-normal	">
+                                    Lorem ipsum dolor sit amet, consectetur elit. Ad assumenda fuga illo
+                                    laudantium magni sed temporibus. Amet atque aut autem consectetur
+                                    consequuntur dolorem enim.
+                                </p>
+                                <div class="mt-4">
+                                    <div class="flex md:text-[22px]">
+                                        <i class="fa-solid fa-star" style="color: #FFc107;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFc107;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFc107;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFc107;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFc107;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class=" hidden md:block">
+                            <div class="bg-white shadow-lg rounded-lg p-6 relative">
+                                <div class="absolute -top-14 ">
+                                    <img src="/images/testimonial-3.png" alt="" class="md:w-[120px] md:h-[120px] border-4 rounded-lg
+                                    border-white shadow-lg
+                                    ">
+                                </div>
+                                <div class="md:ml-[350px] md:mt-3">
+                                    <img src="/images/testimonial-icon.png" alt="">
+                                </div>
+                                <br>
+                                <div class="md:mt-[-5px]">
+                                    <h3 class="poppins font-semibold md:text-2xl text-[#052B5A]">George Johnston</h3>
+                                    <p class="text-sm jost md:text-[21px] text-[#7F7F7F] font-normal md:pt-2 md:pb-5">
+                                        Candidate
+                                    </p>
+                                </div>
+                                <div class="h-[0.1px] bg-[#2f2f2f] opacity-10 "></div>
+                                <p class="mt-4 md:text-[20px] text-[#7F7F7F] font-normal	">
+                                    Lorem ipsum dolor sit amet, consectetur elit. Ad assumenda fuga illo
+                                    laudantium magni sed temporibus. Amet atque aut autem consectetur
+                                    consequuntur dolorem enim.
+                                </p>
+                                <div class="mt-4">
+                                    <div class="flex md:text-[22px]">
+                                        <i class="fa-solid fa-star" style="color: #FFc107;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFc107;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFc107;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFc107;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFc107;"></i>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="md:w-4/12 hidden md:block">
-                    <div class="bg-white shadow-lg rounded-lg p-6 relative">
-                        <div class="absolute -top-14 ">
-                            <img src="/images/testimonial-2.png" alt="" class="md:w-[120px] md:h-[120px] border-4 rounded-lg
-                            border-white shadow-lg
-                            ">
-                        </div>
-                        <div class="md:ml-[350px] md:mt-3">
-                            <img src="/images/testimonial-icon.png" alt="">
-                        </div>
-                        <br>
-                        <div class="md:mt-[-25px]">
-                            <h3 class="poppins font-semibold md:text-2xl text-[#052B5A]">Prateek Tosniwal</h3>
-                            <p class="text-sm jost md:text-[21px] text-[#7F7F7F] font-normal md:pt-2 md:pb-5">Tosniwal &
-                                Co.</p>
-                        </div>
-                        <div class="h-[0.1px] bg-[#2f2f2f] opacity-10 "></div>
-                        <p class="mt-4 md:text-[20px] text-[#7F7F7F] font-normal	">
-                            Lorem ipsum dolor sit amet, consectetur elit. Ad assumenda fuga illo
-                            laudantium magni sed temporibus. Amet atque aut autem consectetur
-                            consequuntur dolorem enim.
-                        </p>
-                        <div class="mt-4">
-                            <div class="flex md:text-[22px]">
-                                <i class="fa-solid fa-star" style="color: #FFc107;"></i>
-                                <i class="fa-solid fa-star" style="color: #FFc107;"></i>
-                                <i class="fa-solid fa-star" style="color: #FFc107;"></i>
-                                <i class="fa-solid fa-star" style="color: #FFc107;"></i>
-                                <i class="fa-solid fa-star" style="color: #FFc107;"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="md:w-4/12 hidden md:block">
-                    <div class="bg-white shadow-lg rounded-lg p-6 relative">
-                        <div class="absolute -top-14 ">
-                            <img src="/images/testimonial-3.png" alt="" class="md:w-[120px] md:h-[120px] border-4 rounded-lg
-                            border-white shadow-lg
-                            ">
-                        </div>
-                        <div class="md:ml-[350px] md:mt-3">
-                            <img src="/images/testimonial-icon.png" alt="">
-                        </div>
-                        <br>
-                        <div class="md:mt-[-25px]">
-                            <h3 class="poppins font-semibold md:text-2xl text-[#052B5A]">George Johnston</h3>
-                            <p class="text-sm jost md:text-[21px] text-[#7F7F7F] font-normal md:pt-2 md:pb-5">Candidate
-                            </p>
-                        </div>
-                        <div class="h-[0.1px] bg-[#2f2f2f] opacity-10 "></div>
-                        <p class="mt-4 md:text-[20px] text-[#7F7F7F] font-normal	">
-                            Lorem ipsum dolor sit amet, consectetur elit. Ad assumenda fuga illo
-                            laudantium magni sed temporibus. Amet atque aut autem consectetur
-                            consequuntur dolorem enim.
-                        </p>
-                        <div class="mt-4">
-                            <div class="flex md:text-[22px]">
-                                <i class="fa-solid fa-star" style="color: #FFc107;"></i>
-                                <i class="fa-solid fa-star" style="color: #FFc107;"></i>
-                                <i class="fa-solid fa-star" style="color: #FFc107;"></i>
-                                <i class="fa-solid fa-star" style="color: #FFc107;"></i>
-                                <i class="fa-solid fa-star" style="color: #FFc107;"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
             </div>
+
         </div>
     </section>
 
@@ -1286,7 +1438,9 @@
                             </div>
                         </div>
 
-                        <div class="w-[1.5px] h-[125px] bg-[#FFF4FA] bg-opacity-10 mt-[120px] absolute left-[610px] hidden md:block"></div>
+                        <div
+                            class="w-[1.5px] h-[125px] bg-[#FFF4FA] bg-opacity-10 mt-[120px] absolute left-[610px] hidden md:block">
+                        </div>
 
                         <div class="md:w-4/12 w-full z-10 hidden md:block">
                             <div class="md:mt-10 md:pt-9">
@@ -1320,7 +1474,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="w-[1.5px] h-[125px] bg-[#FFF4FA] bg-opacity-10 mt-[120px] absolute left-[1270px] hidden md:block"></div>
+                        <div
+                            class="w-[1.5px] h-[125px] bg-[#FFF4FA] bg-opacity-10 mt-[120px] absolute left-[1270px] hidden md:block">
+                        </div>
 
                         <div class="md:w-4/12 w-full z-10">
                             <div class="md:mt-8 md:pt-5">
@@ -1355,9 +1511,8 @@
     </footer>
 
 
-
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 
     <!-- Initialize Swiper -->
     <script>
@@ -1369,6 +1524,17 @@
                 },
             },
         });
+
+        var swiper = new Swiper(".mySwiper1", {
+            slidesPerView: 1.5,
+            breakpoints: {
+                1024: {
+                    slidesPerView: 3.5,
+                },
+            },
+        });
+
+        
     </script>
 
 

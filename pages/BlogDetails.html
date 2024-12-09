@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="../css/fonts.css">
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="/js/script.js"></script>
+
 
     <script>
         function toggleMenu() {
@@ -39,11 +42,11 @@
 </head>
 
 <body>
-      <!-- header  -->
+    <!-- header  -->
 
-      <header class="bg-white">
+    <header class="bg-white">
         <div class="container mx-auto">
-            <div class="px-4 py-6 flex items-center justify-between">
+            <div class="px-4 py-5 flex items-center justify-between">
                 <!-- Logo -->
                 <div class="flex lg:flex-1">
                     <a href="#" class="-m-1 p-1">
@@ -63,18 +66,19 @@
                         class="font-normal poppins text-lg text-[#052B5A]">Volunteer and Contribution</a>
                 </nav>
 
-               <!-- Call to Action Button -->
-               <div class="md:flex md:justify-end md:flex-1 md:block hidden">
-                <div class=" relative bg-[#E3042E] px-[20px] py-[10px] w-fit object-cover  rounded-[10px]  ">
-                    <button>
-                        <a href="/pages/ContactUS.html" class="poppins text-[14px] font-semibold text-white z-[10] relative">Contact
-                            us</a>
-                         </button>
-                    <div
-                        class="  absolute w-[105px] h-[40px] border-2 border-[#E3042E] border-t-0 border-r-0 -left-[5%] -bottom-[13%] rounded-bl-[10px] -right-[5%] ">
+                <!-- Call to Action Button -->
+                <div class="md:flex md:justify-end md:flex-1 md:block hidden">
+                    <div class=" relative bg-[#E3042E] px-[20px] py-[10px] w-fit object-cover  rounded-[10px]  ">
+                        <button>
+                            <a href="/pages/ContactUS.html"
+                                class="poppins text-[14px] font-semibold text-white z-[10] relative">Contact
+                                us</a>
+                        </button>
+                        <div
+                            class="  absolute w-[105px] h-[40px] border-2 border-[#E3042E] border-t-0 border-r-0 -left-[5%] -bottom-[13%] rounded-bl-[10px] -right-[5%] ">
+                        </div>
                     </div>
                 </div>
-            </div>
 
                 <!-- Mobile Menu Toggle Button -->
                 <button class="md:hidden text-gray-700 focus:outline-none" onclick="toggleMenu()">
@@ -106,7 +110,8 @@
                         <div class="absolute inset-0 bg-[#001631] bg-opacity-85 backdrop-blur-[3px] h-[699px]"></div>
                         <div class="relative z-10 container mx-auto px-6">
                             <nav class="space-y-6 py-4 px-4 text-center pt-[120px]">
-                                <a href="/index.html" class="block poppins font-normal text-[20px]">Home</a>
+                                <a href="/index.html"
+                                    class="block poppins font-normal text-[20px] text-[#AFADAD]">Home</a>
                                 <a href="../pages/AboutUs.html"
                                     class="block text-[#AFADAD] hover:text-blue-500 poppins text-[21px] font-normal">About
                                     Us</a>
@@ -136,7 +141,7 @@
 
             </div>
         </div>
-      </header>
+    </header>
 
     <!-- banner section  -->
     <div class="bg-[url(../images/bg-img.jpg)] bg-cover bg-no-repeat md:h-[650px] overflow-hidden">
@@ -180,117 +185,126 @@
         </div>
     </div>
 
-    <section class="md:mt-10 md:mb-20 px-4 mt-10 mb-10">
-        <div class="container mx-auto">
-            <div class="">
-                <div class=" mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8">
-                    <!-- Main Content -->
-                    <div class="lg:col-span-2 space-y-6 bg-white shadow-xl p-7 rounded-lg">
+    <section>
+        <div class="relative hidden md:block">
+            <img src="../images/home-vector-img-2.png" alt="" class="absolute left-0 top-[-70px]">
+        </div>
+        <div class="md:mt-10 md:mb-20 px-4 mt-10 mb-10">
+            <div class="container mx-auto">
+                <div class="">
+                    <div class=" mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8">
+                        <!-- Main Content -->
+                        <div class="lg:col-span-2 space-y-6 bg-white shadow-xl p-7 rounded-lg">
 
-                        <!-- Search Bar -->
-                        <div class="mt-5 md:hidden">
-                            <div class="flex shadow-md rounded-[10px] p-2 border border-gray-300 rounded-md">
-                                <input type="text" placeholder="Search"
-                                    class="w-full  px-4 py-2 focus:outline-none focus:ring-2 text-[#052B5A]" />
-                                <div class="mt-2 mr-2">
-                                    <i class="fa-solid fa-magnifying-glass" style="color: #052b5a;"></i>
+                            <!-- Search Bar -->
+                            <div class="mt-5 md:hidden">
+                                <div class="flex shadow-md rounded-[10px] p-2 border border-gray-300 rounded-md">
+                                    <input type="text" placeholder="Search"
+                                        class="w-full  px-4 py-2 focus:outline-none focus:ring-2 text-[#052B5A]" />
+                                    <div class="mt-2 mr-2">
+                                        <i class="fa-solid fa-magnifying-glass" style="color: #052b5a;"></i>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <!-- Title Section -->
-                        <h1 class="text-[23px] sm:text-[33px] font-semibold text-[#052B5A] poppins md:py-3">The
-                            Importance
-                            of Prenatal Vitamins</h1>
+                            <!-- Title Section -->
+                            <h1 class="text-[23px] sm:text-[33px] font-semibold text-[#052B5A] poppins md:py-3">The
+                                Importance
+                                of Prenatal Vitamins</h1>
 
-                        <!-- Featured Image -->
-                        <div>
-                            <img src="../images/blog-details-sec-1.jpg" alt="Featured Post"
-                                class="w-full rounded-lg shadow-md">
-                        </div>
+                            <!-- Featured Image -->
+                            <div>
+                                <img src="../images/blog-details-sec-1.jpg" alt="Featured Post"
+                                    class="w-full rounded-lg shadow-md">
+                            </div>
 
-                        <div class="bg-[#f9f9f9] md:py-[15px] md:pb-[20px] rounded-lg">
-                            <div class="md:flex md:pl-4 p-4 md:p-0">
-                                <div class="flex">
-                                    <div class="md:w-6/12  relative">
-                                        <div class="flex">
-                                            <div class="icon">
-                                                <div
-                                                    class=" md:w-[40px] w-[30px] h-[30px] md:h-[40px] mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
-                                                    <span class=""><i class="fa-solid fa-calendar-days"
-                                                            style="color: #052b5a;"></i></span>
-                                                </div>
-                                            </div>
-                                            <div class="content md:mt-[6px] mt-1">
-                                                <p class="jost text-[#7F7F7F] md:text-[18px] font-medium">15 March 2024
-                                                </p>
-                                            </div>
-                                            <div
-                                                class="absolute md:w-[1.5px] w-[1.5px] md:h-[37px] h-[30px] bg-[#D7D7D7] absolute top-[0px] md:top-[5px] md:left-[215px] hidden md:block">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="md:w-6/12 gap-2 relative">
-                                        <div class="flex md:ml-[80px] ml-[20px]">
-                                            <div class="icon">
-                                                <div
-                                                    class=" md:w-[35px] w-[30px] h-[30px] md:h-[35px] md:mt-1  mr-1 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
-                                                    <span class=""><i class="fa-solid fa-user"
-                                                            style="color: #052b5a;"></i></span>
-                                                </div>
-                                            </div>
-                                            <div class="content md:ml-[10px]">
-                                                <p class="jost text-[#7F7F7F] md:text-[18px] font-medium md:mt-2 mt-1">
-                                                    M.Smith </p>
-                                            </div>
-                                            <div
-                                                class="absolute md:w-[1.5px] w-[1.5px] md:h-[37px] h-[30px] bg-[#D7D7D7] absolute top-[50px] md:top-[5px] md:left-[235px]  hidden md:block">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="flex ">
-                                    <div class="md:w-6/12 gap-2 relative ">
-                                        <div class="flex  mt-5 md:mt-0 md:ml-[90px]">
-                                            <div class="icon md:mt-1">
-                                                <div
-                                                    class=" md:w-[40px] w-[30px] h-[30px] md:h-[40px]  mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
-                                                    <span class=""><i class="fa-solid fa-location-arrow"
-                                                            style="color: #052b5a;"></i></span>
-                                                </div>
-                                            </div>
-                                            <div class="content md:mt-[px] mt-1">
-                                                <p class="jost text-[#7F7F7F] md:text-[18px] font-medium md:mt-[5px]">
-                                                    Political Press</p>
-                                            </div>
-                                            <div
-                                                class="absolute md:w-[1.5px] w-[1.5px] md:h-[37px] h-[55px] bg-[#D7D7D7] absolute top-[50px] md:top-[5px] md:left-[290px] left-[-25px] hidden md:block">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="md:w-6/12 gap-2 relative">
-                                        <div class="flex md:ml-[60px] md:mt-[4px] ml-[23px]">
-                                            <div class="content md:mt-[6px]">
-                                                <p class="poppins text-[#052B5A] text-xl font-semibold hidden md:block">
-                                                    Share:</p>
-                                            </div>
-                                            <div class="icon mt-5 md:mt-0 ml-2 md:ml-0">
-                                                <div class="flex">
+                            <div class="bg-[#f9f9f9] md:py-[15px] md:pb-[20px] rounded-lg">
+                                <div class="md:flex md:pl-4 p-4 md:p-0">
+                                    <div class="flex">
+                                        <div class="md:w-6/12  relative">
+                                            <div class="flex">
+                                                <div class="icon">
                                                     <div
-                                                        class=" md:w-[40px] w-[30px] h-[30px] md:h-[40px] mr-3 md:ml-2 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
-                                                        <span class=""><i class="fa-brands fa-facebook-f"
+                                                        class=" md:w-[40px] w-[30px] h-[30px] md:h-[40px] mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                                        <span class=""><i class="fa-solid fa-calendar-days"
                                                                 style="color: #052b5a;"></i></span>
                                                     </div>
+                                                </div>
+                                                <div class="content md:mt-[6px] mt-1">
+                                                    <p class="jost text-[#7F7F7F] md:text-[18px] font-medium">15 March
+                                                        2024
+                                                    </p>
+                                                </div>
+                                                <div
+                                                    class="absolute md:w-[1.5px] w-[1.5px] md:h-[37px] h-[30px] bg-[#D7D7D7] absolute top-[0px] md:top-[5px] md:left-[215px] hidden md:block">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="md:w-6/12 gap-2 relative">
+                                            <div class="flex md:ml-[80px] ml-[20px]">
+                                                <div class="icon">
                                                     <div
-                                                        class=" md:w-[40px] w-[30px] h-[30px] md:h-[40px] mr-3  rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
-                                                        <span class=""><i class="fa-brands fa-twitter"
+                                                        class=" md:w-[35px] w-[30px] h-[30px] md:h-[35px] md:mt-1  mr-1 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                                        <span class=""><i class="fa-solid fa-user"
                                                                 style="color: #052b5a;"></i></span>
                                                     </div>
+                                                </div>
+                                                <div class="content md:ml-[10px]">
+                                                    <p
+                                                        class="jost text-[#7F7F7F] md:text-[18px] font-medium md:mt-2 mt-1">
+                                                        M.Smith </p>
+                                                </div>
+                                                <div
+                                                    class="absolute md:w-[1.5px] w-[1.5px] md:h-[37px] h-[30px] bg-[#D7D7D7] absolute top-[50px] md:top-[5px] md:left-[235px]  hidden md:block">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex ">
+                                        <div class="md:w-6/12 gap-2 relative ">
+                                            <div class="flex  mt-5 md:mt-0 md:ml-[90px]">
+                                                <div class="icon md:mt-1">
                                                     <div
-                                                        class=" md:w-[40px] w-[30px] h-[30px] md:h-[40px] mr-3  rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
-                                                        <span class=""><i class="fa-brands fa-square-instagram"
-                                                                style="color: #052b5a;"></i></i></span>
+                                                        class=" md:w-[40px] w-[30px] h-[30px] md:h-[40px]  mr-3 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                                        <span class=""><i class="fa-solid fa-location-arrow"
+                                                                style="color: #052b5a;"></i></span>
+                                                    </div>
+                                                </div>
+                                                <div class="content md:mt-[px] mt-1">
+                                                    <p
+                                                        class="jost text-[#7F7F7F] md:text-[18px] font-medium md:mt-[5px]">
+                                                        Political Press</p>
+                                                </div>
+                                                <div
+                                                    class="absolute md:w-[1.5px] w-[1.5px] md:h-[37px] h-[55px] bg-[#D7D7D7] absolute top-[50px] md:top-[5px] md:left-[290px] left-[-25px] hidden md:block">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="md:w-6/12 gap-2 relative">
+                                            <div class="flex md:ml-[60px] md:mt-[4px] ml-[23px]">
+                                                <div class="content md:mt-[6px]">
+                                                    <p
+                                                        class="poppins text-[#052B5A] text-xl font-semibold hidden md:block">
+                                                        Share:</p>
+                                                </div>
+                                                <div class="icon mt-5 md:mt-0 ml-2 md:ml-0">
+                                                    <div class="flex">
+                                                        <div
+                                                            class=" md:w-[40px] w-[30px] h-[30px] md:h-[40px] mr-3 md:ml-2 rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                                            <span class=""><i class="fa-brands fa-facebook-f"
+                                                                    style="color: #052b5a;"></i></span>
+                                                        </div>
+                                                        <div
+                                                            class=" md:w-[40px] w-[30px] h-[30px] md:h-[40px] mr-3  rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                                            <span class=""><i class="fa-brands fa-twitter"
+                                                                    style="color: #052b5a;"></i></span>
+                                                        </div>
+                                                        <div
+                                                            class=" md:w-[40px] w-[30px] h-[30px] md:h-[40px] mr-3  rounded-full bg-[#FFFFFF] flex items-center justify-center z-10">
+                                                            <span class=""><i class="fa-brands fa-square-instagram"
+                                                                    style="color: #052b5a;"></i></i></span>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -298,256 +312,284 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <!-- Post Content -->
-                        <div class="jost text-[#7F7F7F] md:text-xl text-[15px] font-normal">
-                            <p>
-                                Strives to address the challenges facing our community, population control emerges as a
-                                critical issue requiring thoughtful consideration and effective policies. Our approach
-                                focuses on empowering individuals and families to make informed choices about family
-                                planning while ensuring access to necessary resources and support systems. Here's how
-                                we're working towards this goal.
-                            </p>
-                            <p class="md:mt-3 mt-4">Combined with a handful of model sentence structures, to generate
-                                Lorem
-                                Ipsum which looks
-                                reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected
-                                humor procure him some great pleasure.</p>
-                            <p class="md:mt-3 mt-4">
-                                “We envision a future where [insert key elements of the politician's vision, e.gevery
-                                individual has the opportunity to thrive,our communities are characterized by prosperity
-                                and equity unity
-                            </p>
-                        </div>
-
-                        <!-- Strategy Section -->
-                        <h2 class=" poppins md:text-[34px] text-[24px] font-semibold text-[#052B5A] mt-6 ">Strategy for
-                            providing
-                            latest IT solution
-                        </h2>
-                        <p class="text-[#7F7F7F] leading-relaxed jost md:text-[20px] text-[15px] font-normal	">
-                            The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
-                            as opposed to using making it look like readable English. Many desktop publishing packages
-                            and web page editors now use Lorem Ipsum as their default model text, and a search for
-                            ‘lorem ipsum’ will uncover many web sites still in their infancy.
-                        </p>
-
-                        <!-- Inline Image -->
-                        <div class="md:flex gap-8">
-                            <div class="md:w-6/12">
-                                <div class="mt-4">
-                                    <img src="../images/blog-details-sec-2.jpg" alt="Strategy Image"
-                                        class="w-full rounded-lg shadow-md">
-                                </div>
-                            </div>
-                            <div class="md:w-6/12">
-                                <p class="md:mt-3 mt-5 text-[#7F7F7F] jost font-normal md:text-[20px] md:leading-9">
-                                    Technology strategy and the roadmap to implement that? The leaders are owning their
-                                    data, refreshing it constantly and, more importantly, using it to inform the
-                                    business they’re making the technology that underpins that’s impacting these In
-                                    World Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                    tempor incididunt
+                            <!-- Post Content -->
+                            <div class="jost text-[#7F7F7F] md:text-xl text-[15px] font-normal">
+                                <p>
+                                    Strives to address the challenges facing our community, population control emerges
+                                    as a
+                                    critical issue requiring thoughtful consideration and effective policies. Our
+                                    approach
+                                    focuses on empowering individuals and families to make informed choices about family
+                                    planning while ensuring access to necessary resources and support systems. Here's
+                                    how
+                                    we're working towards this goal.
+                                </p>
+                                <p class="md:mt-3 mt-4">Combined with a handful of model sentence structures, to
+                                    generate
+                                    Lorem
+                                    Ipsum which looks
+                                    reasonable. The generated Lorem Ipsum is therefore always free from repetition,
+                                    injected
+                                    humor procure him some great pleasure.</p>
+                                <p class="md:mt-3 mt-4">
+                                    “We envision a future where [insert key elements of the politician's vision,
+                                    e.gevery
+                                    individual has the opportunity to thrive,our communities are characterized by
+                                    prosperity
+                                    and equity unity
                                 </p>
                             </div>
-                        </div>
-                    </div>
 
-                    <!-- Sidebar -->
-                    <div class="space-y-6">
-                        <!-- Search Bar -->
-                        <div class="hidden md:block">
-                            <div class="flex shadow-md rounded-lg p-2 border border-gray-300 rounded-md">
-                                <input type="text" placeholder="Search"
-                                    class="w-full  px-4 py-2 focus:outline-none focus:ring-2 text-[#052B5A]" />
-                                <div class="md:mt-2 md:mr-1">
-                                    <i class="fa-solid fa-magnifying-glass" style="color: #052b5a;"></i>
+                            <!-- Strategy Section -->
+                            <h2 class=" poppins md:text-[34px] text-[24px] font-semibold text-[#052B5A] mt-6 ">Strategy
+                                for
+                                providing
+                                latest IT solution
+                            </h2>
+                            <p class="text-[#7F7F7F] leading-relaxed jost md:text-[20px] text-[15px] font-normal	">
+                                The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+                                letters,
+                                as opposed to using making it look like readable English. Many desktop publishing
+                                packages
+                                and web page editors now use Lorem Ipsum as their default model text, and a search for
+                                ‘lorem ipsum’ will uncover many web sites still in their infancy.
+                            </p>
+
+                            <!-- Inline Image -->
+                            <div class="md:flex gap-8">
+                                <div class="md:w-6/12">
+                                    <div class="mt-4">
+                                        <img src="../images/blog-details-sec-2.jpg" alt="Strategy Image"
+                                            class="w-full rounded-lg shadow-md">
+                                    </div>
+                                </div>
+                                <div class="md:w-6/12">
+                                    <p class="md:mt-3 mt-5 text-[#7F7F7F] jost font-normal md:text-[20px] md:leading-9">
+                                        Technology strategy and the roadmap to implement that? The leaders are owning
+                                        their
+                                        data, refreshing it constantly and, more importantly, using it to inform the
+                                        business they’re making the technology that underpins that’s impacting these In
+                                        World Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt
+                                    </p>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Categories -->
-                        <div class="bg-white shadow-md rounded-lg p-8">
-                            <h3 class="text-[22px] font-semibold text-[#052B5A] mb-3 poppins">Categories</h3>
-                            <ul class="space-y-5">
-                                <li
-                                    class="flex justify-between items-center text-[#7F7F7F] bg-[#061B35] bg-opacity-5 p-[12px] rounded-[10px]">
-                                    <span class="poppins font-medium text-[20px] ">Election</span>
-                                    <span
-                                        class="bg-[#061B35] bg-opacity-10 text-[#052B5A] rounded-full px-2 py-1 text-sm font-medium">12</span>
-                                </li>
-                                <li
-                                    class="flex justify-between items-center text-[#7F7F7F] bg-[#061B35] bg-opacity-5 p-[12px] rounded-[10px]">
-                                    <span class="poppins font-medium text-[20px] ">Politics</span>
-                                    <span
-                                        class="bg-[#061B35] bg-opacity-10 text-[#052B5A] rounded-full px-2 py-1 text-sm font-medium">02</span>
-                                </li>
-                                <li
-                                    class="flex justify-between items-center text-[#7F7F7F] bg-[#061B35] bg-opacity-5 p-[12px] rounded-[10px]">
-                                    <span class="poppins font-medium text-[20px] ">Statement</span>
-                                    <span
-                                        class="bg-[#061B35] bg-opacity-10 text-[#052B5A] rounded-full px-2 py-1 text-sm font-medium">18</span>
-                                </li>
-                                <li
-                                    class="flex justify-between items-center text-[#7F7F7F] bg-[#061B35] bg-opacity-5 p-[12px] rounded-[10px]">
-                                    <span class="poppins font-medium text-[20px] ">Social</span>
-                                    <span
-                                        class="bg-[#061B35] bg-opacity-10 text-[#052B5A] rounded-full px-2 py-1 text-sm font-medium">11</span>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <!-- Recent Posts -->
-                        <div class="bg-white shadow-md rounded-[10px] p-4">
-                            <h3 class="text-[22px] font-semibold text-[#052B5A] mb-3 md:mt-2">Recent Posts</h3>
-                            <ul class="space-y-4">
-                                <li class="relative ">
-                                    <div class="md:mb-5 flex gap-3 md:mt-5 mb-9 mt-5">
-                                        <img src="../images/blog-details-sec-3.png" alt="Post Thumbnail"
-                                            class="md:w-[115px] w-[83px] h-[85px] md:h-[105px] rounded-lg object-cover">
-                                        <div>
-                                            <h4 class="md:text-[20px] font-medium text-[#052B5A] poppins md:mt-1 ">
-                                                Principle stability in the future
-                                            </h4>
-                                            <p class="md:text-[20px] text-[#7F7F7F] jost font-normal md:mt-1">
-                                                Governments are prioritizing domestic
-                                                policies...</p>
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="absolute w-[0px] md:w-[450px]  md:h-[1.6px] h-[0px] bg-[#DBDBDB] bg-opacity-50 absolute top-[0px] md:top-[120px] md:left-[3px] left-[0px]">
-                                    </div>
-                                </li>
-                                <li class="relative">
-                                    <div class="md:mb-5 flex gap-3 md:mt-10 mb-9">
-                                        <img src="../images/blog-details-sec-4.png" alt="Post Thumbnail"
-                                            class="md:w-[115px] md:h-[105px] w-[83px] h-[85px] rounded-lg object-cover">
-                                        <div>
-                                            <h4 class="md:text-[20px] font-medium text-[#052B5A] poppins md:mt-1 ">
-                                                How to invent a law & pass
-                                            </h4>
-                                            <p class="md:text-[20px] text-[#7F7F7F] jost font-normal md:mt-1">
-                                                Governments are prioritizing domestic policies to pressingissues </p>
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="absolute w-[0px] md:w-[450px]  md:h-[1.6px] h-[0px] bg-[#DBDBDB] bg-opacity-50 absolute top-[0px] md:top-[120px] md:left-[3px] left-[0px] ">
-                                    </div>
-                                </li>
-
-                                <li class="relative">
-                                    <div class="md:mb-5 flex gap-3 md:mt-10 mb-9">
-                                        <img src="../images/blog-details-sec-5.jpg" alt="Post Thumbnail"
-                                            class="md:w-[115px] md:h-[105px] w-[83px] h-[85px] rounded-lg object-cover">
-                                        <div>
-                                            <h4 class="md:text-[20px] font-medium text-[#052B5A] poppins md:mt-1 ">
-                                                Our humanity of Preparing
-                                            </h4>
-                                            <p class="md:text-[20px] text-[#7F7F7F] jost font-normal md:mt-1">
-                                                Governments are prioritizing domestic policies to pressingissues </p>
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="absolute w-[0px] md:w-[450px]  md:h-[1.6px] h-[0px] bg-[#DBDBDB] bg-opacity-50 absolute top-[0px] md:top-[120px] md:left-[3px] left-[0px] ">
-                                    </div>
-                                </li>
-
-                                <li class="relative">
-                                    <div class="md:mb-5 flex gap-3 md:mt-10 mb-9">
-                                        <img src="../images/blog-details-sec-6.jpg" alt="Post Thumbnail"
-                                            class="md:w-[115px] md:h-[105px] w-[83px] h-[85px] rounded-lg object-cover">
-                                        <div>
-                                            <h4 class="md:text-[20px] font-medium text-[#052B5A] poppins md:mt-1 ">
-                                                The people don't just support
-                                            </h4>
-                                            <p class="md:text-[20px] text-[#7F7F7F] jost font-normal md:mt-1">
-                                                Governments are prioritizing domestic policies to pressingissues</p>
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="absolute w-[0px] md:w-[450px]  md:h-[1.6px] h-[0px] bg-[#DBDBDB] bg-opacity-50 absolute top-[0px] md:top-[120px] md:left-[3px] left-[0px] ">
-                                    </div>
-                                </li>
-
-                                <li class="relative">
-                                    <div class="md:mb-5 flex gap-3 md:mt-10">
-                                        <img src="../images/blog-details-sec-7.jpg" alt="Post Thumbnail"
-                                            class="md:w-[187px] md:h-[105px] w-[150px] h-[85px] rounded-lg object-cover">
-                                        <div>
-                                            <h4 class="md:text-[20px] font-medium text-[#052B5A] poppins md:mt-1 ">
-                                                Vote Politic for Results Dedicat 
-                                            </h4>
-                                            <p class="md:text-[20px] text-[#7F7F7F] jost font-normal md:mt-1">
-                                                Governments are prioritizing domestic policies to pressingissues </p>
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="absolute w-[0px] md:w-[450px]  md:h-[1.6px] h-[0px] bg-[#DBDBDB] bg-opacity-50 absolute top-[0px] md:top-[120px] md:left-[3px] left-[0px] hidden md:block">
-                                    </div>
-                                </li>
-
-
-                            </ul>
-                        </div>
-
-                        <!-- Tag Cloud -->
-                        <div class="bg-white shadow-md rounded-lg p-6">
-                            <h3 class="text-lg md:text-[22px] font-semibold text-[#052B5A] mb-3 poppins">Tag Cloud</h3>
-                            <div class="flex md:mt-5 gap-3 md:gap-1">
-                                <div class="w-4/12 group">
-                                    <div
-                                        class="md:h-[50px]  md:w-[139px] border border-[#AFADAD] rounded-[5px] md:py-0  py-3 group-hover:border-[#052B5A] duration-200">
-                                        <h2 class="poppins md:text-[20px] text-[14px] font-medium text-center md:mt-2 text-[#052B5A] group-hover:text-[#000000] duration-200">Campaign
-                                        </h2>
-                                    </div>
-                                </div>
-                                <div class="w-4/12 group ">
-                                    <div
-                                        class="md:h-[50px] md:w-[139px] border border-[#AFADAD] rounded-[5px] md:px-[0px]  px-[10px] md:py-0  py-3  group-hover:border-[#052B5A] duration-200">
-                                        <h2 class="poppins md:text-[20px] text-[14px] font-medium text-center md:mt-2 text-[#052B5A] group-hover:text-[#000000] duration-200">
-                                            Diplomatic</h2>
-                                    </div>
-                                </div>
-                                <div class="w-3/12 group">
-                                    <div
-                                        class="md:h-[50px]  md:w-[139px] border border-[#AFADAD] rounded-[5px] md:py-0  py-3 group-hover:border-[#052B5A] duration-200">
-                                        <h2 class="poppins md:text-[20px] text-[14px] font-medium text-center md:mt-2 text-[#052B5A] group-hover:text-[#000000] duration-200">Election
-                                        </h2>
+                        <!-- Sidebar -->
+                        <div class="space-y-6">
+                            <!-- Search Bar -->
+                            <div class="hidden md:block">
+                                <div class="flex shadow-md rounded-lg p-2 border border-gray-300 rounded-md">
+                                    <input type="text" placeholder="Search"
+                                        class="w-full  px-4 py-2 focus:outline-none focus:ring-2 text-[#052B5A]" />
+                                    <div class="md:mt-2 md:mr-1">
+                                        <i class="fa-solid fa-magnifying-glass" style="color: #052b5a;"></i>
                                     </div>
                                 </div>
                             </div>
-                            <div class="flex  md:mt-5 mt-5 gap-4 md:gap-1">
-                                <div class="w-4/12 group">
-                                    <div
-                                        class="md:h-[50px]  md:w-[139px] border border-[#AFADAD] rounded-[5px] md:py-0  py-3 group-hover:border-[#052B5A] duration-200">
-                                        <h2 class="poppins md:text-[20px] text-[14px] font-medium text-center md:mt-2  text-[#052B5A] group-hover:text-[#000000] duration-200">Press
-                                        </h2>
+
+                            <!-- Categories -->
+                            <div class="bg-white shadow-md rounded-lg p-8">
+                                <h3 class="text-[22px] font-semibold text-[#052B5A] mb-3 poppins">Categories</h3>
+                                <ul class="space-y-5">
+                                    <li
+                                        class="flex justify-between items-center text-[#7F7F7F] bg-[#061B35] bg-opacity-5 p-[12px] rounded-[10px]">
+                                        <span class="poppins font-medium text-[20px] ">Election</span>
+                                        <span
+                                            class="bg-[#061B35] bg-opacity-10 text-[#052B5A] rounded-full px-2 py-1 text-sm font-medium">12</span>
+                                    </li>
+                                    <li
+                                        class="flex justify-between items-center text-[#7F7F7F] bg-[#061B35] bg-opacity-5 p-[12px] rounded-[10px]">
+                                        <span class="poppins font-medium text-[20px] ">Politics</span>
+                                        <span
+                                            class="bg-[#061B35] bg-opacity-10 text-[#052B5A] rounded-full px-2 py-1 text-sm font-medium">02</span>
+                                    </li>
+                                    <li
+                                        class="flex justify-between items-center text-[#7F7F7F] bg-[#061B35] bg-opacity-5 p-[12px] rounded-[10px]">
+                                        <span class="poppins font-medium text-[20px] ">Statement</span>
+                                        <span
+                                            class="bg-[#061B35] bg-opacity-10 text-[#052B5A] rounded-full px-2 py-1 text-sm font-medium">18</span>
+                                    </li>
+                                    <li
+                                        class="flex justify-between items-center text-[#7F7F7F] bg-[#061B35] bg-opacity-5 p-[12px] rounded-[10px]">
+                                        <span class="poppins font-medium text-[20px] ">Social</span>
+                                        <span
+                                            class="bg-[#061B35] bg-opacity-10 text-[#052B5A] rounded-full px-2 py-1 text-sm font-medium">11</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Recent Posts -->
+                            <div class="bg-white shadow-md rounded-[10px] p-4">
+                                <h3 class="text-[22px] font-semibold text-[#052B5A] mb-3 md:mt-2">Recent Posts</h3>
+                                <ul class="space-y-4">
+                                    <li class="relative ">
+                                        <div class="md:mb-5 flex gap-3 md:mt-5 mb-9 mt-5">
+                                            <img src="../images/blog-details-sec-3.png" alt="Post Thumbnail"
+                                                class="md:w-[115px] w-[83px] h-[85px] md:h-[105px] rounded-lg object-cover">
+                                            <div>
+                                                <h4 class="md:text-[20px] font-medium text-[#052B5A] poppins md:mt-1 ">
+                                                    Principle stability in the future
+                                                </h4>
+                                                <p class="md:text-[20px] text-[#7F7F7F] jost font-normal md:mt-1">
+                                                    Governments are prioritizing domestic
+                                                    policies...</p>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="absolute w-[0px] md:w-[450px]  md:h-[1.6px] h-[0px] bg-[#DBDBDB] bg-opacity-50 absolute top-[0px] md:top-[120px] md:left-[3px] left-[0px]">
+                                        </div>
+                                    </li>
+                                    <li class="relative">
+                                        <div class="md:mb-5 flex gap-3 md:mt-10 mb-9">
+                                            <img src="../images/blog-details-sec-4.png" alt="Post Thumbnail"
+                                                class="md:w-[115px] md:h-[105px] w-[83px] h-[85px] rounded-lg object-cover">
+                                            <div>
+                                                <h4 class="md:text-[20px] font-medium text-[#052B5A] poppins md:mt-1 ">
+                                                    How to invent a law & pass
+                                                </h4>
+                                                <p class="md:text-[20px] text-[#7F7F7F] jost font-normal md:mt-1">
+                                                    Governments are prioritizing domestic policies to pressingissues
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="absolute w-[0px] md:w-[450px]  md:h-[1.6px] h-[0px] bg-[#DBDBDB] bg-opacity-50 absolute top-[0px] md:top-[120px] md:left-[3px] left-[0px] ">
+                                        </div>
+                                    </li>
+
+                                    <li class="relative">
+                                        <div class="md:mb-5 flex gap-3 md:mt-10 mb-9">
+                                            <img src="../images/blog-details-sec-5.jpg" alt="Post Thumbnail"
+                                                class="md:w-[115px] md:h-[105px] w-[83px] h-[85px] rounded-lg object-cover">
+                                            <div>
+                                                <h4 class="md:text-[20px] font-medium text-[#052B5A] poppins md:mt-1 ">
+                                                    Our humanity of Preparing
+                                                </h4>
+                                                <p class="md:text-[20px] text-[#7F7F7F] jost font-normal md:mt-1">
+                                                    Governments are prioritizing domestic policies to pressingissues
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="absolute w-[0px] md:w-[450px]  md:h-[1.6px] h-[0px] bg-[#DBDBDB] bg-opacity-50 absolute top-[0px] md:top-[120px] md:left-[3px] left-[0px] ">
+                                        </div>
+                                    </li>
+
+                                    <li class="relative">
+                                        <div class="md:mb-5 flex gap-3 md:mt-10 mb-9">
+                                            <img src="../images/blog-details-sec-6.jpg" alt="Post Thumbnail"
+                                                class="md:w-[115px] md:h-[105px] w-[83px] h-[85px] rounded-lg object-cover">
+                                            <div>
+                                                <h4 class="md:text-[20px] font-medium text-[#052B5A] poppins md:mt-1 ">
+                                                    The people don't just support
+                                                </h4>
+                                                <p class="md:text-[20px] text-[#7F7F7F] jost font-normal md:mt-1">
+                                                    Governments are prioritizing domestic policies to pressingissues</p>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="absolute w-[0px] md:w-[450px]  md:h-[1.6px] h-[0px] bg-[#DBDBDB] bg-opacity-50 absolute top-[0px] md:top-[120px] md:left-[3px] left-[0px] ">
+                                        </div>
+                                    </li>
+
+                                    <li class="relative">
+                                        <div class="md:mb-5 flex gap-3 md:mt-10">
+                                            <img src="../images/blog-details-sec-7.jpg" alt="Post Thumbnail"
+                                                class="md:w-[187px] md:h-[105px] w-[150px] h-[85px] rounded-lg object-cover">
+                                            <div>
+                                                <h4 class="md:text-[20px] font-medium text-[#052B5A] poppins md:mt-1 ">
+                                                    Vote Politic for Results Dedicat 
+                                                </h4>
+                                                <p class="md:text-[20px] text-[#7F7F7F] jost font-normal md:mt-1">
+                                                    Governments are prioritizing domestic policies to pressingissues
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="absolute w-[0px] md:w-[450px]  md:h-[1.6px] h-[0px] bg-[#DBDBDB] bg-opacity-50 absolute top-[0px] md:top-[120px] md:left-[3px] left-[0px] hidden md:block">
+                                        </div>
+                                    </li>
+
+
+                                </ul>
+                            </div>
+
+                            <!-- Tag Cloud -->
+                            <div class="bg-white shadow-md rounded-lg p-6">
+                                <h3 class="text-lg md:text-[22px] font-semibold text-[#052B5A] mb-3 poppins">Tag Cloud
+                                </h3>
+                                <div class="flex md:mt-5 gap-3 md:gap-1">
+                                    <div class="w-4/12 group">
+                                        <div
+                                            class="md:h-[50px]  md:w-[139px] border border-[#AFADAD] rounded-[5px] md:py-0  py-3 group-hover:border-[#052B5A] duration-200">
+                                            <h2
+                                                class="poppins md:text-[20px] text-[14px] font-medium text-center md:mt-2 text-[#052B5A] group-hover:text-[#000000] duration-200">
+                                                Campaign
+                                            </h2>
+                                        </div>
+                                    </div>
+                                    <div class="w-4/12 group ">
+                                        <div
+                                            class="md:h-[50px] md:w-[139px] border border-[#AFADAD] rounded-[5px] md:px-[0px]  px-[10px] md:py-0  py-3  group-hover:border-[#052B5A] duration-200">
+                                            <h2
+                                                class="poppins md:text-[20px] text-[14px] font-medium text-center md:mt-2 text-[#052B5A] group-hover:text-[#000000] duration-200">
+                                                Diplomatic</h2>
+                                        </div>
+                                    </div>
+                                    <div class="w-3/12 group">
+                                        <div
+                                            class="md:h-[50px]  md:w-[139px] border border-[#AFADAD] rounded-[5px] md:py-0  py-3 group-hover:border-[#052B5A] duration-200">
+                                            <h2
+                                                class="poppins md:text-[20px] text-[14px] font-medium text-center md:mt-2 text-[#052B5A] group-hover:text-[#000000] duration-200">
+                                                Election
+                                            </h2>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="w-4/12  group">
-                                    <div
-                                        class="md:h-[50px] md:w-[139px] border border-[#AFADAD] rounded-[5px] md:px-[13px]  px-[10px] md:py-0  py-3 group-hover:border-[#052B5A] duration-200 ">
-                                        <h2 class="poppins md:text-[20px] text-[14px] font-medium  md:mt-2 text-[#052B5A] group-hover:text-[#000000] duration-200">
-                                            Statement</h2>
+                                <div class="flex  md:mt-5 mt-5 gap-4 md:gap-1">
+                                    <div class="w-4/12 group">
+                                        <div
+                                            class="md:h-[50px]  md:w-[139px] border border-[#AFADAD] rounded-[5px] md:py-0  py-3 group-hover:border-[#052B5A] duration-200">
+                                            <h2
+                                                class="poppins md:text-[20px] text-[14px] font-medium text-center md:mt-2  text-[#052B5A] group-hover:text-[#000000] duration-200">
+                                                Press
+                                            </h2>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="w-3/12 group">
-                                    <div
-                                        class="md:h-[50px]  md:w-[139px] border border-[#AFADAD] rounded-[5px] md:py-0  py-3 group-hover:border-[#052B5A] duration-200">
-                                        <h2 class="poppins md:text-[20px] text-[14px] font-medium text-center md:mt-2 text-[#052B5A] group-hover:text-[#000000] duration-200">Social
-                                        </h2>
+                                    <div class="w-4/12  group">
+                                        <div
+                                            class="md:h-[50px] md:w-[139px] border border-[#AFADAD] rounded-[5px] md:px-[13px]  px-[10px] md:py-0  py-3 group-hover:border-[#052B5A] duration-200 ">
+                                            <h2
+                                                class="poppins md:text-[20px] text-[14px] font-medium  md:mt-2 text-[#052B5A] group-hover:text-[#000000] duration-200">
+                                                Statement</h2>
+                                        </div>
+                                    </div>
+                                    <div class="w-3/12 group">
+                                        <div
+                                            class="md:h-[50px]  md:w-[139px] border border-[#AFADAD] rounded-[5px] md:py-0  py-3 group-hover:border-[#052B5A] duration-200">
+                                            <h2
+                                                class="poppins md:text-[20px] text-[14px] font-medium text-center md:mt-2 text-[#052B5A] group-hover:text-[#000000] duration-200">
+                                                Social
+                                            </h2>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
+            </div>
+        </div>
+        <div class="relative hidden md:block">
+            <img src="../images/Home-vector-img.png" alt="" class="absolute right-0 top-[-400px]">
         </div>
     </section>
 
-     
+
     <!-- footer  -->
     <footer>
         <div class="relative bg-cover bg-center md:h-[425px] h-[700px]" style="

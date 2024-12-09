@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="../css/fonts.css">
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="/js/script.js"></script>
+
 
     <script>
         function toggleMenu() {
@@ -44,7 +47,7 @@
 
     <header class="bg-white">
         <div class="container mx-auto">
-            <div class="px-4 py-6 flex items-center justify-between">
+            <div class="px-4 py-5 flex items-center justify-between">
                 <!-- Logo -->
                 <div class="flex lg:flex-1">
                     <a href="#" class="-m-1 p-1">
@@ -68,9 +71,10 @@
                 <div class="md:flex md:justify-end md:flex-1 md:block hidden">
                     <div class=" relative bg-[#E3042E] px-[20px] py-[10px] w-fit object-cover  rounded-[10px]  ">
                         <button>
-                            <a href="/pages/ContactUS.html" class="poppins text-[14px] font-semibold text-white z-[10] relative">Contact
+                            <a href="/pages/ContactUS.html"
+                                class="poppins text-[14px] font-semibold text-white z-[10] relative">Contact
                                 us</a>
-                             </button>
+                        </button>
                         <div
                             class="  absolute w-[105px] h-[40px] border-2 border-[#E3042E] border-t-0 border-r-0 -left-[5%] -bottom-[13%] rounded-bl-[10px] -right-[5%] ">
                         </div>
@@ -107,7 +111,8 @@
                         <div class="absolute inset-0 bg-[#001631] bg-opacity-85 backdrop-blur-[3px] h-[699px]"></div>
                         <div class="relative z-10 container mx-auto px-6">
                             <nav class="space-y-6 py-4 px-4 text-center pt-[120px]">
-                                <a href="/index.html" class="block poppins font-normal text-[20px]">Home</a>
+                                <a href="/index.html"
+                                    class="block poppins font-normal text-[20px] text-[#AFADAD]">Home</a>
                                 <a href="../pages/AboutUs.html"
                                     class="block text-[#AFADAD] hover:text-blue-500 poppins text-[21px] font-normal">About
                                     Us</a>
@@ -176,226 +181,249 @@
         </div>
     </div>
 
-    <section class="px-4 md:pb-10">
-        <div class="container mx-auto">
-            <div class="flex flex-col lg:flex-row items-start gap-6  md:p-6 pt-6 pb-6 lg:p-12">
-                <!-- Left Image Section -->
-                <div class="w-full lg:w-2/3">
-                    <img src="../images/Policies-page-sec-2.jpg" alt="Political Scene"
-                        class="w-full rounded-[10px] border-white shadow-lg border-8">
-                </div>
+    <section>
+        <div class="relative hidden md:block">
+            <img src="../images/home-vector-img-2.png" alt="" class="absolute left-0 top-[950px]">
+        </div>
+        <div class="px-4 md:pb-10">
+            <div class="container mx-auto">
+                <div class="flex flex-col lg:flex-row items-start gap-6  md:p-6 pt-6 pb-6 lg:p-12">
+                    <!-- Left Image Section -->
+                    <div class="w-full lg:w-2/3">
+                        <img src="../images/Policies-page-sec-2.jpg" alt="Political Scene"
+                            class="w-full rounded-[10px] border-white shadow-lg border-8">
+                    </div>
 
-                <!-- Right Menu Section -->
-                <div class="w-full lg:w-1/3 rounded-lg bg-[#F9F9FF] shadow-md p-4 hidden md:block">
-                    <ul class="space-y-3">
-                        <!-- Single Menu Item -->
-                        <li
-                            class="flex items-center justify-between bg-white rounded-[10px] px-6 py-5 hover:bg-gray-100 shadow-lg cursor-pointer">
-                            <span class="font-medium text-[#052B5A] text-[19px] poppins ">Population Control</span>
-                            <i class="fa-solid fa-chevron-right md:ml-48" style="color: #052b5a;"></i>
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                            </svg>
-                        </li>
-                        <li
-                            class="flex items-center justify-between bg-white rounded-[10px] px-6 py-5 hover:bg-gray-100 shadow-lg cursor-pointer">
-                            <span class="font-medium text-[#7F7F7F] text-[19px] poppins ">Safe Environment</span>
-                            <i class="fa-solid fa-chevron-right md:ml-48" style="color: #7f7f7f;"></i>
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                            </svg>
-                        </li>
-                        <li
-                            class="flex items-center justify-between bg-white rounded-[10px] px-6 py-5 hover:bg-gray-100 shadow-lg cursor-pointer">
-                            <span class="font-medium text-[#7F7F7F] text-[19px] poppins ">Human Rights</span>
-                            <i class="fa-solid fa-chevron-right md:ml-56" style="color: #7f7f7f;"></i>
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                            </svg>
-                        </li>
-                        <li
-                            class="flex items-center justify-between bg-white rounded-[10px] px-6 py-5 hover:bg-gray-100 shadow-lg cursor-pointer">
-                            <span class="font-medium text-[#7F7F7F] text-[19px] poppins ">Political Speech</span>
-                            <i class="fa-solid fa-chevron-right md:ml-52" style="color: #7f7f7f;"></i>
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                            </svg>
-                        </li>
-                        <li
-                            class="flex items-center justify-between bg-white rounded-[10px] px-6 py-5 hover:bg-gray-100 shadow-lg cursor-pointer">
-                            <span class="font-medium text-[#7F7F7F] text-[19px] poppins ">Family Protection</span>
-                            <i class="fa-solid fa-chevron-right md:ml-48" style="color: #7f7f7f;"></i>
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                            </svg>
-                        </li>
-                        <li
-                            class="flex items-center justify-between bg-white rounded-[10px] px-6 py-5 hover:bg-gray-100 shadow-lg cursor-pointer">
-                            <span class="font-medium text-[#7F7F7F] text-[19px] poppins ">Economic System</span>
-                            <i class="fa-solid fa-chevron-right md:ml-48" style="color: #7f7f7f;"></i>
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                            </svg>
-                        </li>
-                        <li
-                            class="flex items-center justify-between bg-white rounded-[10px] px-6 py-5 hover:bg-gray-100 shadow-lg cursor-pointer">
-                            <span class="font-medium text-[#7F7F7F] text-[19px] poppins ">Donations Engine</span>
-                            <i class="fa-solid fa-chevron-right md:ml-48" style="color: #7f7f7f;"></i>
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                            </svg>
-                        </li>
-                        <li
-                            class="flex items-center justify-between bg-white rounded-[10px] px-6 py-5 hover:bg-gray-100 shadow-lg cursor-pointer">
-                            <span class="font-medium text-[#7F7F7F] text-[19px] poppins ">Public Service</span>
-                            <i class="fa-solid fa-chevron-right md:ml-56" style="color: #7f7f7f;"></i>
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                            </svg>
-                        </li>
+                    <!-- Right Menu Section -->
+                    <div class="w-full lg:w-1/3 rounded-lg bg-[#F9F9FF] shadow-md p-4 hidden md:block">
+                        <ul class="space-y-3">
+                            <!-- Single Menu Item -->
+                            <li
+                                class="flex items-center justify-between bg-white rounded-[10px] px-6 py-5 hover:bg-gray-100 shadow-lg cursor-pointer">
+                                <span class="font-medium text-[#052B5A] text-[19px] poppins ">Population Control</span>
+                                <i class="fa-solid fa-chevron-right md:ml-48" style="color: #052b5a;"></i>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5l7 7-7 7" />
+                                </svg>
+                            </li>
+                            <li
+                                class="flex items-center justify-between bg-white rounded-[10px] px-6 py-5 hover:bg-gray-100 shadow-lg cursor-pointer">
+                                <span class="font-medium text-[#7F7F7F] text-[19px] poppins ">Safe Environment</span>
+                                <i class="fa-solid fa-chevron-right md:ml-48" style="color: #7f7f7f;"></i>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5l7 7-7 7" />
+                                </svg>
+                            </li>
+                            <li
+                                class="flex items-center justify-between bg-white rounded-[10px] px-6 py-5 hover:bg-gray-100 shadow-lg cursor-pointer">
+                                <span class="font-medium text-[#7F7F7F] text-[19px] poppins ">Human Rights</span>
+                                <i class="fa-solid fa-chevron-right md:ml-56" style="color: #7f7f7f;"></i>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5l7 7-7 7" />
+                                </svg>
+                            </li>
+                            <li
+                                class="flex items-center justify-between bg-white rounded-[10px] px-6 py-5 hover:bg-gray-100 shadow-lg cursor-pointer">
+                                <span class="font-medium text-[#7F7F7F] text-[19px] poppins ">Political Speech</span>
+                                <i class="fa-solid fa-chevron-right md:ml-52" style="color: #7f7f7f;"></i>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5l7 7-7 7" />
+                                </svg>
+                            </li>
+                            <li
+                                class="flex items-center justify-between bg-white rounded-[10px] px-6 py-5 hover:bg-gray-100 shadow-lg cursor-pointer">
+                                <span class="font-medium text-[#7F7F7F] text-[19px] poppins ">Family Protection</span>
+                                <i class="fa-solid fa-chevron-right md:ml-48" style="color: #7f7f7f;"></i>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5l7 7-7 7" />
+                                </svg>
+                            </li>
+                            <li
+                                class="flex items-center justify-between bg-white rounded-[10px] px-6 py-5 hover:bg-gray-100 shadow-lg cursor-pointer">
+                                <span class="font-medium text-[#7F7F7F] text-[19px] poppins ">Economic System</span>
+                                <i class="fa-solid fa-chevron-right md:ml-48" style="color: #7f7f7f;"></i>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5l7 7-7 7" />
+                                </svg>
+                            </li>
+                            <li
+                                class="flex items-center justify-between bg-white rounded-[10px] px-6 py-5 hover:bg-gray-100 shadow-lg cursor-pointer">
+                                <span class="font-medium text-[#7F7F7F] text-[19px] poppins ">Donations Engine</span>
+                                <i class="fa-solid fa-chevron-right md:ml-48" style="color: #7f7f7f;"></i>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5l7 7-7 7" />
+                                </svg>
+                            </li>
+                            <li
+                                class="flex items-center justify-between bg-white rounded-[10px] px-6 py-5 hover:bg-gray-100 shadow-lg cursor-pointer">
+                                <span class="font-medium text-[#7F7F7F] text-[19px] poppins ">Public Service</span>
+                                <i class="fa-solid fa-chevron-right md:ml-56" style="color: #7f7f7f;"></i>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5l7 7-7 7" />
+                                </svg>
+                            </li>
 
 
-                    </ul>
-                </div>
-            </div>
-
-            <div class="px-4 ">
-                <h1 class="poppins font-semibold md:text-[42px] text-[#052B5A] hidden md:block">
-                    Population <span class="text-[#E3042E]">Control</span>
-                </h1>
-                <div class="md:ml-2">
-                    <p class="text-[#7F7F7F] jost font-normal md:text-[18px]  md:mt-4">
-                        <i class="fa-solid fa-share md:mr-1 md:leading-7" style="color: #052b5a;"></i>
-                        Strives to address the challenges facing our community, population control emerges as a critical
-                        issue requiring thoughtful consideration and effective policies. Our approach focuses on
-                        empowering individuals and families to make informed choices about family planning while
-                        ensuring access to necessary resources and support systems. Here's how we're working towards
-                        this goal.
-                    </p>
-                    <p class="text-[#7F7F7F] jost font-normal md:text-[18px] md:mt-3 mt-3 md:leading-7">
-                        <i class="fa-solid fa-share md:mr-1" style="color: #052b5a;"></i>
-                        Supporting policies that ensure access to affordable and comprehensive reproductive healthcare
-                        services, including contraception, family planning counseling, and reproductive health
-                        education.
-                    </p>
-                </div>
-                <div>
-                    <h2 class="md:text-[29px] text-[22px] font-semibold text-[#052B5A] md:mt-5 mt-4">Advocating for
-                        Accessible Healthcare</h2>
-                    <div class="md:ml-2">
-                        <p class="text-[#7F7F7F] jost font-normal md:text-[18px]  md:mt-4 mt-4">
-                            <i class="fa-solid fa-share md:mr-1 md:leading-7" style="color: #052b5a;"></i>
-                            Promoting initiatives to expand access to prenatal care, maternal health services, and
-                            support for expectant mothers to ensure healthy pregnancies and childbirth experiences.
-                        </p>
-                        <p class="text-[#7F7F7F] jost font-normal md:text-[18px] md:mt-3 mt-3 md:leading-7">
-                            <i class="fa-solid fa-share md:mr-1" style="color: #052b5a;"></i>
-                            Advocating for comprehensive sex education programs in schools and communities to equip
-                            individuals with the knowledge and resources to make informed decisions about their
-                            reproductive health and family planning options.
-                        </p>
-                        <p class="text-[#7F7F7F] jost font-normal md:text-[18px] md:mt-3 mt-3 md:leading-7">
-                            <i class="fa-solid fa-share md:mr-1" style="color: #052b5a;"></i>
-                            Recognizing the interconnectedness of population dynamics with broader societal and
-                            environmental challenges, advocating for policies that promote sustainable development,
-                            resource conservation, and environmental stewardship.
-                        </p>
+                        </ul>
                     </div>
                 </div>
-                <div>
-                    <h2 class="md:text-[29px] text-[22px] font-semibold text-[#052B5A] md:mt-5 mt-4">Addressing Societal
-                        and Environmental Impacts</h2>
+
+                <div class="px-4 ">
+                    <h1 class="poppins font-semibold md:text-[42px] text-[#052B5A] hidden md:block">
+                        Population <span class="text-[#E3042E]">Control</span>
+                    </h1>
                     <div class="md:ml-2">
-                        <p class="text-[#7F7F7F] jost font-normal md:text-[18px]  md:mt-4 mt-4">
+                        <p class="text-[#7F7F7F] jost font-normal md:text-[18px]  md:mt-4">
                             <i class="fa-solid fa-share md:mr-1 md:leading-7" style="color: #052b5a;"></i>
-                            Supporting efforts to address the root causes of population growth, such as poverty, lack of
-                            education, and limited access to healthcare, through targeted interventions and social
-                            welfare programs.
+                            Strives to address the challenges facing our community, population control emerges as a
+                            critical
+                            issue requiring thoughtful consideration and effective policies. Our approach focuses on
+                            empowering individuals and families to make informed choices about family planning while
+                            ensuring access to necessary resources and support systems. Here's how we're working towards
+                            this goal.
                         </p>
                         <p class="text-[#7F7F7F] jost font-normal md:text-[18px] md:mt-3 mt-3 md:leading-7">
                             <i class="fa-solid fa-share md:mr-1" style="color: #052b5a;"></i>
-                            As we navigate the complexities of population control, [Politician's Name] remains committed
-                            to promoting policies and initiatives that empower individuals, support families, and
-                            contribute to the well-being and sustainability of our community.
-                        </p>
-                        <p class="text-[#7F7F7F] jost font-normal md:text-[18px] md:mt-3 mt-3 md:leading-7">
-                            <i class="fa-solid fa-share md:mr-1" style="color: #052b5a;"></i>
-                            This approach emphasizes the importance of promoting responsible family planning while
-                            addressing the broader societal, environmental, and ethical considerations associated with
-                            population control.
+                            Supporting policies that ensure access to affordable and comprehensive reproductive
+                            healthcare
+                            services, including contraception, family planning counseling, and reproductive health
+                            education.
                         </p>
                     </div>
-                </div>
-                <div>
-                    <h2 class="md:text-[29px] text-[22px] font-semibold text-[#052B5A] md:mt-5 mt-4">Do you have any
-                        Questions?</h2>
-                    <div class="md:ml-2">
-                        <p class="text-[#7F7F7F] jost font-normal md:text-[18px]  md:mt-4 mt-4">
-                            <i class="fa-solid fa-share md:mr-1 md:leading-7" style="color: #052b5a;"></i>
-                            Our team of Twillers gets your cargo on the vessel that best suits your needs. You book with
-                            us, and you’ll get the same network as the world’s biggest brands at no extra cost across
-                            300+ locations in over 150 countries.
-                        </p>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="md:pt-12 md:pb-10 pb-10 px-4 pt-6">
-                <!-- Container -->
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 ">
-                    <!-- Image Section -->
                     <div>
-                        <img src="../images/Policies-page-sec-3.jpg" alt="Speaker at a public event"
-                            class="w-full rounded-lg shadow-lg ">
+                        <h2 class="md:text-[29px] text-[22px] font-semibold text-[#052B5A] md:mt-5 mt-4">Advocating for
+                            Accessible Healthcare</h2>
+                        <div class="md:ml-2">
+                            <p class="text-[#7F7F7F] jost font-normal md:text-[18px]  md:mt-4 mt-4">
+                                <i class="fa-solid fa-share md:mr-1 md:leading-7" style="color: #052b5a;"></i>
+                                Promoting initiatives to expand access to prenatal care, maternal health services, and
+                                support for expectant mothers to ensure healthy pregnancies and childbirth experiences.
+                            </p>
+                            <p class="text-[#7F7F7F] jost font-normal md:text-[18px] md:mt-3 mt-3 md:leading-7">
+                                <i class="fa-solid fa-share md:mr-1" style="color: #052b5a;"></i>
+                                Advocating for comprehensive sex education programs in schools and communities to equip
+                                individuals with the knowledge and resources to make informed decisions about their
+                                reproductive health and family planning options.
+                            </p>
+                            <p class="text-[#7F7F7F] jost font-normal md:text-[18px] md:mt-3 mt-3 md:leading-7">
+                                <i class="fa-solid fa-share md:mr-1" style="color: #052b5a;"></i>
+                                Recognizing the interconnectedness of population dynamics with broader societal and
+                                environmental challenges, advocating for policies that promote sustainable development,
+                                resource conservation, and environmental stewardship.
+                            </p>
+                        </div>
                     </div>
+                    <div>
+                        <h2 class="md:text-[29px] text-[22px] font-semibold text-[#052B5A] md:mt-5 mt-4">Addressing
+                            Societal
+                            and Environmental Impacts</h2>
+                        <div class="md:ml-2">
+                            <p class="text-[#7F7F7F] jost font-normal md:text-[18px]  md:mt-4 mt-4">
+                                <i class="fa-solid fa-share md:mr-1 md:leading-7" style="color: #052b5a;"></i>
+                                Supporting efforts to address the root causes of population growth, such as poverty,
+                                lack of
+                                education, and limited access to healthcare, through targeted interventions and social
+                                welfare programs.
+                            </p>
+                            <p class="text-[#7F7F7F] jost font-normal md:text-[18px] md:mt-3 mt-3 md:leading-7">
+                                <i class="fa-solid fa-share md:mr-1" style="color: #052b5a;"></i>
+                                As we navigate the complexities of population control, [Politician's Name] remains
+                                committed
+                                to promoting policies and initiatives that empower individuals, support families, and
+                                contribute to the well-being and sustainability of our community.
+                            </p>
+                            <p class="text-[#7F7F7F] jost font-normal md:text-[18px] md:mt-3 mt-3 md:leading-7">
+                                <i class="fa-solid fa-share md:mr-1" style="color: #052b5a;"></i>
+                                This approach emphasizes the importance of promoting responsible family planning while
+                                addressing the broader societal, environmental, and ethical considerations associated
+                                with
+                                population control.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="md:text-[29px] text-[22px] font-semibold text-[#052B5A] md:mt-5 mt-4">Do you have any
+                            Questions?</h2>
+                        <div class="md:ml-2">
+                            <p class="text-[#7F7F7F] jost font-normal md:text-[18px]  md:mt-4 mt-4">
+                                <i class="fa-solid fa-share md:mr-1 md:leading-7" style="color: #052b5a;"></i>
+                                Our team of Twillers gets your cargo on the vessel that best suits your needs. You book
+                                with
+                                us, and you’ll get the same network as the world’s biggest brands at no extra cost
+                                across
+                                300+ locations in over 150 countries.
+                            </p>
 
-                    <!-- Accordion Section -->
-                    <div class="space-y-5">
-                        <!-- Accordion Item 1 -->
-                        <div class="border rounded-lg shadow-sm overflow-hidden  ">
-                            <div class="bg-[#F9F9FF]">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md:pt-12 md:pb-10 pb-10 px-4 pt-6">
+                    <!-- Container -->
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 ">
+                        <!-- Image Section -->
+                        <div>
+                            <img src="../images/Policies-page-sec-3.jpg" alt="Speaker at a public event"
+                                class="w-full rounded-lg shadow-lg ">
+                        </div>
+
+                        <!-- Accordion Section -->
+                        <div class="space-y-5">
+                            <!-- Accordion Item 1 -->
+                            <div class="border rounded-lg shadow-sm overflow-hidden  ">
+                                <div class="bg-[#F9F9FF]">
+                                    <button
+                                        class="w-full flex md:items-center md:justify-between md:px-6 px-3 py-4 font-medium ">
+                                        <span
+                                            class="text-[#052B5A] poppins md:text-[21px] text-[18px] font-medium md:mt-2">What
+                                            you need to know before caucus?</span>
+                                        <div class="md:h-30px md:w-50px bg-[#052B5A] py-1 px-2 rounded-full	">
+                                            <i class="fa-solid fa-angle-down md:text-[18px] md:pt-[5px]"
+                                                style="color: #ffffff;"></i>
+                                        </div>
+                                    </button>
+                                    <div
+                                        class="px-6 pb-6 pt-2 text-[#7F7F7F] jost font-normal text-[16px]	md:text-[19px]">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit sed sol iusmod tempor
+                                        incididunt ut labore et dolore.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Accordion Item 2 -->
+                            <div class="border rounded-lg shadow-sm overflow-hidden">
                                 <button
-                                    class="w-full flex md:items-center md:justify-between md:px-6 px-3 py-4 font-medium ">
-                                    <span
-                                        class="text-[#052B5A] poppins md:text-[21px] text-[18px] font-medium md:mt-2">What
-                                        you need to know before caucus?</span>
+                                    class="w-full flex md:items-center md:justify-between md:px-6 px-3 py-5 md:py-6 text-gray-800 font-medium">
+                                    <span class="text-[#052B5A] poppins md:text-[19px] text-[18px]">How do I know that
+                                        I’ve
+                                        voted?</span>
+                                    <div
+                                        class="md:h-30px md:w-50px bg-[#052B5A] md:py-1 md:px-2 py-1 px-2 ml-5 md:ml-5 rounded-full	">
+                                        <i class="fa-solid fa-angle-down md:text-[18px] md:pt-[5px]"
+                                            style="color: #ffffff;"></i>
+                                    </div>
+                                </button>
+
+                            </div>
+
+                            <!-- Accordion Item 3 -->
+                            <div class="border rounded-lg shadow-sm overflow-hidden">
+                                <button
+                                    class="w-full flex items-center justify-between px-6 py-6 text-gray-800 font-medium">
+                                    <span class="text-[#052B5A] poppins text-[19px]">Reasons to Vote for us?</span>
                                     <div class="md:h-30px md:w-50px bg-[#052B5A] py-1 px-2 rounded-full	">
                                         <i class="fa-solid fa-angle-down md:text-[18px] md:pt-[5px]"
                                             style="color: #ffffff;"></i>
                                     </div>
                                 </button>
-                                <div class="px-6 pb-6 pt-2 text-[#7F7F7F] jost font-normal text-[16px]	md:text-[19px]">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit sed sol iusmod tempor
-                                    incididunt ut labore et dolore.
-                                </div>
+
                             </div>
-                        </div>
-
-                        <!-- Accordion Item 2 -->
-                        <div class="border rounded-lg shadow-sm overflow-hidden">
-                            <button
-                                class="w-full flex md:items-center md:justify-between md:px-6 px-3 py-5 md:py-6 text-gray-800 font-medium">
-                                <span class="text-[#052B5A] poppins md:text-[19px] text-[18px]">How do I know that I’ve
-                                    voted?</span>
-                                <div
-                                    class="md:h-30px md:w-50px bg-[#052B5A] md:py-1 md:px-2 py-1 px-2 ml-5 md:ml-5 rounded-full	">
-                                    <i class="fa-solid fa-angle-down md:text-[18px] md:pt-[5px]"
-                                        style="color: #ffffff;"></i>
-                                </div>
-                            </button>
-
-                        </div>
-
-                        <!-- Accordion Item 3 -->
-                        <div class="border rounded-lg shadow-sm overflow-hidden">
-                            <button
-                                class="w-full flex items-center justify-between px-6 py-6 text-gray-800 font-medium">
-                                <span class="text-[#052B5A] poppins text-[19px]">Reasons to Vote for us?</span>
-                                <div class="md:h-30px md:w-50px bg-[#052B5A] py-1 px-2 rounded-full	">
-                                    <i class="fa-solid fa-angle-down md:text-[18px] md:pt-[5px]"
-                                        style="color: #ffffff;"></i>
-                                </div>
-                            </button>
-
                         </div>
                     </div>
                 </div>
+
+
             </div>
-
-
         </div>
     </section>
 
@@ -493,49 +521,62 @@
     </section>
 
     <!-- Our Highlights  -->
-    <section class="px-4 md:pt-10 md:pb-10">
-        <div class="container mx-auto md:mb-10">
-            <div class="md:flex md:justify-between md:items-center md:mb-14">
-                <h2 class="text-[28px] md:text-[45px] font-semibold poppins mb-5 md:mb-0 md:my-0 text-center">
-                    <span class="text-[#052B5A] ">Our</span> <span class="text-red-600">Highlights</span>
-                </h2>
-            
+    <section>
+        <div class="relative hidden md:block">
+            <img src="../images/home-vector-img.png" alt="" class="absolute right-0 top-[100px]">
+        </div>
+        <div class="px-4 md:pt-10 md:pb-10">
+            <div class="container mx-auto md:mb-10">
+                <div class="md:flex md:justify-between md:items-center md:mb-14">
+                    <h2 class="text-[28px] md:text-[45px] font-semibold poppins mb-5 md:mb-0 md:my-0 text-center">
+                        <span class="text-[#052B5A] ">Our</span> <span class="text-red-600">Highlights</span>
+                    </h2>
 
-             <div class="flex justify-end">
-                <div class="relative bg-[#E3042E] px-[24px] py-[12px] w-fit object-cover m-[20px] rounded-[10px] mx-auto  hidden md:block">
-                    <button class="poppins text-[14px] font-semibold text-white text-[18px]"> Discover More</button>
-                    <div class="  absolute w-[160px] h-[42px] border-2 border-[#E3042E] border-t-0 border-r-0 -left-[4%] -bottom-[13%] rounded-bl-[10px] -right-[5%]"></div>
-                  </div>
 
-             </div>
-            </div>
-
-            <!-- Video Section -->
-            <div class="relative bg-white rounded-lg overflow-hidden h-full">
-                <div class="relative rounded-lg p-7 md:p-10 bg-cover bg-center md:h-[550px] h-[200px] md:w-full "
-                    style="background-image: url('../images/sec-8.1.jpg'); background-position: 50% 49%;">
-                </div>
-                <div class="absolute inset-0 bg-[#052B5A] bg-opacity-45 rounded-lg"></div>
-                <!-- Play Button -->
-                <div class="absolute inset-0 flex items-center justify-center">
-                    <div class="md:w-[110px] md:h-[110px] rounded-full bg-[#ffffff] flex items-center justify-center">
-
+                    <div class="flex justify-end">
                         <div
-                            class=" md:w-[80px] md:h-[80px] rounded-full bg-[#052B5A] flex items-center justify-center z-10">
-                            <div>
-                                <i class="fa-solid fa-play text-[30px] md:ml-2" style="color: #ffffff;"></i>
+                            class="relative bg-[#E3042E] px-[24px] py-[12px] w-fit object-cover m-[20px] rounded-[10px] mx-auto  hidden md:block">
+                            <button class="poppins text-[14px] font-semibold text-white text-[18px]"> Discover
+                                More</button>
+                            <div
+                                class="  absolute w-[160px] h-[42px] border-2 border-[#E3042E] border-t-0 border-r-0 -left-[4%] -bottom-[13%] rounded-bl-[10px] -right-[5%]">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Video Section -->
+                <div class="relative bg-white rounded-lg overflow-hidden h-full">
+                    <div class="relative rounded-lg p-7 md:p-10 bg-cover bg-center md:h-[550px] h-[200px] md:w-full "
+                        style="background-image: url('../images/sec-8.1.jpg'); background-position: 50% 49%;">
+                    </div>
+                    <div class="absolute inset-0 bg-[#052B5A] bg-opacity-45 rounded-lg"></div>
+                    <!-- Play Button -->
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div
+                            class="md:w-[110px] md:h-[110px] rounded-full bg-[#ffffff] flex items-center justify-center">
+
+                            <div
+                                class=" md:w-[80px] md:h-[80px] rounded-full bg-[#052B5A] flex items-center justify-center z-10">
+                                <div>
+                                    <i class="fa-solid fa-play text-[30px] md:ml-2" style="color: #ffffff;"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="relative bg-[#E3042E]  md:px-[20px] px-[18px] md:py-[12px] py-[10px] w-fit object-cover m-[20px] rounded-[10px] mx-auto md:hidden mt-8 mb-10">
-                <button class="poppins text-[14px] font-semibold text-white text-[17px]"> Discover More</button>
-                <div class="  absolute w-[150px] h-[42px] border-2 border-[#E3042E] border-t-0 border-r-0 -left-[4%] -bottom-[13%] rounded-bl-[10px] -right-[5%]"></div>
-              </div>
+                <div
+                    class="relative bg-[#E3042E]  md:px-[20px] px-[18px] md:py-[12px] py-[10px] w-fit object-cover m-[20px] rounded-[10px] mx-auto md:hidden mt-8 mb-10">
+                    <button class="poppins text-[14px] font-semibold text-white text-[17px]"> Discover More</button>
+                    <div
+                        class="  absolute w-[150px] h-[42px] border-2 border-[#E3042E] border-t-0 border-r-0 -left-[4%] -bottom-[13%] rounded-bl-[10px] -right-[5%]">
+                    </div>
+                </div>
+            </div>
         </div>
-        </div>
+
     </section>
 
     <!-- footer  -->
@@ -625,7 +666,9 @@
                             </div>
                         </div>
 
-                        <div class="w-[1.5px] h-[125px] bg-[#FFF4FA] bg-opacity-10 mt-[120px] absolute left-[610px] hidden md:block"></div>
+                        <div
+                            class="w-[1.5px] h-[125px] bg-[#FFF4FA] bg-opacity-10 mt-[120px] absolute left-[610px] hidden md:block">
+                        </div>
 
                         <div class="md:w-4/12 w-full z-10 hidden md:block">
                             <div class="md:mt-10 md:pt-9">
@@ -659,7 +702,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="w-[1.5px] h-[125px] bg-[#FFF4FA] bg-opacity-10 mt-[120px] absolute left-[1270px] hidden md:block"></div>
+                        <div
+                            class="w-[1.5px] h-[125px] bg-[#FFF4FA] bg-opacity-10 mt-[120px] absolute left-[1270px] hidden md:block">
+                        </div>
 
                         <div class="md:w-4/12 w-full z-10">
                             <div class="md:mt-8 md:pt-5">

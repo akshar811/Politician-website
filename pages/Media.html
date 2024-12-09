@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="../css/fonts.css">
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="/js/script.js"></script>
+
 
     <script>
         function toggleMenu() {
@@ -43,11 +46,11 @@
 
     <header class="bg-white">
         <div class="container mx-auto">
-            <div class="px-4 py-6 flex items-center justify-between">
+            <div class="px-4 py-5 flex items-center justify-between">
                 <!-- Logo -->
                 <div class="flex lg:flex-1">
                     <a href="#" class="-m-1 p-1">
-                        <img class="h-8 w-auto" src="/images/politicia-logo 1.png" alt="" />
+                        <img class="md:h-[55px] h-10" src="/images/politicia-logo 1.png" alt="" />
                     </a>
                 </div>
 
@@ -67,9 +70,10 @@
                 <div class="md:flex md:justify-end md:flex-1 md:block hidden">
                     <div class=" relative bg-[#E3042E] px-[20px] py-[10px] w-fit object-cover  rounded-[10px]  ">
                         <button>
-                            <a href="/pages/ContactUS.html" class="poppins text-[14px] font-semibold text-white z-[10] relative">Contact
+                            <a href="/pages/ContactUS.html"
+                                class="poppins text-[14px] font-semibold text-white z-[10] relative">Contact
                                 us</a>
-                             </button>
+                        </button>
                         <div
                             class="  absolute w-[105px] h-[40px] border-2 border-[#E3042E] border-t-0 border-r-0 -left-[5%] -bottom-[13%] rounded-bl-[10px] -right-[5%] ">
                         </div>
@@ -106,7 +110,8 @@
                         <div class="absolute inset-0 bg-[#001631] bg-opacity-85 backdrop-blur-[3px] h-[699px]"></div>
                         <div class="relative z-10 container mx-auto px-6">
                             <nav class="space-y-6 py-4 px-4 text-center pt-[120px]">
-                                <a href="/index.html" class="block poppins font-normal text-[20px]">Home</a>
+                                <a href="/index.html"
+                                    class="block poppins font-normal text-[20px] text-[#AFADAD]">Home</a>
                                 <a href="../pages/AboutUs.html"
                                     class="block text-[#AFADAD] hover:text-blue-500 poppins text-[21px] font-normal">About
                                     Us</a>
@@ -175,49 +180,32 @@
 
     <!-- Political Election  -->
 
-    <section class="px-4 ">
-        <div class="container mx-auto">
-            <div class="flex justify-center mt-10 md:mt-28 mb-9 md:mb-0">
-                <div class="relative">
-                    <p class="poppins text-[#E3042E] font-semibold md:text-[20px] text-[15px]">Political Election</p>
-                    <div
-                        class="md:w-[175px] w-[125px] md:h-[1.5px] h-[2px] bg-[#E3042E] absolute md:top-[40px] mt-2 md:mt-0">
+    <section>
+        <div class="relative hidden md:block">
+            <img src="../images/home-vector-img-2.png" alt="" class="absolute left-0 top-[-80px]">
+        </div>
+        <div class="px-4">
+            <div class="container mx-auto">
+                <div class="flex justify-center mt-10 md:mt-28 mb-9 md:mb-0">
+                    <div class="relative">
+                        <p class="poppins text-[#E3042E] font-semibold md:text-[20px] text-[15px]">Political Election
+                        </p>
+                        <div
+                            class="md:w-[175px] w-[125px] md:h-[1.5px] h-[2px] bg-[#E3042E] absolute md:top-[40px] mt-2 md:mt-0">
+                        </div>
                     </div>
-                </div>
-                <p class="poppins text-[#7F7F7F] font-normal md:text-[20px] text-[16px] md:mx-8 mx-4">Statement
+                    <p class="poppins text-[#7F7F7F] font-normal md:text-[20px] text-[16px] md:mx-8 mx-4">Statement
                     </p>
-                <p class="poppins text-[#7F7F7F] font-normal md:text-[20px] text-[16px] mr-3 md:mr-7">Events</p>
-                <p class="poppins text-[#7F7F7F] font-normal md:text-[20px] text-[16px] ">Social</p>
-            </div>
-
-            <div class="grid grid-cols-2 lg:grid-cols-3 md:gap-6 gap-4 md:mt-16">
-                <!-- Image Card 1 -->
-                <div class="relative group order-1 md:order-1 ">
-                    <img src="../images/media-sec-2.1.jpg" alt="Event Image"
-                        class="w-full h-auto rounded-lg shadow-md object-cover" />
-
-                    <div class=" absolute inset-0 group-hover:border-2 border-white md:m-10 m-5 transition-opacity
-                        duration-300">
-                    </div>
-
-                    <div
-                        class=" absolute inset-0 bg-gradient-to-b from-[rgba(204,13,49,0.9)] to-[rgba(2,20,96,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex justify-center top-0">
-
-                        <h5 class="text-white text-lg font-semibold md:text-[45px] md:pt-[230px] pt-[80px] poppins">
-                            Election 
-                        </h5>
-
-
-                    </div>
-
+                    <p class="poppins text-[#7F7F7F] font-normal md:text-[20px] text-[16px] mr-3 md:mr-7">Events</p>
+                    <p class="poppins text-[#7F7F7F] font-normal md:text-[20px] text-[16px] ">Social</p>
                 </div>
 
-                <!-- Highlighted Card -->
-                <div class="relative col-span-2 order-3 order-4 md:order-2 md:order-3 ">
+                <div class="grid grid-cols-2 lg:grid-cols-3 md:gap-6 gap-4 md:mt-16">
+                    <!-- Image Card 1 -->
+                    <div class="relative group order-1 md:order-1 ">
+                        <img src="../images/media-sec-2.1.jpg" alt="Event Image"
+                            class="w-full h-auto rounded-lg shadow-md object-cover" />
 
-                    <div class="relative group">
-                        <img src="../images/media-sec-2.2.jpg" alt="Event Image"
-                            class="w-full md:h-[497px] rounded-lg shadow-md object-cover" />
                         <div class=" absolute inset-0 group-hover:border-2 border-white md:m-10 m-5 transition-opacity
                         duration-300">
                         </div>
@@ -225,173 +213,211 @@
                         <div
                             class=" absolute inset-0 bg-gradient-to-b from-[rgba(204,13,49,0.9)] to-[rgba(2,20,96,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex justify-center top-0">
 
-                            <h5
-                                class="text-white text-lg font-semibold md:text-[45px] md:pt-[230px] pt-[100px] poppins">
-                                Election meeting
+                            <h5 class="text-white text-lg font-semibold md:text-[45px] md:pt-[230px] pt-[80px] poppins">
+                                Election
+                            </h5>
+
+
+                        </div>
+
+                    </div>
+
+                    <!-- Highlighted Card -->
+                    <div class="relative col-span-2 order-3 order-4 md:order-2 md:order-3 ">
+
+                        <div class="relative group">
+                            <img src="../images/media-sec-2.2.jpg" alt="Event Image"
+                                class="w-full md:h-[497px] rounded-lg shadow-md object-cover" />
+                            <div class=" absolute inset-0 group-hover:border-2 border-white md:m-10 m-5 transition-opacity
+                        duration-300">
+                            </div>
+
+                            <div
+                                class=" absolute inset-0 bg-gradient-to-b from-[rgba(204,13,49,0.9)] to-[rgba(2,20,96,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex justify-center top-0">
+
+                                <h5
+                                    class="text-white text-lg font-semibold md:text-[45px] md:pt-[230px] pt-[100px] poppins">
+                                    Election meeting
+                                </h5>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Image Card 3 -->
+                    <div class="relative group order-2 md:order-4">
+                        <img src="../images/media-sec-2.3.jpg" alt="Event Image"
+                            class="w-full md:h-[460px] rounded-lg shadow-md object-cover" />
+
+                        <div class=" absolute inset-0 group-hover:border-2 border-white md:m-10 m-5 transition-opacity
+                        duration-300">
+                        </div>
+
+                        <div
+                            class=" absolute inset-0 bg-gradient-to-b from-[rgba(204,13,49,0.9)] to-[rgba(2,20,96,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex justify-center top-0">
+
+                            <h5 class="text-white text-lg font-semibold md:text-[45px] md:pt-[230px] pt-[80px] poppins">
+                                Election
                             </h5>
 
 
                         </div>
                     </div>
 
-                </div>
+                    <!-- Image Card 4 -->
+                    <div class="relative group order-5 md:order-5">
+                        <img src="../images/media-sec-2.4.jpg" alt="Event Image"
+                            class="w-full md:h-[460px] rounded-lg shadow-md object-cover" />
 
-                <!-- Image Card 3 -->
-                <div class="relative group order-2 md:order-4">
-                    <img src="../images/media-sec-2.3.jpg" alt="Event Image"
-                        class="w-full md:h-[460px] rounded-lg shadow-md object-cover" />
-
-                    <div class=" absolute inset-0 group-hover:border-2 border-white md:m-10 m-5 transition-opacity
+                        <div class=" absolute inset-0 group-hover:border-2 border-white md:m-10 m-5 transition-opacity
                         duration-300">
+                        </div>
+
+                        <div
+                            class=" absolute inset-0 bg-gradient-to-b from-[rgba(204,13,49,0.9)] to-[rgba(2,20,96,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex justify-center top-0">
+
+                            <h5 class="text-white text-lg font-semibold md:text-[45px] md:pt-[230px] pt-[80px] poppins">
+                                Election
+                            </h5>
+
+
+                        </div>
                     </div>
 
-                    <div
-                        class=" absolute inset-0 bg-gradient-to-b from-[rgba(204,13,49,0.9)] to-[rgba(2,20,96,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex justify-center top-0">
+                    <!-- Image Card 5 -->
+                    <div class="relative group order-6 md:order-6">
+                        <img src="../images/media-sec-2.5.jpg" alt="Event Image"
+                            class="w-full md:h-[460px] rounded-lg shadow-md object-cover" />
 
-                        <h5 class="text-white text-lg font-semibold md:text-[45px] md:pt-[230px] pt-[80px] poppins">
-                            Election 
-                        </h5>
-
-
-                    </div>
-                </div>
-
-                <!-- Image Card 4 -->
-                <div class="relative group order-5 md:order-5">
-                    <img src="../images/media-sec-2.4.jpg" alt="Event Image"
-                        class="w-full md:h-[460px] rounded-lg shadow-md object-cover" />
-
-                    <div class=" absolute inset-0 group-hover:border-2 border-white md:m-10 m-5 transition-opacity
+                        <div class=" absolute inset-0 group-hover:border-2 border-white md:m-10 m-5 transition-opacity
                         duration-300">
+                        </div>
+
+                        <div
+                            class=" absolute inset-0 bg-gradient-to-b from-[rgba(204,13,49,0.9)] to-[rgba(2,20,96,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex justify-center top-0">
+
+                            <h5 class="text-white text-lg font-semibold md:text-[45px] md:pt-[230px] pt-[80px] poppins">
+                                Election
+                            </h5>
+
+
+                        </div>
                     </div>
 
-                    <div
-                        class=" absolute inset-0 bg-gradient-to-b from-[rgba(204,13,49,0.9)] to-[rgba(2,20,96,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex justify-center top-0">
+                    <!-- Image Card 6 -->
+                    <div class="relative group md:col-span-2 order-7 md:order-7">
+                        <img src="../images/media-sec-2.6.jpg" alt="Event Image"
+                            class="w-full md:h-[460px] rounded-lg shadow-md object-cover" />
 
-                        <h5 class="text-white text-lg font-semibold md:text-[45px] md:pt-[230px] pt-[80px] poppins">
-                            Election 
-                        </h5>
-
-
-                    </div>
-                </div>
-
-                <!-- Image Card 5 -->
-                <div class="relative group order-6 md:order-6">
-                    <img src="../images/media-sec-2.5.jpg" alt="Event Image"
-                        class="w-full md:h-[460px] rounded-lg shadow-md object-cover" />
-
-                    <div class=" absolute inset-0 group-hover:border-2 border-white md:m-10 m-5 transition-opacity
+                        <div class=" absolute inset-0 group-hover:border-2 border-white md:m-10 m-5 transition-opacity
                         duration-300">
+                        </div>
+
+                        <div
+                            class=" absolute inset-0 bg-gradient-to-b from-[rgba(204,13,49,0.9)] to-[rgba(2,20,96,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex justify-center top-0">
+
+                            <h5 class="text-white text-lg font-semibold md:text-[45px] md:pt-[230px] pt-[80px] poppins">
+                                Election
+                            </h5>
+
+
+                        </div>
                     </div>
 
-                    <div
-                        class=" absolute inset-0 bg-gradient-to-b from-[rgba(204,13,49,0.9)] to-[rgba(2,20,96,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex justify-center top-0">
+                    <!-- Image Card 7 -->
+                    <div class="relative group order-8 md:order-8">
+                        <img src="../images/media-sec-2.7.jpg" alt="Event Image"
+                            class="w-full md:h-[460px] h-full rounded-lg shadow-md object-cover" />
 
-                        <h5 class="text-white text-lg font-semibold md:text-[45px] md:pt-[230px] pt-[80px] poppins">
-                            Election
-                        </h5>
-
-
-                    </div>
-                </div>
-
-                <!-- Image Card 6 -->
-                <div class="relative group md:col-span-2 order-7 md:order-7">
-                    <img src="../images/media-sec-2.6.jpg" alt="Event Image"
-                        class="w-full md:h-[460px] rounded-lg shadow-md object-cover" />
-
-                    <div class=" absolute inset-0 group-hover:border-2 border-white md:m-10 m-5 transition-opacity
+                        <div class=" absolute inset-0 group-hover:border-2 border-white md:m-10 m-5 transition-opacity
                         duration-300">
+                        </div>
+
+                        <div
+                            class=" absolute inset-0 bg-gradient-to-b from-[rgba(204,13,49,0.9)] to-[rgba(2,20,96,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex justify-center top-0">
+
+                            <h5 class="text-white text-lg font-semibold md:text-[45px] md:pt-[230px] pt-[80px] poppins">
+                                Election
+                            </h5>
+
+
+                        </div>
                     </div>
+                </div>
 
+                <div
+                    class="relative bg-[#E3042E] px-[20px] py-[10px] w-fit object-cover  rounded-[10px] mx-auto mt-8 md:mt-12">
+                    <button class="poppins text-[14px] font-semibold text-white">Load More</button>
                     <div
-                        class=" absolute inset-0 bg-gradient-to-b from-[rgba(204,13,49,0.9)] to-[rgba(2,20,96,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex justify-center top-0">
-
-                        <h5 class="text-white text-lg font-semibold md:text-[45px] md:pt-[230px] pt-[80px] poppins">
-                            Election
-                        </h5>
-
-
+                        class="  absolute w-[105px] h-[40px] border-2 border-[#E3042E] border-t-0 border-r-0 -left-[5%] -bottom-[13%] rounded-bl-[10px] -right-[5%]">
                     </div>
                 </div>
 
-                <!-- Image Card 7 -->
-                <div class="relative group order-8 md:order-8">
-                    <img src="../images/media-sec-2.7.jpg" alt="Event Image"
-                        class="w-full md:h-[460px] h-full rounded-lg shadow-md object-cover" />
 
-                    <div class=" absolute inset-0 group-hover:border-2 border-white md:m-10 m-5 transition-opacity
-                        duration-300">
-                    </div>
-
-                    <div
-                        class=" absolute inset-0 bg-gradient-to-b from-[rgba(204,13,49,0.9)] to-[rgba(2,20,96,0.9)] opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex justify-center top-0">
-
-                        <h5 class="text-white text-lg font-semibold md:text-[45px] md:pt-[230px] pt-[80px] poppins">
-                            Election 
-                        </h5>
-
-
-                    </div>
-                </div>
             </div>
-
-            <div class="relative bg-[#E3042E] px-[20px] py-[10px] w-fit object-cover  rounded-[10px] mx-auto mt-8 md:mt-12">
-                <button class="poppins text-[14px] font-semibold text-white">Load More</button>
-                <div class="  absolute w-[105px] h-[40px] border-2 border-[#E3042E] border-t-0 border-r-0 -left-[5%] -bottom-[13%] rounded-bl-[10px] -right-[5%]"></div>
-              </div>
-
-
         </div>
     </section>
 
     <!-- Political Engagements  -->
 
-    <section class="px-4 md:pb-20 pb-10">
-        <div class="container mx-auto">
-            <div class="flex justify-center mt-10 md:mt-28 pb-10 md:pb-0">
-                <div class="relative">
-                    <p class="poppins text-[#E3042E] font-semibold md:text-[20px] text-[16px]">Political Engagements</p>
-                    <div
-                        class="md:w-[225px] w-[150px] md:h-[1.5px] h-[2px] bg-[#E3042E] absolute md:top-[40px] mt-2 md:mt-0">
-                    </div>
-                </div>
-                <p class="poppins text-[#7F7F7F] font-normal md:text-[20px] text-[16px] md:mx-8 mx-4">Audio Clips</p>
-                <p class="poppins text-[#7F7F7F] font-normal md:text-[20px] text-[16px]">Initiatives</p>
-           </div>
-
-            <!-- Video Section -->
-            <div class="relative bg-white rounded-lg overflow-hidden h-full md:mt-20">
-               
-                    <div class="relative rounded-lg p-7 md:p-10 bg-cover bg-center md:h-[550px] h-[200px] md:w-full "
-                    style="background-image: url('../images/sec-8.1.jpg'); background-position: 50% 49%;">
-              
-                </div>
-                <div class="absolute inset-0 bg-[#052B5A] bg-opacity-45 rounded-lg"></div>
-                <!-- Play Button -->
-                <div class="absolute inset-0 flex items-center justify-center">
-                    <div class="md:w-[110px] md:h-[110px] rounded-full bg-[#ffffff] flex items-center justify-center">
-
+    <section>
+        <div class="relative hidden md:block">
+            <img src="../images/home-vector-img-2.png" alt="" class="absolute right-0 top-[-40px]">
+        </div>
+        <div class="px-4 md:pb-20 pb-10">
+            <div class="container mx-auto">
+                <div class="flex justify-center mt-10 md:mt-28 pb-10 md:pb-0">
+                    <div class="relative">
+                        <p class="poppins text-[#E3042E] font-semibold md:text-[20px] text-[16px]">Political Engagements
+                        </p>
                         <div
-                            class=" md:w-[80px] md:h-[80px] rounded-full bg-[#052B5A] flex items-center justify-center z-10">
-                            <div>
-                                <i class="fa-solid fa-play text-[30px] md:ml-2" style="color: #ffffff;"></i>
+                            class="md:w-[225px] w-[150px] md:h-[1.5px] h-[2px] bg-[#E3042E] absolute md:top-[40px] mt-2 md:mt-0">
+                        </div>
+                    </div>
+                    <p class="poppins text-[#7F7F7F] font-normal md:text-[20px] text-[16px] md:mx-8 mx-4">Audio Clips
+                    </p>
+                    <p class="poppins text-[#7F7F7F] font-normal md:text-[20px] text-[16px]">Initiatives</p>
+                </div>
+
+                <!-- Video Section -->
+                <div class="relative bg-white rounded-lg overflow-hidden h-full md:mt-20">
+
+                    <div class="relative rounded-lg p-7 md:p-10 bg-cover bg-center md:h-[550px] h-[200px] md:w-full "
+                        style="background-image: url('../images/sec-8.1.jpg'); background-position: 50% 49%;">
+
+                    </div>
+                    <div class="absolute inset-0 bg-[#052B5A] bg-opacity-45 rounded-lg"></div>
+                    <!-- Play Button -->
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div
+                            class="md:w-[115px] md:h-[115px] w-[80px] h-[80px] rounded-full bg-[#ffffff] flex items-center justify-center">
+
+                            <div
+                                class="md:w-[84px] md:h-[84px] w-[60px] h-[60px] rounded-full bg-[#052B5A] bg-opacity-30 flex items-center justify-center">
+                                <div
+                                    class=" md:w-[61px] md:h-[61px] w-[45px] h-[45px] rounded-full bg-[#052B5A] flex items-center justify-center z-10">
+                                    <div>
+                                        <i class="fa-solid fa-play md:text-[25px] text-[18px] md:ml-1 ml-[2px]"
+                                            style="color: #ffffff;"></i>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
+            </div>
         </div>
     </section>
 
     <!-- footer  -->
     <footer>
         <div class="relative bg-cover bg-center md:h-[425px] h-[700px]" style="
-          background-image: url('../images/footer-bg.jpg');
-          background-position: 31% 34%;
-        ">
+            background-image: url('/images/footer-bg.jpg');
+            background-position: 31% 34%;
+            ">
             <!-- Overlay with color -->
             <div class="absolute inset-0 bg-[#001631] bg-opacity-90">
                 <div class="container mx-auto">
@@ -401,7 +427,7 @@
                                 <div class="">
                                     <div class="flex justify-between">
                                         <div>
-                                            <img src="../images/footer-logo.png" alt="" class="h-[45px]" />
+                                            <img src="/images/footer-logo.png" alt="" class="h-[45px]" />
                                         </div>
                                         <div class="flex mt-2 relative ">
                                             <div class="flex ">
@@ -472,10 +498,15 @@
                                 </ul>
                             </div>
                         </div>
+
+                        <div
+                            class="w-[1.5px] h-[125px] bg-[#FFF4FA] bg-opacity-10 mt-[120px] absolute left-[610px] hidden md:block">
+                        </div>
+
                         <div class="md:w-4/12 w-full z-10 hidden md:block">
-                            <div class="md:mt-5 md:pt-9">
+                            <div class="md:mt-10 md:pt-9">
                                 <div class="flex justify-center items-center">
-                                    <img src="../images/footer-logo.png" alt="" />
+                                    <img src="/images/footer-logo.png" alt="" />
                                 </div>
                                 <div class="md:mt-5">
                                     <p class="text-gray-300 text-center jost font-medium text-lg">
@@ -504,8 +535,12 @@
                                 </div>
                             </div>
                         </div>
+                        <div
+                            class="w-[1.5px] h-[125px] bg-[#FFF4FA] bg-opacity-10 mt-[120px] absolute left-[1270px] hidden md:block">
+                        </div>
+
                         <div class="md:w-4/12 w-full z-10">
-                            <div class="md:mt-5 md:pt-5">
+                            <div class="md:mt-8 md:pt-5">
                                 <div class="md:text-center md:ml-56 mt-8 md:mt-0 ml-3 md:ml-0">
                                     <h3
                                         class="text-xl font-semibold mb-4 poppins font-semibold text-white md:mt-10 md:mr-[130px]">
@@ -520,7 +555,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="h-[0.1px] bg-white opacity-30 mt-16"></div>
+                <div class="h-[0.1px] bg-[#FFF4FA] opacity-10 mt-16"></div>
+
                 <div class="md:w-10/12 mx-auto flex flex-col md:flex-row justify-between text-sm text-gray-400 z-10">
                     <p class="text-white mt-8 text-center">
                         Copyright © 2023 Politician, All Rights Reserved

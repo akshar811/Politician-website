@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="../css/fonts.css">
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="/js/script.js"></script>
+
 
     <script>
         function toggleMenu() {
@@ -43,11 +46,11 @@
 
     <header class="bg-white">
         <div class="container mx-auto">
-            <div class="px-4 py-6 flex items-center justify-between">
+            <div class="px-4 py-5 flex items-center justify-between">
                 <!-- Logo -->
                 <div class="flex lg:flex-1">
                     <a href="#" class="-m-1 p-1">
-                        <img class="h-8 w-auto" src="/images/politicia-logo 1.png" alt="" />
+                        <img class="md:h-[55px] h-10" src="/images/politicia-logo 1.png" alt="" />
                     </a>
                 </div>
 
@@ -63,18 +66,19 @@
                         class="font-bold poppins text-lg text-[#052B5A]">Volunteer and Contribution</a>
                 </nav>
 
-               <!-- Call to Action Button -->
-               <div class="md:flex md:justify-end md:flex-1 md:block hidden">
-                <div class=" relative bg-[#E3042E] px-[20px] py-[10px] w-fit object-cover  rounded-[10px]  ">
-                    <button>
-                        <a href="/pages/ContactUS.html" class="poppins text-[14px] font-semibold text-white z-[10] relative">Contact
-                            us</a>
-                         </button>
-                    <div
-                        class="  absolute w-[105px] h-[40px] border-2 border-[#E3042E] border-t-0 border-r-0 -left-[5%] -bottom-[13%] rounded-bl-[10px] -right-[5%] ">
+                <!-- Call to Action Button -->
+                <div class="md:flex md:justify-end md:flex-1 md:block hidden">
+                    <div class=" relative bg-[#E3042E] px-[20px] py-[10px] w-fit object-cover  rounded-[10px]  ">
+                        <button>
+                            <a href="/pages/ContactUS.html"
+                                class="poppins text-[14px] font-semibold text-white z-[10] relative">Contact
+                                us</a>
+                        </button>
+                        <div
+                            class="  absolute w-[105px] h-[40px] border-2 border-[#E3042E] border-t-0 border-r-0 -left-[5%] -bottom-[13%] rounded-bl-[10px] -right-[5%] ">
+                        </div>
                     </div>
                 </div>
-            </div>
 
                 <!-- Mobile Menu Toggle Button -->
                 <button class="md:hidden text-gray-700 focus:outline-none" onclick="toggleMenu()">
@@ -106,7 +110,8 @@
                         <div class="absolute inset-0 bg-[#001631] bg-opacity-85 backdrop-blur-[3px] h-[699px]"></div>
                         <div class="relative z-10 container mx-auto px-6">
                             <nav class="space-y-6 py-4 px-4 text-center pt-[120px]">
-                                <a href="/index.html" class="block poppins font-normal text-[20px]">Home</a>
+                                <a href="/index.html"
+                                    class="block poppins font-normal text-[20px] text-[#AFADAD]">Home</a>
                                 <a href="../pages/AboutUs.html"
                                     class="block text-[#AFADAD] hover:text-blue-500 poppins text-[21px] font-normal">About
                                     Us</a>
@@ -175,291 +180,340 @@
         </div>
     </div>
 
-    <section class="px-4 md:mt-24 md:mb-32">
-        <div class="container mx-auto">
-            <div class="poppins md:text-[44px] font-semibold text-[#052B5A] mt-10 mb-6 text-[24px] md:hidden">Volunteer
-                For The <span class="text-[#E3042E]">Campaign <br> And The Roles</span></div>
-            <div class="md:flex gap-11">
-                <div class="md:w-5/12">
-                    <div>
-                        <img src="../images/volunteer-sec-2.1.jpg" alt="">
+    <section>
+        <div class="relative hidden md:block">
+            <img src="../images/home-vector-img-2.png" alt="" class="absolute left-0  top-[-130px]">
+        </div>
+        <div class="relative hidden md:block">
+            <img src="../images/home-vector-img.png" alt="" class="absolute right-0  top-[1500px]">
+        </div>
+        <div class="px-4 md:mt-24 md:mb-32">
+            <div class="container mx-auto relative z-10">
+                <div class="poppins md:text-[44px] font-semibold text-[#052B5A] mt-10 mb-6 text-[24px] md:hidden">
+                    Volunteer
+                    For The <span class="text-[#E3042E]">Campaign <br> And The Roles</span></div>
+                <div class="md:flex gap-11">
+                    <div class="md:w-5/12">
+                        <div>
+                            <img src="../images/volunteer-sec-2.1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="md:w-7/12">
+                        <div>
+                            <div class="poppins md:text-[44px] font-semibold text-[#052B5A] md:mt-5 hidden md:block">
+                                Volunteer For The <span class="text-[#E3042E]">Campaign <br> And The Roles</span></div>
+                            <p class="jost font-normal md:text-[20px] text-[16px] text-[#7F7F7F] md:mt-5 mt-6">We
+                                envision a
+                                future where
+                                [insert key elements of the politician's vision, e.g., "every
+                                individual has the opportunity to thrive,"our communities are characterized by
+                                prosperity
+                                and equity,"unity and collaboration are celebrated the politician's vision, e.g., "every
+                                individual has the opportunity.</p>
+                            <p class="jost font-normal md:text-[20px] text-[16px] text-[#7F7F7F] mt-5">Unity and
+                                collaboration are
+                                celebrated the politician's vision, e.g., "every individual has
+                                the opportunity.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="md:w-7/12">
-                    <div>
-                        <div class="poppins md:text-[44px] font-semibold text-[#052B5A] md:mt-5 hidden md:block">
-                            Volunteer For The <span class="text-[#E3042E]">Campaign <br> And The Roles</span></div>
-                        <p class="jost font-normal md:text-[20px] text-[16px] text-[#7F7F7F] md:mt-5 mt-6">We envision a
-                            future where
-                            [insert key elements of the politician's vision, e.g., "every
-                            individual has the opportunity to thrive,"our communities are characterized by prosperity
-                            and equity,"unity and collaboration are celebrated the politician's vision, e.g., "every
-                            individual has the opportunity.</p>
-                        <p class="jost font-normal md:text-[20px] text-[16px] text-[#7F7F7F] mt-5">Unity and
-                            collaboration are
-                            celebrated the politician's vision, e.g., "every individual has
-                            the opportunity.</p>
-                    </div>
+
+                <!-- Contact the Campaign:  -->
+                <div class="md:my-7 my-5">
+                    <h2 class="poppins text-[#052B5A] font-semibold md:text-[30px] text-[23px]">Contact the Campaign:
+                    </h2>
+                    <p class="jost font-normal md:text-[20px] text-[16px] text-[#7F7F7F]  mt-3">Recognizing the
+                        interconnectedness of
+                        population dynamics with broader societal and environmental challenges, advocating for policies
+                        that
+                        promote sustainable development, resource conservation, and environmental stewardship.</p>
                 </div>
-            </div>
 
-            <!-- Contact the Campaign:  -->
-            <div class="md:my-7 my-5">
-                <h2 class="poppins text-[#052B5A] font-semibold md:text-[30px] text-[23px]">Contact the Campaign:</h2>
-                <p class="jost font-normal md:text-[20px] text-[16px] text-[#7F7F7F]  mt-3">Recognizing the
-                    interconnectedness of
-                    population dynamics with broader societal and environmental challenges, advocating for policies that
-                    promote sustainable development, resource conservation, and environmental stewardship.</p>
-            </div>
+                <!-- Express Your Interest:  -->
+                <div class="md:my-7 my-5">
+                    <h2 class="poppins text-[#052B5A] font-semibold md:text-[30px] text-[23px]">Express Your Interest:
+                    </h2>
+                    <p class="jost font-normal md:text-[20px] text-[16px] text-[#7F7F7F] md:mt-3 mt-3">Challenges facing
+                        our
+                        community,
+                        population control emerges as a critical issue requiring thoughtful consideration and effective
+                        policies. Our approach focuses on empowering individuals and families to make informed choices
+                        about
+                        family planning while ensuring access to necessary resources and support systems.</p>
+                </div>
 
-            <!-- Express Your Interest:  -->
-            <div class="md:my-7 my-5">
-                <h2 class="poppins text-[#052B5A] font-semibold md:text-[30px] text-[23px]">Express Your Interest:</h2>
-                <p class="jost font-normal md:text-[20px] text-[16px] text-[#7F7F7F] md:mt-3 mt-3">Challenges facing our
-                    community,
-                    population control emerges as a critical issue requiring thoughtful consideration and effective
-                    policies. Our approach focuses on empowering individuals and families to make informed choices about
-                    family planning while ensuring access to necessary resources and support systems.</p>
-            </div>
+                <!-- Training and Support:  -->
+                <div class="md:my-7 my-5">
+                    <h2 class="poppins text-[#052B5A] font-semibold md:text-[30px] text-[23px]">Training and Support:
+                    </h2>
+                    <p class="jost font-normal text-[16px] md:text-[20px] text-[#7F7F7F] mt-3">Describe the politician's
+                        entry into
+                        politics, including key milestones, campaigns, and elections they have participated in.
+                        Highlight
+                        any previous positions held in government or public service.Provide insights into the
+                        politician's
+                        personal interests, hobbies, and passions outside of their professional life, humanizing their
+                        public persona and offering a glimpse into who they are beyond politics.</p>
+                </div>
 
-            <!-- Training and Support:  -->
-            <div class="md:my-7 my-5">
-                <h2 class="poppins text-[#052B5A] font-semibold md:text-[30px] text-[23px]">Training and Support:</h2>
-                <p class="jost font-normal text-[16px] md:text-[20px] text-[#7F7F7F] mt-3">Describe the politician's
-                    entry into
-                    politics, including key milestones, campaigns, and elections they have participated in. Highlight
-                    any previous positions held in government or public service.Provide insights into the politician's
-                    personal interests, hobbies, and passions outside of their professional life, humanizing their
-                    public persona and offering a glimpse into who they are beyond politics.</p>
-            </div>
-
-            <!-- Roles Available:  -->
-            <div class="md:my-7 my-5">
-                <h2 class="poppins text-[#052B5A] font-semibold md:text-[30px] text-[23px]">Roles Available:</h2>
-                <p class="jost font-normal text-[16px] md:text-[20px] text-[#7F7F7F] mt-3">Campaigns usually have a
-                    variety of roles
-                    to fill, depending on their needs and the size of the campaign. Some common volunteer roles include.
-                </p>
-                <div>
-                    <div class="text-[#052B5A] jost font-semibold md:text-[20px] md:mt-5 mt-4 md:leading-7">
-                        <i class="fa-solid fa-share mr-3" style="color: #052b5a;"></i>Canvassing:
-                        <span class="text-[#7F7F7F] jost font-normal md:text-[20px] md:mt-3 mt-3 md:leading-7"> Going
-                            door-to-door to talk to voters and distribute campaign materials.</span>
-                        </p>
-                        <div class="text-[#052B5A] jost font-semibold md:text-[20px] md:mt-5 mt-3   md:leading-7">
-                            <i class="fa-solid fa-share mr-3" style="color: #052b5a;"></i>Phone Banking:
+                <!-- Roles Available:  -->
+                <div class="md:my-7 my-5">
+                    <h2 class="poppins text-[#052B5A] font-semibold md:text-[30px] text-[23px]">Roles Available:</h2>
+                    <p class="jost font-normal text-[16px] md:text-[20px] text-[#7F7F7F] mt-3">Campaigns usually have a
+                        variety of roles
+                        to fill, depending on their needs and the size of the campaign. Some common volunteer roles
+                        include.
+                    </p>
+                    <div>
+                        <div class="text-[#052B5A] jost font-semibold md:text-[20px] md:mt-5 mt-4 md:leading-7">
+                            <i class="fa-solid fa-share mr-3" style="color: #052b5a;"></i>Canvassing:
                             <span class="text-[#7F7F7F] jost font-normal md:text-[20px] md:mt-3 mt-3 md:leading-7">
-                                Making calls to potential voters to gather information or encourage them to support the
-                                candidate.</span>
+                                Going
+                                door-to-door to talk to voters and distribute campaign materials.</span>
                             </p>
                             <div class="text-[#052B5A] jost font-semibold md:text-[20px] md:mt-5 mt-3   md:leading-7">
-                                <i class="fa-solid fa-share mr-3" style="color: #052b5a;"></i>Event Staff:
+                                <i class="fa-solid fa-share mr-3" style="color: #052b5a;"></i>Phone Banking:
                                 <span class="text-[#7F7F7F] jost font-normal md:text-[20px] md:mt-3 mt-3 md:leading-7">
-                                    Assisting with campaign events, such as rallies, fundraisers, or community
-                                    meetings.</span>
+                                    Making calls to potential voters to gather information or encourage them to support
+                                    the
+                                    candidate.</span>
                                 </p>
                                 <div
                                     class="text-[#052B5A] jost font-semibold md:text-[20px] md:mt-5 mt-3   md:leading-7">
-                                    <i class="fa-solid fa-share mr-3" style="color: #052b5a;"></i>Data Entry:
+                                    <i class="fa-solid fa-share mr-3" style="color: #052b5a;"></i>Event Staff:
                                     <span
                                         class="text-[#7F7F7F] jost font-normal md:text-[20px] md:mt-3 mt-3 md:leading-7">
-                                        Helping to enter and organize voter data and other campaign information.</span>
+                                        Assisting with campaign events, such as rallies, fundraisers, or community
+                                        meetings.</span>
                                     </p>
                                     <div
                                         class="text-[#052B5A] jost font-semibold md:text-[20px] md:mt-5 mt-3   md:leading-7">
-                                        <i class="fa-solid fa-share mr-3" style="color: #052b5a;"></i>Social Media
-                                        Support:
+                                        <i class="fa-solid fa-share mr-3" style="color: #052b5a;"></i>Data Entry:
                                         <span
                                             class="text-[#7F7F7F] jost font-normal md:text-[20px] md:mt-3 mt-3 md:leading-7">
-                                            Assisting with managing and promoting the campaign's social media
-                                            accounts.</span>
+                                            Helping to enter and organize voter data and other campaign
+                                            information.</span>
                                         </p>
                                         <div
-                                            class="text-[#052B5A] jost font-semibold md:text-[20px] md:mt-5 mt-3  md:leading-7">
-                                            <i class="fa-solid fa-share mr-3" style="color: #052b5a;"></i>Volunteer
-                                            Coordination:
+                                            class="text-[#052B5A] jost font-semibold md:text-[20px] md:mt-5 mt-3   md:leading-7">
+                                            <i class="fa-solid fa-share mr-3" style="color: #052b5a;"></i>Social Media
+                                            Support:
                                             <span
                                                 class="text-[#7F7F7F] jost font-normal md:text-[20px] md:mt-3 mt-3 md:leading-7">
-                                                Helping to recruit, train, and organize other volunteers.</span>
+                                                Assisting with managing and promoting the campaign's social media
+                                                accounts.</span>
                                             </p>
                                             <div
                                                 class="text-[#052B5A] jost font-semibold md:text-[20px] md:mt-5 mt-3  md:leading-7">
-                                                <i class="fa-solid fa-share mr-3"
-                                                    style="color: #052b5a;"></i>Fundraising:
+                                                <i class="fa-solid fa-share mr-3" style="color: #052b5a;"></i>Volunteer
+                                                Coordination:
                                                 <span
                                                     class="text-[#7F7F7F] jost font-normal md:text-[20px] md:mt-3 mt-3 md:leading-7">
-                                                    Assisting with fundraising efforts, such as making calls to donors
-                                                    or organizing fundraising events.</span>
+                                                    Helping to recruit, train, and organize other volunteers.</span>
                                                 </p>
+                                                <div
+                                                    class="text-[#052B5A] jost font-semibold md:text-[20px] md:mt-5 mt-3  md:leading-7">
+                                                    <i class="fa-solid fa-share mr-3"
+                                                        style="color: #052b5a;"></i>Fundraising:
+                                                    <span
+                                                        class="text-[#7F7F7F] jost font-normal md:text-[20px] md:mt-3 mt-3 md:leading-7">
+                                                        Assisting with fundraising efforts, such as making calls to
+                                                        donors
+                                                        or organizing fundraising events.</span>
+                                                    </p>
 
+                                                </div>
                                             </div>
+
+
                                         </div>
-
-
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Training and Support:  -->
-            <div class="md:my-8 my-5 md:pt-2">
-                <h2 class="poppins text-[#052B5A] font-semibold md:text-[30px] text-[23px]">Training and Support:</h2>
-                <p class="jost font-normal text-[16px] md:text-[20px] text-[#7F7F7F] mt-3">Once you've chosen a role,
-                    the campaign
-                    will often provide training and support to help you succeed in your volunteer activities. This may
-                    include training sessions, informational materials, or guidance from experienced volunteers or staff
-                    members.</p>
-            </div>
+                <!-- Training and Support:  -->
+                <div class="md:my-8 my-5 md:pt-2">
+                    <h2 class="poppins text-[#052B5A] font-semibold md:text-[30px] text-[23px]">Training and Support:
+                    </h2>
+                    <p class="jost font-normal text-[16px] md:text-[20px] text-[#7F7F7F] mt-3">Once you've chosen a
+                        role,
+                        the campaign
+                        will often provide training and support to help you succeed in your volunteer activities. This
+                        may
+                        include training sessions, informational materials, or guidance from experienced volunteers or
+                        staff
+                        members.</p>
+                </div>
 
-            <!-- Time Commitment:  -->
-            <div class="md:my-7 my-5">
-                <h2 class="poppins text-[#052B5A] font-semibold md:text-[30px] text-[23px]">Time Commitment:</h2>
-                <p class="jost font-normal text-[16px] md:text-[20px] text-[#7F7F7F] mt-3">Be sure to discuss the time
-                    commitment
-                    expected for your volunteer role. Campaigns may have flexible options for volunteering, allowing you
-                    to contribute as much or as little time as you're able.</p>
-            </div>
+                <!-- Time Commitment:  -->
+                <div class="md:my-7 my-5">
+                    <h2 class="poppins text-[#052B5A] font-semibold md:text-[30px] text-[23px]">Time Commitment:</h2>
+                    <p class="jost font-normal text-[16px] md:text-[20px] text-[#7F7F7F] mt-3">Be sure to discuss the
+                        time
+                        commitment
+                        expected for your volunteer role. Campaigns may have flexible options for volunteering, allowing
+                        you
+                        to contribute as much or as little time as you're able.</p>
+                </div>
 
-            <!-- Stay Engaged:  -->
-            <div class="md:my-7 my-5">
-                <h2 class="poppins text-[#052B5A] font-semibold md:text-[30px] text-[23px]">Stay Engaged:</h2>
-                <p class="jost font-normal text-[16px] md:text-[20px] text-[#7F7F7F] mt-3">Keep in touch with the
-                    campaign team and
-                    stay informed about upcoming events, volunteer opportunities, and any updates or changes to the
-                    campaign's strategy..</p>
-            </div>
+                <!-- Stay Engaged:  -->
+                <div class="md:my-7 my-5">
+                    <h2 class="poppins text-[#052B5A] font-semibold md:text-[30px] text-[23px]">Stay Engaged:</h2>
+                    <p class="jost font-normal text-[16px] md:text-[20px] text-[#7F7F7F] mt-3">Keep in touch with the
+                        campaign team and
+                        stay informed about upcoming events, volunteer opportunities, and any updates or changes to the
+                        campaign's strategy..</p>
+                </div>
 
-            <!-- Secure Platform For Financial Contributions  -->
+                <!-- Secure Platform For Financial Contributions  -->
 
-            <div class="md:flex gap-11 md:mt-20 mb-6 md:mb-0">
-                <div class="md:w-7/12 w-full">
-                    <div class="md:mt-9 mt-4">
-                        <div class="poppins md:text-[44px] font-semibold text-[#052B5A] text-[24px]">Secure Platform For
-                            <span class="text-[#E3042E]">Financial Contributions</span>
+                <div class="md:flex gap-11 md:mt-20 mb-6 md:mb-0">
+                    <div class="md:w-7/12 w-full">
+                        <div class="md:mt-9 mt-4">
+                            <div class="poppins md:text-[44px] font-semibold text-[#052B5A] text-[24px]">Secure Platform
+                                For
+                                <span class="text-[#E3042E]">Financial Contributions</span>
+                            </div>
+                            <p class="jost font-normal text-[20px] text-[#7F7F7F] mt-5">We envision a future where
+                                [insert key elements of the politician's vision, e.g., "every
+                                individual has the opportunity to thrive,"our communities are characterized by
+                                prosperity
+                                and equity,"unity and collaboration are celebrated the politician's vision, e.g., "every
+                                individual has the opportunity.</p>
+                            <p class="jost font-normal text-[20px] text-[#7F7F7F] mt-5">Unity and collaboration are
+                                celebrated the politician's vision, e.g., "every individual has
+                                the opportunity.</p>
                         </div>
-                        <p class="jost font-normal text-[20px] text-[#7F7F7F] mt-5">We envision a future where
-                            [insert key elements of the politician's vision, e.g., "every
-                            individual has the opportunity to thrive,"our communities are characterized by prosperity
-                            and equity,"unity and collaboration are celebrated the politician's vision, e.g., "every
-                            individual has the opportunity.</p>
-                        <p class="jost font-normal text-[20px] text-[#7F7F7F] mt-5">Unity and collaboration are
-                            celebrated the politician's vision, e.g., "every individual has
-                            the opportunity.</p>
+                    </div>
+                    <div class="md:w-5/12 w-full">
+                        <div>
+                            <img src="../images/volunteer-sec-2.1.jpg" alt="" class="pt-6 md:pt-0">
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Choose a Payment Processor:  -->
+                <div class="md:my-7 my-5">
+                    <h2 class="poppins text-[#052B5A] font-semibold md:text-[30px] text-[23px]">Choose a Payment
+                        Processor:
+                    </h2>
+                    <p class="jost font-normal text-[16px] md:text-[20px] text-[#7F7F7F] mt-3">Select a reputable
+                        payment
+                        processor that
+                        specializes in political fundraising. Some popular options include ActBlue, WinRed, Anedot, and
+                        NGP
+                        VAN. These platforms are designed to handle political contributions securely and are compliant
+                        with
+                        relevant regulations.</p>
+                </div>
+
+                <!-- Ensure Compliance:  -->
+                <div class="md:my-7 my-5">
+                    <h2 class="poppins text-[#052B5A] font-semibold md:text-[30px] text-[23px]">Ensure Compliance:</h2>
+                    <p class="jost font-normal text-[16px] md:text-[20px] text-[#7F7F7F] mt-3">Select a reputable
+                        payment
+                        processor that
+                        specializes in political fundraising. Some popular options include ActBlue, WinRed, Anedot, and
+                        NGP
+                        VAN. These platforms are designed to handle political contributions securely and are compliant
+                        with
+                        relevant regulations.</p>
+                </div>
+
+                <!-- Secure Transactions:  -->
+                <div class="md:my-7 my-5">
+                    <h2 class="poppins text-[#052B5A] font-semibold md:text-[30px] text-[23px]">Secure Transactions:
+                    </h2>
+                    <p class="jost font-normal text-[16px] md:text-[20px] text-[#7F7F7F] mt-3">Select a reputable
+                        payment
+                        processor that
+                        specializes in political fundraising. Some popular options include ActBlue, WinRed, Anedot, and
+                        NGP
+                        VAN. These platforms are designed to handle political contributions securely and are compliant
+                        with
+                        relevant regulations.</p>
+                </div>
+
+                <!-- Provide Transparency:  -->
+                <div class="md:my-7 my-5">
+                    <h2 class="poppins text-[#052B5A] font-semibold md:text-[30px] text-[23px]">Provide Transparency:
+                    </h2>
+                    <p class="jost font-normal text-[16px] md:text-[20px] text-[#7F7F7F] mt-3">Clearly communicate to
+                        donors
+                        how their
+                        contributions will be used and ensure transparency in the fundraising process. This can help
+                        build
+                        trust and encourage donors to contribute.</p>
+                </div>
+
+                <!-- Offer Multiple Payment Options:  -->
+                <div class="md:my-7 my-5">
+                    <h2 class="poppins text-[#052B5A] font-semibold md:text-[30px] text-[23px]">Offer Multiple Payment
+                        Options:</h2>
+                    <p class="jost font-normal text-[16px] md:text-[20px] text-[#7F7F7F] mt-3">Offer Multiple Payment
+                        Options:</p>
+                </div>
+
+                <!-- Comprehensive Reporting:  -->
+                <div class="md:my-7 my-5">
+                    <h2 class="poppins text-[#052B5A] font-semibold md:text-[30px] text-[23px]">Comprehensive Reporting:
+                    </h2>
+                    <p class="jost font-normal text-[16px] md:text-[20px] text-[#7F7F7F] mt-3">Ensure that the payment
+                        processor
+                        provides comprehensive reporting tools that allow you to track donations, generate financial
+                        reports, and comply with reporting requirements.commitment expected for your volunteer role.
+                        Campaigns may have flexible options for volunteering, allowing you to contribute as much or as
+                        little time as you're able</p>
+                </div>
+
+                <!-- Legal Compliance:  -->
+                <div class="md:my-7 my-5">
+                    <h2 class="poppins text-[#052B5A] font-semibold md:text-[30px] text-[23px]">Legal Compliance:</h2>
+                    <p class="jost font-normal text-[16px] md:text-[20px] text-[#7F7F7F] mt-3">Work closely with legal
+                        advisors or
+                        compliance experts to ensure that your fundraising platform complies with all relevant laws and
+                        regulations. This includes understanding contribution limits, disclosure requirements, and
+                        restrictions on certain types of contributions.</p>
+                </div>
+
+                <!-- complain  -->
+                <div class="md:flex md:my-10 my-10">
+                    <div class="w-full  bg-white shadow-lg rounded-lg flex overflow-hidden md:p-6 p-4">
+                        <!-- Input Field -->
+                        <input type="text" placeholder="Complain"
+                            class="flex-grow px-4 py-2 text-g[#7F7F7F] border-2 focus:outline-none  rounded-lg" />
+                        <!-- Button -->
+                        <button
+                            class="md:px-8 md:py-2 px-6 py-2 bg-[#9c9c9c] md:ml-5 ml-4 text-white font-semibold rounded-lg focus:outline-none">
+                            Send
+                        </button>
+                        <a href="" class="relative block">
+                            <!-- Add the pseudo-element using Tailwind -->
+                            <div
+                                class=" before:content-[''] before:absolute md:before:-bottom-[5px] before:-bottom-[5px] before:left-[-89px] md:before:left-[-106px] before:border-b-2 before:border-l-2 before:border-[#9c9c9c] before:rounded-bl-lg md:before:rounded-bl-xl md:before:px-[44px] before:px-[35px] before:py-[19px] md:before:py-[18px] before:py-[15px]">
+                            </div>
+                        </a>
                     </div>
                 </div>
-                <div class="md:w-5/12 w-full">
-                    <div>
-                        <img src="../images/volunteer-sec-2.1.jpg" alt="" class="pt-6 md:pt-0">
-                    </div>
-                </div>
+
 
             </div>
-
-            <!-- Choose a Payment Processor:  -->
-            <div class="md:my-7 my-5">
-                <h2 class="poppins text-[#052B5A] font-semibold md:text-[30px] text-[23px]">Choose a Payment Processor:
-                </h2>
-                <p class="jost font-normal text-[16px] md:text-[20px] text-[#7F7F7F] mt-3">Select a reputable payment
-                    processor that
-                    specializes in political fundraising. Some popular options include ActBlue, WinRed, Anedot, and NGP
-                    VAN. These platforms are designed to handle political contributions securely and are compliant with
-                    relevant regulations.</p>
-            </div>
-
-            <!-- Ensure Compliance:  -->
-            <div class="md:my-7 my-5">
-                <h2 class="poppins text-[#052B5A] font-semibold md:text-[30px] text-[23px]">Ensure Compliance:</h2>
-                <p class="jost font-normal text-[16px] md:text-[20px] text-[#7F7F7F] mt-3">Select a reputable payment
-                    processor that
-                    specializes in political fundraising. Some popular options include ActBlue, WinRed, Anedot, and NGP
-                    VAN. These platforms are designed to handle political contributions securely and are compliant with
-                    relevant regulations.</p>
-            </div>
-
-            <!-- Secure Transactions:  -->
-            <div class="md:my-7 my-5">
-                <h2 class="poppins text-[#052B5A] font-semibold md:text-[30px] text-[23px]">Secure Transactions:</h2>
-                <p class="jost font-normal text-[16px] md:text-[20px] text-[#7F7F7F] mt-3">Select a reputable payment
-                    processor that
-                    specializes in political fundraising. Some popular options include ActBlue, WinRed, Anedot, and NGP
-                    VAN. These platforms are designed to handle political contributions securely and are compliant with
-                    relevant regulations.</p>
-            </div>
-
-            <!-- Provide Transparency:  -->
-            <div class="md:my-7 my-5">
-                <h2 class="poppins text-[#052B5A] font-semibold md:text-[30px] text-[23px]">Provide Transparency:</h2>
-                <p class="jost font-normal text-[16px] md:text-[20px] text-[#7F7F7F] mt-3">Clearly communicate to donors
-                    how their
-                    contributions will be used and ensure transparency in the fundraising process. This can help build
-                    trust and encourage donors to contribute.</p>
-            </div>
-
-            <!-- Offer Multiple Payment Options:  -->
-            <div class="md:my-7 my-5">
-                <h2 class="poppins text-[#052B5A] font-semibold md:text-[30px] text-[23px]">Offer Multiple Payment
-                    Options:</h2>
-                <p class="jost font-normal text-[16px] md:text-[20px] text-[#7F7F7F] mt-3">Offer Multiple Payment
-                    Options:</p>
-            </div>
-
-            <!-- Comprehensive Reporting:  -->
-            <div class="md:my-7 my-5">
-                <h2 class="poppins text-[#052B5A] font-semibold md:text-[30px] text-[23px]">Comprehensive Reporting:
-                </h2>
-                <p class="jost font-normal text-[16px] md:text-[20px] text-[#7F7F7F] mt-3">Ensure that the payment
-                    processor
-                    provides comprehensive reporting tools that allow you to track donations, generate financial
-                    reports, and comply with reporting requirements.commitment expected for your volunteer role.
-                    Campaigns may have flexible options for volunteering, allowing you to contribute as much or as
-                    little time as you're able</p>
-            </div>
-
-            <!-- Legal Compliance:  -->
-            <div class="md:my-7 my-5">
-                <h2 class="poppins text-[#052B5A] font-semibold md:text-[30px] text-[23px]">Legal Compliance:</h2>
-                <p class="jost font-normal text-[16px] md:text-[20px] text-[#7F7F7F] mt-3">Work closely with legal
-                    advisors or
-                    compliance experts to ensure that your fundraising platform complies with all relevant laws and
-                    regulations. This includes understanding contribution limits, disclosure requirements, and
-                    restrictions on certain types of contributions.</p>
-            </div>
-
-            <!-- complain  -->
-            <div class="md:flex md:my-10 my-10">
-                <div class="w-full  bg-white shadow-lg rounded-lg flex overflow-hidden md:p-6 p-4">
-                    <!-- Input Field -->
-                    <input type="text" placeholder="Complain"
-                        class="flex-grow px-4 py-2 text-g[#7F7F7F] border-2 focus:outline-none  rounded-lg" />
-                    <!-- Button -->
-                    <button
-                        class="md:px-6 md:py-2 px-5 py-2 bg-[#9c9c9c] md:ml-5 ml-4 text-white font-semibold rounded-lg focus:outline-none">
-                        Send
-                    </button>
-                    <a href="" class="relative block">
-                        <!-- Add the pseudo-element using Tailwind -->
-                        <div
-                            class="hidden md:block before:content-[''] before:absolute before:-bottom-[6px] before:left-[-90px] before:border-b-2 before:border-l-2 before:border-[#9c9c9c] before:rounded-bl-lg md:before:rounded-bl-xl md:before:px-[36px] before:px-[35px] before:py-[19px] md:before:py-[18px] before:py-[15px]">
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-
         </div>
-
-
+        <div class="relative hidden md:block">
+            <img src="../images/home-vector-img-2.png" alt="" class="absolute left-0  top-[-830px]">
+        </div>
     </section>
 
     <!-- footer  -->
     <footer>
         <div class="relative bg-cover bg-center md:h-[425px] h-[700px]" style="
-      background-image: url('../images/footer-bg.jpg');
-      background-position: 31% 34%;
-    ">
+            background-image: url('/images/footer-bg.jpg');
+            background-position: 31% 34%;
+            ">
             <!-- Overlay with color -->
             <div class="absolute inset-0 bg-[#001631] bg-opacity-90">
                 <div class="container mx-auto">
@@ -469,7 +523,7 @@
                                 <div class="">
                                     <div class="flex justify-between">
                                         <div>
-                                            <img src="../images/footer-logo.png" alt="" class="h-[45px]" />
+                                            <img src="/images/footer-logo.png" alt="" class="h-[45px]" />
                                         </div>
                                         <div class="flex mt-2 relative ">
                                             <div class="flex ">
@@ -540,10 +594,15 @@
                                 </ul>
                             </div>
                         </div>
+
+                        <div
+                            class="w-[1.5px] h-[125px] bg-[#FFF4FA] bg-opacity-10 mt-[120px] absolute left-[610px] hidden md:block">
+                        </div>
+
                         <div class="md:w-4/12 w-full z-10 hidden md:block">
-                            <div class="md:mt-5 md:pt-9">
+                            <div class="md:mt-10 md:pt-9">
                                 <div class="flex justify-center items-center">
-                                    <img src="../images/footer-logo.png" alt="" />
+                                    <img src="/images/footer-logo.png" alt="" />
                                 </div>
                                 <div class="md:mt-5">
                                     <p class="text-gray-300 text-center jost font-medium text-lg">
@@ -572,8 +631,12 @@
                                 </div>
                             </div>
                         </div>
+                        <div
+                            class="w-[1.5px] h-[125px] bg-[#FFF4FA] bg-opacity-10 mt-[120px] absolute left-[1270px] hidden md:block">
+                        </div>
+
                         <div class="md:w-4/12 w-full z-10">
-                            <div class="md:mt-5 md:pt-5">
+                            <div class="md:mt-8 md:pt-5">
                                 <div class="md:text-center md:ml-56 mt-8 md:mt-0 ml-3 md:ml-0">
                                     <h3
                                         class="text-xl font-semibold mb-4 poppins font-semibold text-white md:mt-10 md:mr-[130px]">
@@ -588,7 +651,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="h-[0.1px] bg-white opacity-30 mt-16"></div>
+                <div class="h-[0.1px] bg-[#FFF4FA] opacity-10 mt-16"></div>
+
                 <div class="md:w-10/12 mx-auto flex flex-col md:flex-row justify-between text-sm text-gray-400 z-10">
                     <p class="text-white mt-8 text-center">
                         Copyright © 2023 Politician, All Rights Reserved
@@ -607,4 +671,3 @@
 </body>
 
 </html>
-
